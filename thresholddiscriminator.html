@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Threshold/Discriminator | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Threshold/Discriminator  Definition: A threshold, also known as a discriminator, is a set value that an electronic signal must exceed in order to be recorded as an event by the flow...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Threshold/Discriminator | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Threshold/Discriminator  Definition: A threshold, also known as a discriminator, is a set value that an electronic signal must exceed in order to be recorded as an event by the flow...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Threshold/Discriminator | Cytometry">
+<meta name="twitter:description" content="Overview of Threshold/Discriminator  Definition: A threshold, also known as a discriminator, is a set value that an electronic signal must exceed in order to be recorded as an event by the flow...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="active" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="thresholddiscriminator" class="section level1 unnumbered">
+<h1>Threshold/Discriminator<a class="anchor" aria-label="anchor" href="#thresholddiscriminator"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-thresholddiscriminator" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Threshold/Discriminator</strong><a class="anchor" aria-label="anchor" href="#overview-of-thresholddiscriminator"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> A threshold, also known as a discriminator, is a set value that an electronic signal must exceed in order to be recorded as an event by the flow cytometer</li>
+<li>
+<strong>Purpose in Flow Cytometry:</strong>
+<ul>
+<li>
+<strong>Reduce Noise:</strong> To eliminate background noise and low-amplitude signals from being recorded as events</li>
+<li>
+<strong>Discriminate Events:</strong> To selectively record events of interest while ignoring unwanted events</li>
+<li>
+<strong>Improve Data Quality:</strong> By reducing noise and unwanted events, the overall quality of the data is improved</li>
+</ul>
+</li>
+<li>
+<strong>Key Concepts:</strong>
+<ul>
+<li>
+<strong>Threshold Level:</strong> The specific value that the signal must exceed</li>
+<li>
+<strong>Trigger Parameter:</strong> The parameter that is used to determine whether the threshold is exceeded (e.g., forward scatter, side scatter, fluorescence channel)</li>
+<li>
+<strong>Event Recording:</strong> Only events that exceed the threshold level are recorded and analyzed</li>
+<li>
+<strong>Data Analysis:</strong> The threshold setting can affect the number of events recorded and the overall distribution of data</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="types-of-thresholds" class="section level2 unnumbered">
+<h2>
+<strong>Types of Thresholds</strong><a class="anchor" aria-label="anchor" href="#types-of-thresholds"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Single Threshold:</strong>
+<ul>
+<li>
+<em>Definition:</em> A single value that the signal must exceed on a specific parameter</li>
+<li>
+<em>Example:</em> A threshold set on forward scatter to exclude debris and small particles</li>
+</ul>
+</li>
+<li>
+<strong>Multiple Thresholds:</strong>
+<ul>
+<li>
+<em>Definition:</em> Multiple values that the signal must exceed on different parameters</li>
+<li>
+<em>Example:</em> A threshold set on forward scatter and a threshold set on side scatter to select a specific population of cells</li>
+</ul>
+</li>
+<li>
+<strong>Software Thresholds:</strong>
+<ul>
+<li>
+<em>Definition:</em> Thresholds that are set and adjusted using software controls</li>
+<li>
+<em>Advantages:</em> More flexible and easier to adjust than hardware thresholds</li>
+</ul>
+</li>
+<li>
+<strong>Hardware Thresholds:</strong>
+<ul>
+<li>
+<em>Definition:</em> Thresholds that are set using physical components on the flow cytometer</li>
+<li>
+<em>Advantages:</em> More stable and less susceptible to software glitches</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="setting-thresholds" class="section level2 unnumbered">
+<h2>
+<strong>Setting Thresholds</strong><a class="anchor" aria-label="anchor" href="#setting-thresholds"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Cell Type:</strong> The size and complexity of the cells being analyzed</li>
+<li>
+<strong>Fluorophore Brightness:</strong> The intensity of the fluorescence signal</li>
+<li>
+<strong>Background Noise:</strong> The level of background noise in the system</li>
+<li>
+<strong>Experimental Goals:</strong> The specific objectives of the experiment</li>
+</ul>
+</li>
+<li>
+<strong>Methods:</strong>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Visual Inspection:</strong> Examine the data on a scatter plot or histogram to identify the region of interest</li>
+<li>
+<strong>Control Samples:</strong> Use control samples (e.g., unstained cells) to determine the level of background noise</li>
+<li>
+<strong>Titration:</strong> Titrate the threshold level to optimize the separation between positive and negative populations</li>
+<li>
+<strong>Automated Thresholding:</strong> Use software algorithms to automatically set the threshold level based on the data</li>
+</ol>
+</li>
+</ul>
+</div>
+<div id="trigger-parameter-selection" class="section level2 unnumbered">
+<h2>
+<strong>Trigger Parameter Selection</strong><a class="anchor" aria-label="anchor" href="#trigger-parameter-selection"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The parameter that is used to determine whether the threshold is exceeded</li>
+<li>
+<strong>Common Trigger Parameters:</strong>
+<ul>
+<li>
+<strong>Forward Scatter (FSC):</strong> Used to trigger on cells based on size</li>
+<li>
+<strong>Side Scatter (SSC):</strong> Used to trigger on cells based on granularity</li>
+<li>
+<strong>Fluorescence Channel:</strong> Used to trigger on cells based on fluorescence intensity</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Cell Population of Interest:</strong> Select a trigger parameter that is expressed by the cell population of interest</li>
+<li>
+<strong>Background Noise:</strong> Avoid trigger parameters with high levels of background noise</li>
+<li>
+<strong>Experiment Objectives:</strong> Select a trigger parameter that is relevant to the specific objectives of the experiment</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="impact-of-threshold-settings" class="section level2 unnumbered">
+<h2>
+<strong>Impact of Threshold Settings</strong><a class="anchor" aria-label="anchor" href="#impact-of-threshold-settings"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Threshold:</strong>
+<ul>
+<li>
+<em>Advantages:</em>
+<ul>
+<li>Captures more events</li>
+<li>Detects rare cell populations</li>
+</ul>
+</li>
+<li>
+<em>Disadvantages:</em>
+<ul>
+<li>Increases noise</li>
+<li>Records unwanted events</li>
+<li>Decreases data quality</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Threshold:</strong>
+<ul>
+<li>
+<em>Advantages:</em>
+<ul>
+<li>Reduces noise</li>
+<li>Records fewer unwanted events</li>
+<li>Improves data quality</li>
+</ul>
+</li>
+<li>
+<em>Disadvantages:</em>
+<ul>
+<li>Loses events</li>
+<li>May miss rare cell populations</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="optimizing-threshold-settings" class="section level2 unnumbered">
+<h2>
+<strong>Optimizing Threshold Settings</strong><a class="anchor" aria-label="anchor" href="#optimizing-threshold-settings"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Objective:</strong> To find the optimal balance between capturing events of interest and reducing noise</li>
+<li>
+<strong>Strategies:</strong>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Start with a Low Threshold:</strong> Begin with a low threshold to capture all possible events</li>
+<li>
+<strong>Gradually Increase the Threshold:</strong> Gradually increase the threshold level while monitoring the data</li>
+<li>
+<strong>Monitor the Noise Level:</strong> Pay close attention to the level of background noise</li>
+<li>
+<strong>Optimize Separation:</strong> Adjust the threshold to optimize the separation between positive and negative populations</li>
+<li>
+<strong>Confirm with Controls:</strong> Use control samples to confirm that the threshold setting is appropriate</li>
+</ol>
+</li>
+<li>
+<strong>General Considerations:</strong>
+<ul>
+<li>If you are performing immunophenotyping, you will want to trigger on the cells of interest
+<ul>
+<li>If you are performing immunophenotyping on lymphocytes, trigger on CD45</li>
+</ul>
+</li>
+<li>If you are performing rare event analysis, you want to cast a very wide net by setting the threshold low</li>
+<li>If you want to remove any carryover from the sheath fluid as well as remove debris, you will want to set the threshold on forward scatter (FSC)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-threshold-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Threshold Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-threshold-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Event Count:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>High threshold setting</li>
+<li>Incorrect trigger parameter</li>
+<li>Sample preparation issues</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Reduce threshold setting</li>
+<li>Verify trigger parameter</li>
+<li>Optimize sample preparation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Low threshold setting</li>
+<li>Contaminated samples</li>
+<li>Incorrect instrument settings</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Increase threshold setting</li>
+<li>Clean samples</li>
+<li>Optimize instrument settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Unexpected Event Populations:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect threshold settings</li>
+<li>Sample contamination</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify threshold settings</li>
+<li>Check for sample contamination</li>
+<li>Inspect instrument for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-11" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-11"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Threshold:</strong> A set value that an electronic signal must exceed in order to be recorded as an event</li>
+<li>
+<strong>Discriminator:</strong> Another term for threshold</li>
+<li>
+<strong>Trigger Parameter:</strong> The parameter that is used to determine whether the threshold is exceeded</li>
+<li>
+<strong>Event Recording:</strong> The process of recording events that exceed the threshold level</li>
+<li>
+<strong>Background Noise:</strong> Unwanted signals that interfere with the detection of true events</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="pulse-measurement.html">Pulse Measurement</a></div>
+<div class="next"><a href="troubleshooting.html">Troubleshooting</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#thresholddiscriminator">Threshold/Discriminator</a></li>
+<li><a class="nav-link" href="#overview-of-thresholddiscriminator">Overview of Threshold/Discriminator</a></li>
+<li><a class="nav-link" href="#types-of-thresholds">Types of Thresholds</a></li>
+<li><a class="nav-link" href="#setting-thresholds">Setting Thresholds</a></li>
+<li><a class="nav-link" href="#trigger-parameter-selection">Trigger Parameter Selection</a></li>
+<li><a class="nav-link" href="#impact-of-threshold-settings">Impact of Threshold Settings</a></li>
+<li><a class="nav-link" href="#optimizing-threshold-settings">Optimizing Threshold Settings</a></li>
+<li><a class="nav-link" href="#troubleshooting-threshold-issues">Troubleshooting Threshold Issues</a></li>
+<li><a class="nav-link" href="#key-terms-11">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/01-15-instrumentation-electronics-threshold-discriminator.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/01-15-instrumentation-electronics-threshold-discriminator.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

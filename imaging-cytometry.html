@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Imaging Cytometry | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Imaging Cytometry  Definition: Imaging cytometry is a technique that combines the high-throughput capabilities of flow cytometry with the high-resolution imaging capabilities of...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Imaging Cytometry | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Imaging Cytometry  Definition: Imaging cytometry is a technique that combines the high-throughput capabilities of flow cytometry with the high-resolution imaging capabilities of...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Imaging Cytometry | Cytometry">
+<meta name="twitter:description" content="Overview of Imaging Cytometry  Definition: Imaging cytometry is a technique that combines the high-throughput capabilities of flow cytometry with the high-resolution imaging capabilities of...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="active" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="imaging-cytometry" class="section level1 unnumbered">
+<h1>Imaging Cytometry<a class="anchor" aria-label="anchor" href="#imaging-cytometry"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-imaging-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Imaging Cytometry</strong><a class="anchor" aria-label="anchor" href="#overview-of-imaging-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Imaging cytometry is a technique that combines the high-throughput capabilities of flow cytometry with the high-resolution imaging capabilities of microscopy</li>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Cells are labeled with fluorescent antibodies or dyes</li>
+<li>The cells are passed through a flow cytometer, where their fluorescence and scatter properties are measured</li>
+<li>As the cells pass through the interrogation point, high-resolution images are captured</li>
+<li>The images are then analyzed to quantify the expression of cell markers, the localization of proteins, and other cellular features</li>
+</ul>
+</li>
+<li>
+<strong>Advantages Over Traditional Flow Cytometry:</strong>
+<ul>
+<li>Visualization of Cellular Morphology: Provides visual confirmation of cell identity and morphology</li>
+<li>Intracellular Localization: Allows for the analysis of the subcellular localization of proteins</li>
+<li>Contextual Information: Provides contextual information about the relationship between cells and their environment</li>
+</ul>
+</li>
+<li>
+<strong>Advantages Over Traditional Microscopy:</strong>
+<ul>
+<li>High Throughput: Can analyze thousands of cells in a matter of minutes</li>
+<li>Automated Analysis: Provides automated image analysis and data quantification</li>
+<li>Objective Measurements: Provides objective measurements of cellular features</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Cell Biology</li>
+<li>Immunology</li>
+<li>Cancer Research</li>
+<li>Drug Discovery</li>
+<li>Toxicology</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-components-of-an-imaging-cytometer" class="section level2 unnumbered">
+<h2>
+<strong>Key Components of an Imaging Cytometer</strong><a class="anchor" aria-label="anchor" href="#key-components-of-an-imaging-cytometer"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Fluidics System:</strong>
+<ul>
+<li>Transports the cells from the sample tube to the imaging flow cell</li>
+<li>Maintains a stable and consistent flow rate</li>
+</ul>
+</li>
+<li>
+<strong>Optics System:</strong>
+<ul>
+<li>Illuminates the cells with a light source (e.g., laser, LED)</li>
+<li>Collects the emitted fluorescence and scattered light</li>
+<li>Forms a high-resolution image of the cells</li>
+</ul>
+</li>
+<li>
+<strong>Imaging System:</strong>
+<ul>
+<li>Includes a high-speed camera (e.g., CCD, CMOS) and objective lens</li>
+<li>Captures images of the cells as they pass through the interrogation point</li>
+</ul>
+</li>
+<li>
+<strong>Electronics System:</strong>
+<ul>
+<li>Controls the operation of the instrument</li>
+<li>Processes the signals from the detectors</li>
+<li>Synchronizes image acquisition with cell detection</li>
+</ul>
+</li>
+<li>
+<strong>Software System:</strong>
+<ul>
+<li>Controls the instrument</li>
+<li>Analyzes the images</li>
+<li>Quantifies cellular features</li>
+<li>Provides data visualization and reporting tools</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="sample-preparation-for-imaging-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Sample Preparation for Imaging Cytometry</strong><a class="anchor" aria-label="anchor" href="#sample-preparation-for-imaging-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Single-Cell Suspension:</strong>
+<ul>
+<li>Prepare a single-cell suspension of the sample</li>
+<li>Remove cell aggregates and debris</li>
+</ul>
+</li>
+<li>
+<strong>Cell Labeling:</strong>
+<ul>
+<li>Label the cells with fluorescent antibodies or dyes</li>
+<li>Optimize staining protocols to maximize signal intensity and minimize background noise</li>
+</ul>
+</li>
+<li>
+<strong>Fixation and Permeabilization:</strong>
+<ul>
+<li>Fix and permeabilize the cells to preserve cell structure and allow antibody access to intracellular targets</li>
+<li>Use appropriate fixation and permeabilization methods for the target antigens</li>
+</ul>
+</li>
+<li>
+<strong>Controls:</strong>
+<ul>
+<li>Include appropriate controls to validate the staining protocol and to account for background fluorescence</li>
+<li>Use isotype controls, FMO controls, and autofluorescence controls</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="imaging-parameters" class="section level2 unnumbered">
+<h2>
+<strong>Imaging Parameters</strong><a class="anchor" aria-label="anchor" href="#imaging-parameters"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Magnification:</strong>
+<ul>
+<li>Determines the level of detail that can be visualized in the images</li>
+<li>Higher magnification provides more detail but may reduce the field of view</li>
+</ul>
+</li>
+<li>
+<strong>Resolution:</strong>
+<ul>
+<li>Determines the ability to distinguish between closely spaced objects</li>
+<li>Higher resolution allows for the visualization of finer details</li>
+</ul>
+</li>
+<li>
+<strong>Exposure Time:</strong>
+<ul>
+<li>The amount of time that the camera is exposed to light</li>
+<li>Longer exposure times increase signal intensity but may also increase background noise</li>
+</ul>
+</li>
+<li>
+<strong>Focus:</strong>
+<ul>
+<li>The sharpness of the image</li>
+<li>Proper focus is essential for accurate image analysis</li>
+</ul>
+</li>
+<li>
+<strong>Field of View:</strong>
+<ul>
+<li>The area of the sample that is captured in each image</li>
+<li>Larger fields of view allow for the analysis of more cells but may reduce resolution</li>
+</ul>
+</li>
+<li>
+<strong>Number of Images:</strong>
+<ul>
+<li>Having an ample number of images will increase the ability to draw conclusions regarding the population of interest</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="image-analysis-techniques" class="section level2 unnumbered">
+<h2>
+<strong>Image Analysis Techniques</strong><a class="anchor" aria-label="anchor" href="#image-analysis-techniques"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Object Identification:</strong>
+<ul>
+<li>Identifying and segmenting individual cells or particles in the images</li>
+<li>Use appropriate algorithms to accurately identify objects of interest</li>
+</ul>
+</li>
+<li>
+<strong>Feature Extraction:</strong>
+<ul>
+<li>Measuring the size, shape, intensity, and texture of the objects</li>
+<li>Use appropriate algorithms to accurately measure cellular features</li>
+</ul>
+</li>
+<li>
+<strong>Data Quantification:</strong>
+<ul>
+<li>Quantifying the expression of cell markers, the localization of proteins, and other cellular features</li>
+<li>Use appropriate statistical methods to analyze the data</li>
+</ul>
+</li>
+<li>
+<strong>Object Colocalization:</strong>
+<ul>
+<li>The colocalization of two or more markers may suggest co-expression</li>
+</ul>
+</li>
+<li>
+<strong>Intensity and Distribution:</strong>
+<ul>
+<li>The intensity in a given location is proportional to the amount of fluorescence</li>
+<li>The distribution can also have meaning</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="applications-of-imaging-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Applications of Imaging Cytometry</strong><a class="anchor" aria-label="anchor" href="#applications-of-imaging-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cell Biology:</strong>
+<ul>
+<li>Studying the subcellular localization of proteins</li>
+<li>Analyzing cell morphology and structure</li>
+<li>Investigating cell-cell interactions</li>
+</ul>
+</li>
+<li>
+<strong>Immunology:</strong>
+<ul>
+<li>Analyzing immune cell activation and function</li>
+<li>Studying immune cell trafficking and migration</li>
+<li>Investigating the role of cytokines and chemokines in immune responses</li>
+</ul>
+</li>
+<li>
+<strong>Cancer Research:</strong>
+<ul>
+<li>Identifying and characterizing cancer stem cells</li>
+<li>Studying the mechanisms of cancer metastasis</li>
+<li>Developing new cancer therapies</li>
+</ul>
+</li>
+<li>
+<strong>Drug Discovery:</strong>
+<ul>
+<li>Screening for drugs that affect cellular morphology or protein localization</li>
+<li>Analyzing the effects of drugs on cell signaling pathways</li>
+</ul>
+</li>
+<li>
+<strong>Toxicology:</strong>
+<ul>
+<li>Assessing the toxicity of chemicals on cells</li>
+<li>Identifying mechanisms of toxicity</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-imaging-cytometry-assays" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Imaging Cytometry Assays</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-imaging-cytometry-assays"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Blurry Images:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect focus</li>
+<li>Sample movement</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Adjust focus</li>
+<li>Stabilize sample</li>
+<li>Inspect instrument for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Weak Signal:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Low expression of target antigens</li>
+<li>Poor antibody binding</li>
+<li>Low light intensity</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Increase antibody concentration</li>
+<li>Optimize staining protocol</li>
+<li>Increase light intensity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Non-specific binding</li>
+<li>Autofluorescence</li>
+<li>Contamination</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Use blocking reagents</li>
+<li>Reduce autofluorescence</li>
+<li>Clean samples</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Poor Segmentation:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Low image contrast</li>
+<li>Cell aggregates</li>
+<li>Incorrect segmentation parameters</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Optimize image contrast</li>
+<li>Disaggregate cells</li>
+<li>Adjust segmentation parameters</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-34" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-34"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Imaging Cytometry:</strong> A technique that combines flow cytometry and microscopy</li>
+<li>
+<strong>Interrogation Point:</strong> The location where the cells are imaged</li>
+<li>
+<strong>Objective Lens:</strong> The lens that collects light from the sample and forms an image</li>
+<li>
+<strong>Camera:</strong> A device that captures images of the cells</li>
+<li>
+<strong>Magnification:</strong> The degree to which the image is enlarged</li>
+<li>
+<strong>Resolution:</strong> The ability to distinguish between closely spaced objects</li>
+<li>
+<strong>Exposure Time:</strong> The amount of time that the camera is exposed to light</li>
+<li>
+<strong>Segmentation:</strong> The process of identifying and separating objects in an image</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="cell-sorting.html">Cell Sorting</a></div>
+<div class="next"><a href="mass-cytometry.html">Mass Cytometry</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#imaging-cytometry">Imaging Cytometry</a></li>
+<li><a class="nav-link" href="#overview-of-imaging-cytometry">Overview of Imaging Cytometry</a></li>
+<li><a class="nav-link" href="#key-components-of-an-imaging-cytometer">Key Components of an Imaging Cytometer</a></li>
+<li><a class="nav-link" href="#sample-preparation-for-imaging-cytometry">Sample Preparation for Imaging Cytometry</a></li>
+<li><a class="nav-link" href="#imaging-parameters">Imaging Parameters</a></li>
+<li><a class="nav-link" href="#image-analysis-techniques">Image Analysis Techniques</a></li>
+<li><a class="nav-link" href="#applications-of-imaging-cytometry">Applications of Imaging Cytometry</a></li>
+<li><a class="nav-link" href="#troubleshooting-imaging-cytometry-assays">Troubleshooting Imaging Cytometry Assays</a></li>
+<li><a class="nav-link" href="#key-terms-34">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/03-11-applications-imaging-cytometry.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/03-11-applications-imaging-cytometry.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

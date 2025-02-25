@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Operations | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Operational Management in a Flow Cytometry Lab  Definition: Operational management encompasses all activities related to the efficient and effective operation of the flow cytometry...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Operations | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Operational Management in a Flow Cytometry Lab  Definition: Operational management encompasses all activities related to the efficient and effective operation of the flow cytometry...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Operations | Cytometry">
+<meta name="twitter:description" content="Overview of Operational Management in a Flow Cytometry Lab  Definition: Operational management encompasses all activities related to the efficient and effective operation of the flow cytometry...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="active" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="operations" class="section level1 unnumbered">
+<h1>Operations<a class="anchor" aria-label="anchor" href="#operations"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-operational-management-in-a-flow-cytometry-lab" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Operational Management in a Flow Cytometry Lab</strong><a class="anchor" aria-label="anchor" href="#overview-of-operational-management-in-a-flow-cytometry-lab"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Operational management encompasses all activities related to the efficient and effective operation of the flow cytometry laboratory, ensuring that it meets the needs of its customers and stakeholders</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Customer Satisfaction: To provide high-quality services that meet the needs of the laboratory’s customers</li>
+<li>Operational Efficiency: To optimize the use of resources and minimize waste</li>
+<li>Regulatory Compliance: To comply with all applicable laws and regulations</li>
+</ul>
+</li>
+<li>
+<strong>Key Aspects of Operational Management:</strong>
+<ul>
+<li>Customer Service</li>
+<li>Facility Management</li>
+<li>Information Technology</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="customer-service" class="section level2 unnumbered">
+<h2>
+<strong>Customer Service</strong><a class="anchor" aria-label="anchor" href="#customer-service"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Providing excellent service to the users of the flow cytometry laboratory</li>
+<li>
+<strong>Key Elements of Customer Service:</strong>
+<ul>
+<li>Communication: Respond promptly and effectively to customer inquiries</li>
+<li>Consultation: Provide expert advice and guidance to customers on experimental design, data analysis, and other aspects of flow cytometry</li>
+<li>Training: Provide training to customers on the use of the flow cytometer and related software</li>
+<li>Troubleshooting: Assist customers with troubleshooting problems and resolving issues</li>
+<li>Data Reporting: Provide timely and accurate data reporting</li>
+</ul>
+</li>
+<li>
+<strong>Customer Feedback:</strong>
+<ul>
+<li>Solicit feedback from customers on a regular basis</li>
+<li>Use the feedback to improve the services provided by the laboratory</li>
+</ul>
+</li>
+<li><strong>Surveys are a good way to monitor the customer satisfaction!</strong></li>
+</ul>
+</div>
+<div id="facility-management" class="section level2 unnumbered">
+<h2>
+<strong>Facility Management</strong><a class="anchor" aria-label="anchor" href="#facility-management"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Managing the physical space and resources of the flow cytometry laboratory</li>
+<li>
+<strong>Key Aspects of Facility Management:</strong>
+<ul>
+<li>Space Planning:
+<ul>
+<li>Optimize the use of laboratory space</li>
+<li>Ensure that there is adequate space for equipment, personnel, and storage</li>
+</ul>
+</li>
+<li>Equipment Maintenance:
+<ul>
+<li>Perform regular maintenance on the flow cytometer and other equipment</li>
+<li>Keep the equipment clean and in good working order</li>
+</ul>
+</li>
+<li>Safety:
+<ul>
+<li>Maintain a safe working environment</li>
+<li>Implement and enforce safety procedures</li>
+</ul>
+</li>
+<li>Environmental Control:
+<ul>
+<li>Maintain appropriate temperature, humidity, and air quality</li>
+<li>Monitor environmental conditions regularly</li>
+</ul>
+</li>
+<li>Security:
+<ul>
+<li>Control access to the laboratory</li>
+<li>Protect equipment and data from theft or damage</li>
+</ul>
+</li>
+<li>Waste Disposal:
+<ul>
+<li>Properly dispose of all waste materials</li>
+<li>Follow all applicable regulations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Routine Maintenance:</strong>
+<ul>
+<li>Scheduled and performed by vendor</li>
+<li>Log each service into the machine’s book to track and maintain historical records</li>
+</ul>
+</li>
+<li>
+<strong>Daily Maintenance:</strong>
+<ul>
+<li>Clean the instrument after each use with special cleaning solutions.</li>
+</ul>
+</li>
+<li><strong>Keep the instrument in a room that has a steady, controlled temperature.</strong></li>
+</ul>
+</div>
+<div id="information-technology-it" class="section level2 unnumbered">
+<h2>
+<strong>Information Technology (IT)</strong><a class="anchor" aria-label="anchor" href="#information-technology-it"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Managing the computer systems and software used in the flow cytometry laboratory</li>
+<li>
+<strong>Key Aspects of IT Management:</strong>
+<ul>
+<li>Data Storage:
+<ul>
+<li>Use reliable storage systems to store flow cytometry data</li>
+<li>Back up the data regularly to prevent data loss</li>
+</ul>
+</li>
+<li>Data Security:
+<ul>
+<li>Implement security measures to protect the data from unauthorized access or modification</li>
+<li>Use strong passwords and access controls</li>
+</ul>
+</li>
+<li>Software Management:
+<ul>
+<li>Install and maintain flow cytometry software</li>
+<li>Ensure that the software is up-to-date and compatible with the flow cytometer</li>
+</ul>
+</li>
+<li>Networking:
+<ul>
+<li>Connect the flow cytometer to the network to facilitate data transfer and sharing</li>
+<li>Use a secure network connection to protect data from unauthorized access</li>
+</ul>
+</li>
+<li>Data analysis:
+<ul>
+<li>The laboratory’s data should be accurate for effective data analysis</li>
+<li>It is important to routinely check the operation of data analysis systems</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Important factors to review:</strong>
+<ul>
+<li>The instrument is properly connected to the network</li>
+<li>Data storage meets institutional and regulatory requirements</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-operational-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Operational Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-operational-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Customer Complaints:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Poor communication</li>
+<li>Long turnaround times</li>
+<li>Inaccurate results</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Improve communication with customers</li>
+<li>Streamline processes to reduce turnaround times</li>
+<li>Implement quality control measures to improve the accuracy of results</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Equipment Malfunctions:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Lack of maintenance</li>
+<li>Improper use</li>
+<li>Component failure</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Implement a regular maintenance schedule</li>
+<li>Provide training to equipment operators</li>
+<li>Replace faulty components</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Data Breaches:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Weak passwords</li>
+<li>Lack of access controls</li>
+<li>Software vulnerabilities</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Enforce strong password policies</li>
+<li>Implement access controls</li>
+<li>Keep software up-to-date</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>The laboratory director or supervisor must be promptly notified of all issues or problems that arise!</strong></li>
+</ul>
+</div>
+<div id="key-terms-57" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-57"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Customer Service:</strong> Providing excellent service to users</li>
+<li>
+<strong>Facility Management:</strong> Managing the physical space and resources</li>
+<li>
+<strong>Information Technology (IT):</strong> Managing computer systems and software</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="financial.html">Financial</a></div>
+<div class="next"><a href="personnel.html">Personnel</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#operations">Operations</a></li>
+<li><a class="nav-link" href="#overview-of-operational-management-in-a-flow-cytometry-lab">Overview of Operational Management in a Flow Cytometry Lab</a></li>
+<li><a class="nav-link" href="#customer-service">Customer Service</a></li>
+<li><a class="nav-link" href="#facility-management">Facility Management</a></li>
+<li><a class="nav-link" href="#information-technology-it">Information Technology (IT)</a></li>
+<li><a class="nav-link" href="#troubleshooting-operational-issues">Troubleshooting Operational Issues</a></li>
+<li><a class="nav-link" href="#key-terms-57">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/05-18-laboratory-operations-laboratory-administration-operations.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/05-18-laboratory-operations-laboratory-administration-operations.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

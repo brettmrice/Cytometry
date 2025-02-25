@@ -1,0 +1,110 @@
+# Quality Management {-}
+
+## **Overview of Quality Management** {-}
+
+*   **Definition:** Quality management is a systematic approach to ensure that all aspects of the flow cytometry laboratory are operating at the highest possible level of quality
+*   **Importance:**
+    *   Accurate and Reliable Results: To ensure that the data accurately reflects the biological system being studied and is free from errors
+    *   Continuous Improvement: To continuously improve the processes and procedures used in the laboratory
+    *   Risk Mitigation: To identify and mitigate potential risks that could compromise the quality of the results
+    *   Compliance: To comply with regulatory requirements and accreditation standards
+*   **Key Components of Quality Management:**
+    *   Continuous Quality Improvement (CQI)
+    *   Risk Management/Medical-Legal Issues
+
+## **Continuous Quality Improvement (CQI)** {-}
+
+*   **Definition:** A systematic approach to identifying and resolving problems in the laboratory to continuously improve the quality of services provided
+*   **Key Principles of CQI:**
+    *   Customer Focus: The needs of the customers (e.g., physicians, researchers, patients) should be the primary focus of the CQI process
+    *   Process Orientation: Quality is best achieved by focusing on the processes used to produce the results
+    *   Data-Driven Decision Making: Decisions should be based on data and evidence, not on opinions or assumptions
+    *   Teamwork: CQI is most effective when it involves the participation of all members of the laboratory team
+    *   Continuous Learning: CQI is an ongoing process that requires a commitment to continuous learning and improvement
+*   **CQI Methods:**
+    *   PDCA Cycle (Plan-Do-Check-Act):
+        *   *Plan:* Identify the problem, analyze the causes, and develop a plan for improvement
+        *   *Do:* Implement the plan
+        *   *Check:* Evaluate the results of the plan
+        *   *Act:* Take action to sustain the improvement or to implement further changes
+    *   Lean Methodology:
+        *   A systematic approach to identifying and eliminating waste in the laboratory
+        *   Focuses on streamlining processes and reducing unnecessary steps
+    *   Six Sigma:
+        *   A data-driven approach to reducing variation and improving quality
+        *   Uses statistical methods to identify and eliminate defects
+*   **Checklists are a great tool to implement into workflows**
+
+## **Risk Management/Medical-Legal Issues** {-}
+
+*   **Definition:** Risk management is the process of identifying, assessing, and mitigating potential risks that could compromise the quality of the results or the safety of laboratory personnel
+*   **Key Steps in Risk Management:**
+    1.  Risk Identification:
+        *   Identify potential risks by brainstorming with the laboratory team, reviewing incident reports, and analyzing process data
+        *   Consider risks related to:
+            *   Equipment malfunction
+            *   Reagent degradation
+            *   Human error
+            *   Data security
+            *   Regulatory non-compliance
+    2.  Risk Assessment:
+        *   Assess the likelihood and impact of each risk
+        *   Use a risk assessment matrix to prioritize risks based on their severity
+    3.  Risk Mitigation:
+        *   Develop and implement strategies to mitigate the identified risks
+        *   Risk mitigation strategies may include:
+            *   Implementing new procedures
+            *   Providing additional training
+            *   Purchasing new equipment
+            *   Increasing monitoring and oversight
+    4.  Monitoring and Review:
+        *   Regularly monitor and review the risk management plan
+        *   Update the plan as needed based on changes in the laboratory environment
+*   **Medical-Legal Issues:**
+    *   Test Validity: To ensure that the test is used appropriately
+    *   Confidentiality: To protect the privacy of patient information
+    *   Compliance: To adhere to regulations
+    *   Proper Documentation: Maintain accurate records of all aspects of the testing process
+    *   Informed Consent: Obtain informed consent from patients before performing any tests
+*  **All records must be properly maintained**
+
+## **Components of a Quality Management System** {-}
+
+*   **Quality Manual:** A document that describes the laboratory's quality management system
+*   **Standard Operating Procedures (SOPs):** Detailed instructions for performing specific tasks in the laboratory
+*   **Forms and Checklists:** Tools for documenting and tracking quality control activities
+*   **Audits:** Regular reviews of the laboratory's quality management system to identify areas for improvement
+*   **Staff Training and Competency Assessment:** Programs to ensure staff are qualified
+
+## **Troubleshooting Quality Management Issues** {-}
+
+*   **Lack of Employee Engagement:**
+    *   *Possible Causes:*
+        *   Poor communication
+        *   Lack of authority
+        *   Lack of training
+    *   *Troubleshooting Steps:*
+        *   Improve communication
+        *   Provide employees with more authority
+        *   Provide additional training
+*   **Ineffective Communication:**
+    *   *Possible Causes:*
+        *   Lack of established protocols
+        *   Poorly enforced procedures
+    *   *Troubleshooting Steps:*
+        *   Review protocols and create a schedule for routine maintenance
+*   **Non-Compliance with Regulations:**
+    *   *Possible Causes:*
+        *   Lack of awareness
+        *   Poor documentation
+        *   Inadequate resources
+    *   *Troubleshooting Steps:*
+        *   Provide regular trainings to maintain proper certifications
+
+## **Key Terms** {-}
+
+*   **Quality Management:** A systematic approach to ensure high-quality results
+*   **Continuous Quality Improvement (CQI):** A systematic approach to identifying and resolving problems
+*   **Risk Management:** Identifying, assessing, and mitigating potential risks
+*   **Standard Operating Procedures (SOPs):** Detailed instructions for performing specific tasks
+*   **Audits:** Regular reviews of the laboratory's quality management system

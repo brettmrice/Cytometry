@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Detectors | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Detectors  Definition: Detectors are electronic components that convert light into an electrical signal Purpose in Flow Cytometry: Convert Light to Electrons: Detect and convert the...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Detectors | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Detectors  Definition: Detectors are electronic components that convert light into an electrical signal Purpose in Flow Cytometry: Convert Light to Electrons: Detect and convert the...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Detectors | Cytometry">
+<meta name="twitter:description" content="Overview of Detectors  Definition: Detectors are electronic components that convert light into an electrical signal Purpose in Flow Cytometry: Convert Light to Electrons: Detect and convert the...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="active" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="detectors" class="section level1 unnumbered">
+<h1>Detectors<a class="anchor" aria-label="anchor" href="#detectors"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-detectors" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Detectors</strong><a class="anchor" aria-label="anchor" href="#overview-of-detectors"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Detectors are electronic components that convert light into an electrical signal</li>
+<li>
+<strong>Purpose in Flow Cytometry:</strong>
+<ul>
+<li>
+<strong>Convert Light to Electrons:</strong> Detect and convert the photons emitted from fluorophores or scattered by cells into electrical signals</li>
+<li>
+<strong>Amplify the Signal:</strong> Increase the strength of the electrical signal for accurate measurement</li>
+<li>
+<strong>Provide Data for Analysis:</strong> Generate the raw data that is used to quantify fluorescence intensity and cell characteristics</li>
+</ul>
+</li>
+<li>
+<strong>Key Properties:</strong>
+<ul>
+<li>
+<strong>Sensitivity:</strong> The ability to detect weak light signals</li>
+<li>
+<strong>Quantum Efficiency:</strong> The percentage of incident photons that are converted into electrons</li>
+<li>
+<strong>Gain:</strong> The factor by which the detector amplifies the signal</li>
+<li>
+<strong>Dynamic Range:</strong> The range of light intensities that the detector can accurately measure</li>
+<li>
+<strong>Linearity:</strong> The ability of the detector to produce an output signal that is proportional to the input light intensity</li>
+<li>
+<strong>Response Time:</strong> The speed at which the detector responds to changes in light intensity</li>
+<li>
+<strong>Noise:</strong> The unwanted electrical fluctuations generated by the detector itself</li>
+</ul>
+</li>
+<li>
+<strong>Types of Detectors Used in Flow Cytometry:</strong>
+<ul>
+<li>Photomultiplier Tubes (PMTs)</li>
+<li>Photodiodes</li>
+<li>Charge-Coupled Device (CCD) Cameras</li>
+<li>Avalanche Photodiodes (APDs)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="photomultiplier-tubes-pmts" class="section level2 unnumbered">
+<h2>
+<strong>Photomultiplier Tubes (PMTs)</strong><a class="anchor" aria-label="anchor" href="#photomultiplier-tubes-pmts"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> PMTs use the photoelectric effect and secondary emission to convert a single photon into a cascade of electrons, resulting in a highly amplified signal</li>
+<li>
+<strong>Components:</strong>
+<ul>
+<li>
+<strong>Photocathode:</strong> A light-sensitive material that emits electrons when struck by photons (photoelectric effect)</li>
+<li>
+<strong>Dynodes:</strong> A series of electrodes with increasingly positive voltages that attract and multiply the electrons through secondary emission</li>
+<li>
+<strong>Anode:</strong> Collects the electrons and generates an electrical current proportional to the number of photons detected</li>
+</ul>
+</li>
+<li>
+<strong>Characteristics:</strong>
+<ul>
+<li>
+<strong>High Sensitivity:</strong> Can detect very weak light signals</li>
+<li>
+<strong>High Gain:</strong> Provides significant signal amplification</li>
+<li>
+<strong>Fast Response Time:</strong> Can respond quickly to changes in light intensity</li>
+<li>
+<strong>Relatively High Noise:</strong> Generates some background noise due to thermal emission of electrons</li>
+<li>
+<strong>Sensitive to Light Exposure:</strong> Can be damaged by exposure to bright light when not powered</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>High sensitivity and gain</li>
+<li>Fast response time</li>
+<li>Well-established technology</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Relatively high noise</li>
+<li>Sensitive to light exposure</li>
+<li>Bulky and expensive compared to some other detectors</li>
+</ul>
+</li>
+<li>
+<strong>Applications in Flow Cytometry:</strong>
+<ul>
+<li>Detection of fluorescence signals</li>
+<li>Detection of forward scatter (FSC) and side scatter (SSC) signals</li>
+<li>Most common detector in conventional flow cytometers</li>
+</ul>
+</li>
+<li>
+<strong>How to optimize:</strong>
+<ul>
+<li>Managing voltage is key, as sensitivity of the PMT is directly related to the voltage applied; higher voltage will result in higher sensitivity</li>
+</ul>
+</li>
+<li>
+<strong>Caveats:</strong>
+<ul>
+<li>PMTs can be damaged with exposure to light when the instrument is turned off</li>
+<li>PMTs tend to heat up and can change over the course of the experiment</li>
+<li>PMTs are analog detectors</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="photodiodes" class="section level2 unnumbered">
+<h2>
+<strong>Photodiodes</strong><a class="anchor" aria-label="anchor" href="#photodiodes"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Photodiodes are semiconductor devices that generate an electrical current when exposed to light</li>
+<li>
+<strong>Types:</strong>
+<ul>
+<li>
+<strong>PIN Photodiodes:</strong> High sensitivity and fast response time</li>
+<li>
+<strong>Avalanche Photodiodes (APDs):</strong> Internal gain mechanism for increased sensitivity</li>
+</ul>
+</li>
+<li>
+<strong>Characteristics:</strong>
+<ul>
+<li>
+<strong>Moderate Sensitivity:</strong> Less sensitive than PMTs but more sensitive than CCD cameras</li>
+<li>
+<strong>Lower Gain:</strong> Requires external amplification circuitry</li>
+<li>
+<strong>Fast Response Time:</strong> Can respond very quickly to changes in light intensity</li>
+<li>
+<strong>Low Noise:</strong> Generates very little background noise</li>
+<li>
+<strong>Robust and Stable:</strong> Less sensitive to light exposure and temperature changes compared to PMTs</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>Low noise</li>
+<li>Robust and stable</li>
+<li>Compact and inexpensive</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower sensitivity and gain compared to PMTs</li>
+<li>Requires external amplification circuitry</li>
+</ul>
+</li>
+<li>
+<strong>Applications in Flow Cytometry:</strong>
+<ul>
+<li>Detection of forward scatter (FSC) signals</li>
+<li>Light scatter detectors for cell counting</li>
+<li>Applications where high sensitivity is not required</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="charge-coupled-device-ccd-cameras" class="section level2 unnumbered">
+<h2>
+<strong>Charge-Coupled Device (CCD) Cameras</strong><a class="anchor" aria-label="anchor" href="#charge-coupled-device-ccd-cameras"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> CCD cameras are image sensors that consist of an array of light-sensitive pixels. Each pixel accumulates charge proportional to the amount of light that strikes it</li>
+<li>
+<strong>Characteristics:</strong>
+<ul>
+<li>
+<strong>Moderate Sensitivity:</strong> Less sensitive than PMTs but can be improved with long exposure times</li>
+<li>
+<strong>High Resolution:</strong> Can capture detailed images with a large number of pixels</li>
+<li>
+<strong>Slow Response Time:</strong> Requires longer exposure times compared to PMTs</li>
+<li>
+<strong>Low Noise:</strong> Generates relatively little background noise</li>
+<li>
+<strong>Digital Output:</strong> Provides a digital image that can be directly processed by a computer</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>High resolution imaging</li>
+<li>Digital output</li>
+<li>Low noise</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower sensitivity compared to PMTs</li>
+<li>Slower response time</li>
+<li>More complex and expensive than PMTs</li>
+</ul>
+</li>
+<li>
+<strong>Applications in Flow Cytometry:</strong>
+<ul>
+<li>Imaging flow cytometry</li>
+<li>Cell morphology analysis</li>
+<li>Intracellular localization of fluorescent markers</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="avalanche-photodiodes-apds" class="section level2 unnumbered">
+<h2>
+<strong>Avalanche Photodiodes (APDs)</strong><a class="anchor" aria-label="anchor" href="#avalanche-photodiodes-apds"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> APDs are semiconductor devices that use impact ionization to create an internal gain mechanism, similar to PMTs</li>
+<li>
+<strong>Characteristics:</strong>
+<ul>
+<li>
+<strong>High Sensitivity:</strong> Can detect very weak light signals</li>
+<li>
+<strong>High Gain:</strong> Provides significant signal amplification</li>
+<li>
+<strong>Fast Response Time:</strong> Can respond quickly to changes in light intensity</li>
+<li>
+<strong>Lower Noise:</strong> Generates less noise than PMTs</li>
+<li>
+<strong>Compact Size:</strong> Smaller than PMTs</li>
+<li>
+<strong>Lower Voltage Operation:</strong> Requires lower operating voltages compared to PMTs</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>High sensitivity and gain</li>
+<li>Fast response time</li>
+<li>Low noise</li>
+<li>Compact size</li>
+<li>Lower voltage operation</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>More expensive than standard photodiodes</li>
+<li>Requires precise voltage control</li>
+</ul>
+</li>
+<li>
+<strong>Applications in Flow Cytometry:</strong>
+<ul>
+<li>Detection of fluorescence signals</li>
+<li>Applications where high sensitivity and low noise are required</li>
+<li>Becoming more common in modern flow cytometers</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="comparison-table-3" class="section level2 unnumbered">
+<h2>
+<strong>Comparison Table</strong><a class="anchor" aria-label="anchor" href="#comparison-table-3"><i class="fas fa-link"></i></a>
+</h2>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="17%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="21%">
+</colgroup>
+<thead><tr class="header">
+<th>Feature</th>
+<th>PMT</th>
+<th>Photodiode</th>
+<th>CCD Camera</th>
+<th>APD</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Sensitivity</td>
+<td>High</td>
+<td>Moderate</td>
+<td>Moderate</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td>Gain</td>
+<td>High</td>
+<td>Low</td>
+<td>N/A</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Response Time</td>
+<td>Fast</td>
+<td>Fast</td>
+<td>Slow</td>
+<td>Fast</td>
+</tr>
+<tr class="even">
+<td>Noise</td>
+<td>Moderate</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+</tr>
+<tr class="odd">
+<td>Dynamic Range</td>
+<td>Moderate</td>
+<td>Wide</td>
+<td>Wide</td>
+<td>Moderate</td>
+</tr>
+<tr class="even">
+<td>Size</td>
+<td>Bulky</td>
+<td>Compact</td>
+<td>Moderate</td>
+<td>Compact</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>Moderate</td>
+<td>Low</td>
+<td>High</td>
+<td>Moderate</td>
+</tr>
+<tr class="even">
+<td>Digital/Analog</td>
+<td>Analog</td>
+<td>Analog</td>
+<td>Digital</td>
+<td>Analog</td>
+</tr>
+<tr class="odd">
+<td>Light Sensitivity</td>
+<td>Highly Sensitive</td>
+<td>Sensitive</td>
+<td>Less Sensitive</td>
+<td>Highly Sensitive</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="troubleshooting-detector-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Detector Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-detector-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Weak Signals:</strong>
+<ul>
+<li>
+<em>Causes:</em> Low detector voltage, low laser power, misaligned optics, or detector failure</li>
+<li>
+<em>Solutions:</em> Increase detector voltage, check laser power, align optics, and replace detector if necessary</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Causes:</em> High detector voltage, noisy detector, stray light, or autofluorescence</li>
+<li>
+<em>Solutions:</em> Reduce detector voltage, replace noisy detector, shield from stray light, and optimize staining protocols</li>
+</ul>
+</li>
+<li>
+<strong>Saturated Signals:</strong>
+<ul>
+<li>
+<em>Causes:</em> High detector voltage, strong signal, or detector saturation</li>
+<li>
+<em>Solutions:</em> Reduce detector voltage and check signal intensity</li>
+</ul>
+</li>
+<li>
+<strong>Non-Linearity:</strong>
+<ul>
+<li>
+<em>Causes:</em> Detector saturation or malfunction</li>
+<li>
+<em>Solutions:</em> Reduce signal intensity, test detector linearity, and replace detector if necessary</li>
+</ul>
+</li>
+<li>
+<strong>Image Artifacts (CCD Cameras):</strong>
+<ul>
+<li>
+<em>Causes:</em> Uneven illumination, dark current, or pixel defects</li>
+<li>
+<em>Solutions:</em> Correct for uneven illumination, reduce dark current by cooling the CCD, and correct for pixel defects</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-7" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-7"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Photomultiplier Tube (PMT):</strong> A vacuum tube that converts light into an electrical signal through the photoelectric effect and secondary emission</li>
+<li>
+<strong>Photodiode:</strong> A semiconductor device that generates an electrical current when exposed to light</li>
+<li>
+<strong>Charge-Coupled Device (CCD):</strong> An image sensor consisting of an array of light-sensitive pixels</li>
+<li>
+<strong>Avalanche Photodiode (APD):</strong> A semiconductor device that uses impact ionization to create an internal gain mechanism</li>
+<li>
+<strong>Quantum Efficiency:</strong> The percentage of incident photons that are converted into electrons</li>
+<li>
+<strong>Gain:</strong> The factor by which the detector amplifies the signal</li>
+<li>
+<strong>Dynamic Range:</strong> The range of light intensities that the detector can accurately measure</li>
+<li>
+<strong>Linearity:</strong> The ability of the detector to produce an output signal that is proportional to the input light intensity</li>
+<li>
+<strong>Noise:</strong> Unwanted electrical fluctuations generated by the detector itself</li>
+<li>
+<strong>Photoelectric Effect:</strong> The emission of electrons from a material when it absorbs electromagnetic radiation (e.g., light)</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="amplifiers.html">Amplifiers</a></div>
+<div class="next"><a href="digital-vs-analog.html">Digital vs Analog</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#detectors">Detectors</a></li>
+<li><a class="nav-link" href="#overview-of-detectors">Overview of Detectors</a></li>
+<li><a class="nav-link" href="#photomultiplier-tubes-pmts">Photomultiplier Tubes (PMTs)</a></li>
+<li><a class="nav-link" href="#photodiodes">Photodiodes</a></li>
+<li><a class="nav-link" href="#charge-coupled-device-ccd-cameras">Charge-Coupled Device (CCD) Cameras</a></li>
+<li><a class="nav-link" href="#avalanche-photodiodes-apds">Avalanche Photodiodes (APDs)</a></li>
+<li><a class="nav-link" href="#comparison-table-3">Comparison Table</a></li>
+<li><a class="nav-link" href="#troubleshooting-detector-issues">Troubleshooting Detector Issues</a></li>
+<li><a class="nav-link" href="#key-terms-7">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/01-11-instrumentation-electronics-detectors.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/01-11-instrumentation-electronics-detectors.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

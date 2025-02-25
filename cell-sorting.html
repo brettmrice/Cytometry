@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Cell Sorting | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Cell Sorting  Cell Sorting: Definition: A technique that uses flow cytometry to identify and physically separate cells based on their fluorescence and scatter properties Also Known As:...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Cell Sorting | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Cell Sorting  Cell Sorting: Definition: A technique that uses flow cytometry to identify and physically separate cells based on their fluorescence and scatter properties Also Known As:...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cell Sorting | Cytometry">
+<meta name="twitter:description" content="Overview of Cell Sorting  Cell Sorting: Definition: A technique that uses flow cytometry to identify and physically separate cells based on their fluorescence and scatter properties Also Known As:...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="active" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="cell-sorting" class="section level1 unnumbered">
+<h1>Cell Sorting<a class="anchor" aria-label="anchor" href="#cell-sorting"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-cell-sorting" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Cell Sorting</strong><a class="anchor" aria-label="anchor" href="#overview-of-cell-sorting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cell Sorting:</strong>
+<ul>
+<li>
+<em>Definition:</em> A technique that uses flow cytometry to identify and physically separate cells based on their fluorescence and scatter properties</li>
+<li>
+<em>Also Known As:</em> Fluorescence-Activated Cell Sorting (FACS)</li>
+</ul>
+</li>
+<li>
+<strong>Purpose:</strong>
+<ul>
+<li>Isolate Specific Cell Populations: To obtain pure populations of cells for downstream applications</li>
+<li>Enrich Rare Cells: To increase the frequency of rare cells for further analysis</li>
+<li>Study Cell Function: To study the function of specific cell populations in vitro or in vivo</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Immunology</li>
+<li>Cell Biology</li>
+<li>Stem Cell Research</li>
+<li>Cancer Research</li>
+<li>Genomics</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="principles-of-cell-sorting" class="section level2 unnumbered">
+<h2>
+<strong>Principles of Cell Sorting</strong><a class="anchor" aria-label="anchor" href="#principles-of-cell-sorting"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Sample Preparation:</strong>
+<ul>
+<li>Prepare a single-cell suspension of the sample</li>
+<li>Label the cells with fluorescent antibodies or dyes</li>
+<li>Filter the sample to remove cell aggregates and debris</li>
+</ul>
+</li>
+<li>
+<strong>Flow Cytometry Analysis:</strong>
+<ul>
+<li>Pass the cells through a flow cytometer, where their fluorescence and scatter properties are measured</li>
+<li>Identify the cell populations of interest based on their marker expression</li>
+</ul>
+</li>
+<li>
+<strong>Droplet Formation:</strong>
+<ul>
+<li>The flow cytometer creates droplets containing individual cells</li>
+<li>The timing of droplet formation is precisely controlled</li>
+</ul>
+</li>
+<li>
+<strong>Charging:</strong>
+<ul>
+<li>Droplets containing cells of interest are given an electrical charge</li>
+<li>The charge can be positive, negative, or neutral, depending on the desired sorting parameters</li>
+</ul>
+</li>
+<li>
+<strong>Deflection:</strong>
+<ul>
+<li>Charged droplets are deflected by an electric field into collection tubes</li>
+<li>Neutral droplets are not deflected and are discarded</li>
+</ul>
+</li>
+<li>
+<strong>Collection:</strong>
+<ul>
+<li>Sorted cells are collected in tubes for further analysis or culture</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="key-components-of-a-cell-sorter" class="section level2 unnumbered">
+<h2>
+<strong>Key Components of a Cell Sorter</strong><a class="anchor" aria-label="anchor" href="#key-components-of-a-cell-sorter"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Fluidics System:</strong>
+<ul>
+<li>Transports the cells from the sample tube to the sorting nozzle</li>
+<li>Maintains a stable and consistent flow rate</li>
+</ul>
+</li>
+<li>
+<strong>Optics System:</strong>
+<ul>
+<li>Excites the fluorochromes on the cells</li>
+<li>Collects the emitted fluorescence and scattered light</li>
+<li>Directs the light to the detectors</li>
+</ul>
+</li>
+<li>
+<strong>Electronics System:</strong>
+<ul>
+<li>Processes the signals from the detectors</li>
+<li>Identifies the cell populations of interest</li>
+<li>Controls the charging and deflection of the droplets</li>
+</ul>
+</li>
+<li>
+<strong>Sorting Nozzle:</strong>
+<ul>
+<li>Forms droplets containing individual cells</li>
+<li>The size of the nozzle affects the size of the droplets and the sorting efficiency</li>
+</ul>
+</li>
+<li>
+<strong>Deflection Plates:</strong>
+<ul>
+<li>Create an electric field that deflects the charged droplets into collection tubes</li>
+<li>The voltage applied to the deflection plates affects the degree of deflection</li>
+</ul>
+</li>
+<li>
+<strong>Collection Tubes:</strong>
+<ul>
+<li>Collect the sorted cells</li>
+<li>Can be chilled to improve cell viability</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="sorting-modes" class="section level2 unnumbered">
+<h2>
+<strong>Sorting Modes</strong><a class="anchor" aria-label="anchor" href="#sorting-modes"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Purity Mode:</strong>
+<ul>
+<li>
+<em>Goal:</em> To maximize the purity of the sorted population</li>
+<li>
+<em>Settings:</em> Uses more stringent sorting criteria</li>
+<li>
+<em>Tradeoff:</em> May result in lower recovery</li>
+</ul>
+</li>
+<li>
+<strong>Yield Mode:</strong>
+<ul>
+<li>
+<em>Goal:</em> To maximize the recovery of the sorted population</li>
+<li>
+<em>Settings:</em> Uses less stringent sorting criteria</li>
+<li>
+<em>Tradeoff:</em> May result in lower purity</li>
+</ul>
+</li>
+<li>
+<strong>Single-Cell Mode:</strong>
+<ul>
+<li>
+<em>Goal:</em> To sort individual cells into separate wells or tubes</li>
+<li>
+<em>Settings:</em> Requires precise control of droplet formation and charging</li>
+<li>
+<em>Applications:</em> Cloning, single-cell sequencing</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="considerations-for-cell-sorting" class="section level2 unnumbered">
+<h2>
+<strong>Considerations for Cell Sorting</strong><a class="anchor" aria-label="anchor" href="#considerations-for-cell-sorting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cell Viability:</strong>
+<ul>
+<li>Cell sorting can be stressful for cells, so it is essential to maintain high cell viability</li>
+<li>Use appropriate cell culture techniques and handling procedures</li>
+<li>Use a viability dye to exclude dead cells from the sorting process</li>
+</ul>
+</li>
+<li>
+<strong>Sterility:</strong>
+<ul>
+<li>Cell sorting must be performed under sterile conditions to prevent contamination</li>
+<li>Use sterile reagents and supplies</li>
+<li>Clean and disinfect the cell sorter regularly</li>
+</ul>
+</li>
+<li>
+<strong>Carryover:</strong>
+<ul>
+<li>Carryover occurs when cells from one sample contaminate subsequent samples</li>
+<li>Minimize carryover by using appropriate washing procedures and by using a dedicated nozzle for each sample type</li>
+</ul>
+</li>
+<li>
+<strong>Compensation:</strong>
+<ul>
+<li>Accurate compensation is essential for cell sorting</li>
+<li>Use single-stain controls to accurately calculate compensation values</li>
+<li>Verify compensation settings before sorting</li>
+</ul>
+</li>
+<li>
+<strong>Drop Delay:</strong>
+<ul>
+<li>The drop delay is the time it takes for a cell to travel from the laser intercept to the droplet break-off point</li>
+<li>The drop delay must be accurately calibrated to ensure that the correct droplets are charged and deflected</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="applications-of-cell-sorting" class="section level2 unnumbered">
+<h2>
+<strong>Applications of Cell Sorting</strong><a class="anchor" aria-label="anchor" href="#applications-of-cell-sorting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Immunology:</strong>
+<ul>
+<li>Isolating specific immune cell populations for functional studies</li>
+<li>Cloning T cell or B cell receptors</li>
+<li>Generating monoclonal antibodies</li>
+</ul>
+</li>
+<li>
+<strong>Cell Biology:</strong>
+<ul>
+<li>Isolating cells with specific characteristics (e.g., size, shape, fluorescence intensity)</li>
+<li>Studying cell differentiation and development</li>
+<li>Generating stable cell lines</li>
+</ul>
+</li>
+<li>
+<strong>Stem Cell Research:</strong>
+<ul>
+<li>Isolating hematopoietic stem cells (HSCs) for transplantation</li>
+<li>Isolating mesenchymal stem cells (MSCs) for regenerative medicine applications</li>
+<li>Studying stem cell differentiation and self-renewal</li>
+</ul>
+</li>
+<li>
+<strong>Cancer Research:</strong>
+<ul>
+<li>Isolating cancer stem cells</li>
+<li>Studying the mechanisms of cancer metastasis</li>
+<li>Developing new cancer therapies</li>
+</ul>
+</li>
+<li>
+<strong>Genomics:</strong>
+<ul>
+<li>Preparing samples for single-cell sequencing</li>
+<li>Isolating specific cell populations for gene expression analysis
+*Identifying genetic markers</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-cell-sorting-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Cell Sorting Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-cell-sorting-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Cell Recovery:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Cell loss during sample preparation</li>
+<li>Inefficient sorting</li>
+<li>Incorrect drop delay</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Optimize sample preparation protocols</li>
+<li>Adjust the sorting parameters</li>
+<li>Calibrate the drop delay</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Poor Purity:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect gating</li>
+<li>Inadequate compensation</li>
+<li>Cell aggregation</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Review gating strategy</li>
+<li>Verify compensation values</li>
+<li>Disaggregate cells</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Cell Damage:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>High sorting pressure</li>
+<li>Prolonged sorting time</li>
+<li>Inappropriate collection buffer</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Reduce sorting pressure</li>
+<li>Shorten sorting time</li>
+<li>Use appropriate collection buffer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-33" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-33"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cell Sorting (FACS):</strong> A technique that uses flow cytometry to identify and physically separate cells</li>
+<li>
+<strong>Droplet Formation:</strong> The process of creating droplets containing individual cells</li>
+<li>
+<strong>Charging:</strong> The process of giving droplets containing cells of interest an electrical charge</li>
+<li>
+<strong>Deflection:</strong> The process of using an electric field to deflect charged droplets into collection tubes</li>
+<li>
+<strong>Purity Mode:</strong> A sorting mode that maximizes the purity of the sorted population</li>
+<li>
+<strong>Yield Mode:</strong> A sorting mode that maximizes the recovery of the sorted population</li>
+<li>
+<strong>Single-Cell Mode:</strong> A sorting mode that sorts individual cells into separate wells or tubes</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></div>
+<div class="next"><a href="imaging-cytometry.html">Imaging Cytometry</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#cell-sorting">Cell Sorting</a></li>
+<li><a class="nav-link" href="#overview-of-cell-sorting">Overview of Cell Sorting</a></li>
+<li><a class="nav-link" href="#principles-of-cell-sorting">Principles of Cell Sorting</a></li>
+<li><a class="nav-link" href="#key-components-of-a-cell-sorter">Key Components of a Cell Sorter</a></li>
+<li><a class="nav-link" href="#sorting-modes">Sorting Modes</a></li>
+<li><a class="nav-link" href="#considerations-for-cell-sorting">Considerations for Cell Sorting</a></li>
+<li><a class="nav-link" href="#applications-of-cell-sorting">Applications of Cell Sorting</a></li>
+<li><a class="nav-link" href="#troubleshooting-cell-sorting-issues">Troubleshooting Cell Sorting Issues</a></li>
+<li><a class="nav-link" href="#key-terms-33">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/03-10-applications-cell-sorting.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/03-10-applications-cell-sorting.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Light Source | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Light Sources  Purpose: To provide excitation light that induces fluorescence in labeled cells or particles Key Properties: Wavelength: The specific color of light emitted (measured in...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Light Source | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Light Sources  Purpose: To provide excitation light that induces fluorescence in labeled cells or particles Key Properties: Wavelength: The specific color of light emitted (measured in...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Light Source | Cytometry">
+<meta name="twitter:description" content="Overview of Light Sources  Purpose: To provide excitation light that induces fluorescence in labeled cells or particles Key Properties: Wavelength: The specific color of light emitted (measured in...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="active" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="light-source" class="section level1 unnumbered">
+<h1>Light Source<a class="anchor" aria-label="anchor" href="#light-source"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-light-sources" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Light Sources</strong><a class="anchor" aria-label="anchor" href="#overview-of-light-sources"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Purpose:</strong> To provide excitation light that induces fluorescence in labeled cells or particles</li>
+<li>
+<strong>Key Properties:</strong>
+<ul>
+<li>
+<strong>Wavelength:</strong> The specific color of light emitted (measured in nanometers). Different fluorophores are excited by different wavelengths</li>
+<li>
+<strong>Intensity:</strong> The amount of light emitted. Higher intensity can lead to brighter signals but also increased photobleaching</li>
+<li>
+<strong>Beam Quality:</strong> The shape and uniformity of the light beam. A well-collimated beam is essential for precise illumination</li>
+<li>
+<strong>Stability:</strong> The consistency of the light output over time. Fluctuations in intensity can affect data quality</li>
+<li>
+<strong>Lifespan:</strong> The expected operating life of the light source</li>
+<li>
+<strong>Cost:</strong> The initial cost of the light source and the cost of maintenance and replacement</li>
+</ul>
+</li>
+<li>
+<strong>Common Types of Light Sources in Flow Cytometry:</strong>
+<ul>
+<li>Lasers (Argon, HeNe, Solid-State, Dye)</li>
+<li>Arc Lamps (Mercury, Xenon)</li>
+<li>Light-Emitting Diodes (LEDs)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="lasers" class="section level2 unnumbered">
+<h2>
+<strong>Lasers</strong><a class="anchor" aria-label="anchor" href="#lasers"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Lasers generate coherent, monochromatic, and highly collimated light through stimulated emission</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>High Intensity: Provides strong excitation for bright fluorescence signals</li>
+<li>Monochromaticity: Emits light at a very specific wavelength, allowing for precise excitation of fluorophores</li>
+<li>Collimation: Produces a highly focused beam, enabling precise illumination of cells</li>
+<li>Stability: Generally stable light output over time</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Cost: More expensive than other light sources</li>
+<li>Size: Can be bulky, especially gas lasers</li>
+<li>Safety: Lasers can be hazardous to the eyes and skin, requiring safety precautions</li>
+<li>Heat: Some lasers generate significant heat, requiring cooling systems</li>
+</ul>
+</li>
+<li>
+<strong>Common Laser Types in Flow Cytometry:</strong>
+<ul>
+<li>Argon (Ar) Laser</li>
+<li>Helium-Neon (HeNe) Laser</li>
+<li>Solid-State Lasers</li>
+<li>Dye Lasers</li>
+</ul>
+</li>
+</ul>
+<div id="argon-ar-laser" class="section level3 unnumbered">
+<h3>
+<strong>Argon (Ar) Laser</strong><a class="anchor" aria-label="anchor" href="#argon-ar-laser"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Wavelengths:</strong> Primarily emits at 488 nm (blue light), with weaker lines at 457 nm, 476 nm, and 514 nm</li>
+<li>
+<strong>Applications:</strong> Widely used for excitation of common fluorophores like FITC, GFP, and Alexa Fluor 488</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>High power output at 488 nm</li>
+<li>Well-established technology with a wide range of available fluorophores</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Bulky and requires a cooling system</li>
+<li>Relatively short lifespan compared to solid-state lasers</li>
+<li>High power consumption</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helium-neon-hene-laser" class="section level3 unnumbered">
+<h3>
+<strong>Helium-Neon (HeNe) Laser</strong><a class="anchor" aria-label="anchor" href="#helium-neon-hene-laser"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Wavelengths:</strong> Primarily emits at 633 nm (red light), with weaker lines at 543 nm and 594 nm</li>
+<li>
+<strong>Applications:</strong> Used for excitation of red-emitting fluorophores like APC, Alexa Fluor 647, and PE-Cy5</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>Relatively inexpensive</li>
+<li>Long lifespan</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower power output compared to Argon lasers</li>
+<li>Limited number of available fluorophores that are optimally excited at 633 nm</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="solid-state-lasers" class="section level3 unnumbered">
+<h3>
+<strong>Solid-State Lasers</strong><a class="anchor" aria-label="anchor" href="#solid-state-lasers"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong> Use a solid-state gain medium (e.g., diode-pumped solid-state (DPSS) lasers) to generate laser light</li>
+<li>
+<strong>Wavelengths:</strong> Available in a wide range of wavelengths, including 405 nm (violet), 532 nm (green), and 561 nm (yellow-green)</li>
+<li>
+<strong>Applications:</strong> Versatile for excitation of various fluorophores, including Pacific Blue, PE, and many others</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>Compact size</li>
+<li>High efficiency and low power consumption</li>
+<li>Long lifespan</li>
+<li>Wide range of available wavelengths</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Can be more expensive than gas lasers</li>
+<li>Some solid-state lasers may exhibit mode hopping (wavelength instability)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="dye-lasers" class="section level3 unnumbered">
+<h3>
+<strong>Dye Lasers</strong><a class="anchor" aria-label="anchor" href="#dye-lasers"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong> Use a liquid dye as the gain medium, which is pumped by another laser (e.g., Argon or Nd:YAG laser)</li>
+<li>
+<strong>Wavelengths:</strong> Can be tuned to emit at a wide range of wavelengths, depending on the dye used</li>
+<li>
+<strong>Applications:</strong> Used when a specific wavelength is required that is not available from other laser types</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>Tunable wavelength, allowing for excitation of a wide range of fluorophores</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Complex and requires frequent maintenance</li>
+<li>Dyes can be toxic and require special handling</li>
+<li>Less stable than other laser types</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="arc-lamps" class="section level2 unnumbered">
+<h2>
+<strong>Arc Lamps</strong><a class="anchor" aria-label="anchor" href="#arc-lamps"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Generate light by passing an electric current through a gas (e.g., mercury or xenon) at high pressure</li>
+<li>
+<strong>Types:</strong>
+<ul>
+<li>Mercury Arc Lamps</li>
+<li>Xenon Arc Lamps</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>Broadband emission spectrum, covering a wide range of wavelengths</li>
+<li>Relatively inexpensive compared to lasers</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower intensity compared to lasers</li>
+<li>Broadband emission requires filters to select specific wavelengths</li>
+<li>Less stable than lasers</li>
+<li>Shorter lifespan than lasers and LEDs</li>
+<li>Generate significant heat</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Historically used in some flow cytometers, but largely replaced by lasers and LEDs</li>
+<li>Still used in some fluorescence microscopes and other applications where broadband illumination is needed</li>
+</ul>
+</li>
+</ul>
+<div id="mercury-arc-lamps" class="section level3 unnumbered">
+<h3>
+<strong>Mercury Arc Lamps</strong><a class="anchor" aria-label="anchor" href="#mercury-arc-lamps"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Emission Spectrum:</strong> Strong emission lines in the UV, visible, and near-IR regions</li>
+<li>
+<strong>Applications:</strong> Primarily used for UV excitation in fluorescence microscopy</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Emit UV light, which can be harmful and requires shielding</li>
+<li>Contain mercury, which is toxic and requires special disposal procedures</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="xenon-arc-lamps" class="section level3 unnumbered">
+<h3>
+<strong>Xenon Arc Lamps</strong><a class="anchor" aria-label="anchor" href="#xenon-arc-lamps"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Emission Spectrum:</strong> More uniform emission spectrum compared to mercury arc lamps, covering a broader range of wavelengths</li>
+<li>
+<strong>Applications:</strong> Used when a more uniform broadband light source is needed</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower intensity than mercury arc lamps</li>
+<li>Shorter lifespan than LEDs</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="light-emitting-diodes-leds" class="section level2 unnumbered">
+<h2>
+<strong>Light-Emitting Diodes (LEDs)</strong><a class="anchor" aria-label="anchor" href="#light-emitting-diodes-leds"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> LEDs are semiconductor devices that emit light when an electric current passes through them</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>Compact size</li>
+<li>Low power consumption</li>
+<li>Long lifespan</li>
+<li>Relatively inexpensive</li>
+<li>Available in a wide range of wavelengths</li>
+<li>Stable light output</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower intensity compared to lasers</li>
+<li>May require focusing optics to achieve a collimated beam</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Increasingly used in flow cytometers as excitation light sources</li>
+<li>Suitable for applications where high intensity is not required</li>
+<li>Becoming more common as technology advances</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="comparison-table-1" class="section level2 unnumbered">
+<h2>
+<strong>Comparison Table</strong><a class="anchor" aria-label="anchor" href="#comparison-table-1"><i class="fas fa-link"></i></a>
+</h2>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="21%">
+<col width="25%">
+<col width="28%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th>Feature</th>
+<th>Laser</th>
+<th>Arc Lamp</th>
+<th>LED</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Intensity</td>
+<td>High</td>
+<td>Moderate</td>
+<td>Moderate to Low</td>
+</tr>
+<tr class="even">
+<td>Wavelength</td>
+<td>Monochromatic</td>
+<td>Broadband</td>
+<td>Narrowband</td>
+</tr>
+<tr class="odd">
+<td>Beam Quality</td>
+<td>Highly Collimated</td>
+<td>Diffuse</td>
+<td>Can be Collimated</td>
+</tr>
+<tr class="even">
+<td>Stability</td>
+<td>High</td>
+<td>Moderate</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Lifespan</td>
+<td>Moderate to Long</td>
+<td>Short</td>
+<td>Long</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>High</td>
+<td>Moderate</td>
+<td>Low</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>Moderate to High</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr class="even">
+<td>Size</td>
+<td>Variable</td>
+<td>Bulky</td>
+<td>Compact</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="troubleshooting-light-source-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Light Source Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-light-source-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Weak or No Signal:</strong>
+<ul>
+<li>
+<em>Causes:</em> Light source failure, low power output, misaligned optics, or incorrect wavelength selection</li>
+<li>
+<em>Solutions:</em> Check light source power, verify wavelength selection, align optics, and replace light source if necessary</li>
+</ul>
+</li>
+<li>
+<strong>Unstable Signal:</strong>
+<ul>
+<li>
+<em>Causes:</em> Fluctuations in light source intensity, mode hopping (lasers), or voltage fluctuations</li>
+<li>
+<em>Solutions:</em> Stabilize voltage, replace light source if necessary, and allow light source to warm up properly</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Causes:</em> Stray light, autofluorescence, or incorrect filter selection</li>
+<li>
+<em>Solutions:</em> Shield from stray light, optimize staining protocols, and verify filter selection</li>
+</ul>
+</li>
+<li>
+<strong>Photobleaching:</strong>
+<ul>
+<li>
+<em>Causes:</em> Excessive exposure to excitation light</li>
+<li>
+<em>Solutions:</em> Minimize exposure time, use photostable fluorophores, and reduce light source intensity</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-3" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-3"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Wavelength:</strong> The distance between successive crests of a wave (e.g., light wave), typically measured in nanometers (nm)</li>
+<li>
+<strong>Intensity:</strong> The amount of light emitted</li>
+<li>
+<strong>Monochromatic:</strong> Light of a single wavelength or a very narrow range of wavelengths</li>
+<li>
+<strong>Coherent:</strong> Light waves that are in phase with each other</li>
+<li>
+<strong>Collimated:</strong> Light rays that are parallel to each other, forming a focused beam</li>
+<li>
+<strong>Excitation:</strong> The process of raising a molecule to a higher energy state by absorbing light</li>
+<li>
+<strong>Emission:</strong> The process of releasing energy in the form of light as a molecule returns to its ground state.</li>
+<li>
+<strong>Fluorophore:</strong> A fluorescent chemical compound that emits light upon excitation.</li>
+<li>
+<strong>Photobleaching:</strong> The irreversible destruction of a fluorophore’s ability to fluoresce due to prolonged exposure to light</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="optical-filters.html">Optical Filters</a></div>
+<div class="next"><a href="lenses.html">Lenses</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#light-source">Light Source</a></li>
+<li><a class="nav-link" href="#overview-of-light-sources">Overview of Light Sources</a></li>
+<li>
+<a class="nav-link" href="#lasers">Lasers</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#argon-ar-laser">Argon (Ar) Laser</a></li>
+<li><a class="nav-link" href="#helium-neon-hene-laser">Helium-Neon (HeNe) Laser</a></li>
+<li><a class="nav-link" href="#solid-state-lasers">Solid-State Lasers</a></li>
+<li><a class="nav-link" href="#dye-lasers">Dye Lasers</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#arc-lamps">Arc Lamps</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#mercury-arc-lamps">Mercury Arc Lamps</a></li>
+<li><a class="nav-link" href="#xenon-arc-lamps">Xenon Arc Lamps</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#light-emitting-diodes-leds">Light-Emitting Diodes (LEDs)</a></li>
+<li><a class="nav-link" href="#comparison-table-1">Comparison Table</a></li>
+<li><a class="nav-link" href="#troubleshooting-light-source-issues">Troubleshooting Light Source Issues</a></li>
+<li><a class="nav-link" href="#key-terms-3">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/01-06-instrumentation-optics-light.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/01-06-instrumentation-optics-light.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

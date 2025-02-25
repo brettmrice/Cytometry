@@ -1,0 +1,127 @@
+# Gating {-}
+
+## **Overview of Gating** {-}
+
+*   **Definition:** Gating is the process of selecting specific cell populations for analysis based on their expression of cell surface markers, their size, and their granularity
+*   **Purpose:**
+    *   Identify Cell Populations: To identify and quantify different cell types in a sample
+    *   Reduce Background Noise: To exclude debris, dead cells, and other unwanted events from the analysis
+    *   Isolate Subsets: To isolate subsets of cells based on their expression of multiple markers
+*   **Key Concepts:**
+    *   Gates
+    *   Regions
+    *   Hierarchical Gating
+    *   Boolean Gating
+
+## **Gates** {-}
+
+*   **Definition:** A boundary drawn on a flow cytometry plot that is used to select a specific population of cells
+*   **Types of Gates:**
+    *   Rectangle Gates: A rectangular region defined by two x-axis values and two y-axis values
+    *   Ellipse Gates: An elliptical region defined by a center point, a major axis, a minor axis, and an angle of rotation
+    *   Polygon Gates: A polygonal region defined by a series of vertices
+    *   Freeform Gates: A region that is drawn manually using a freeform shape
+*   **Considerations:**
+    *   Gate Placement: The placement of the gate should be based on the expression of the cell markers and the distribution of the data
+    *   Gate Size: The size of the gate should be large enough to include all of the cells in the population of interest, but small enough to exclude unwanted events
+    *   Controls: Use appropriate controls to validate the gating strategy and to account for background noise
+
+## **Regions** {-}
+
+*   **Definition:** An area on a flow cytometry plot that is used to define a specific cell population
+*   **Difference Between Gates and Regions:**
+    *   Gates are used to select cells for further analysis, while regions are used to define cell populations
+    *   Gates are typically applied to listmode data, while regions are typically used to analyze histograms
+*   **Types of Regions:**
+    *   Marker Regions: Regions that are defined based on the expression of a single marker
+    *   Quadrant Regions: Regions that are defined by two perpendicular lines, dividing the plot into four quadrants
+    *   Multi-Dimensional Regions: Regions that are defined based on the expression of multiple markers
+*   **Setting Quadrant Gates:**
+    *   Set the gates based on the FMO to determine what the cut off values will be.
+    *   This may be done using an unstained control.
+*   **General notes on setting gates:**
+    *   When setting gates on an entire population of cells, review the samples to ensure that the gate is properly placed
+
+## **Hierarchical Gating** {-}
+
+*   **Definition:** A gating strategy in which cells are selected based on a series of sequential gates, with each gate defining a subset of the cells selected by the previous gate
+*   **Purpose:**
+    *   Identify Complex Cell Populations: To identify cell populations that are defined by the expression of multiple markers
+    *   Reduce Background Noise: To exclude unwanted events from the analysis
+*   **Implementation:**
+    1.  Start with a broad gate to select all of the cells of interest
+    2.  Apply subsequent gates to select subsets of cells based on their expression of additional markers
+    3.  Continue gating until the desired cell population is isolated
+*   **Example:**
+    *   First, gate on lymphocytes based on forward and side scatter properties
+    *   Then, gate on CD3+ T cells
+    *   Then, gate on CD4+ helper T cells
+    *   Then, gate on CD25+FoxP3+ regulatory T cells
+
+## **Boolean Gating** {-}
+
+*   **Definition:** A gating strategy in which cells are selected based on the combination of multiple gates using Boolean logic operators
+*   **Purpose:**
+    *   Define Complex Cell Populations: To define cell populations that are based on the expression of multiple markers
+    *   Identify Overlapping Populations: To identify cells that express multiple markers simultaneously
+*   **Boolean Operators:**
+    *   AND: Selects cells that are within all of the specified gates
+    *   OR: Selects cells that are within any of the specified gates
+    *   NOT: Selects cells that are not within the specified gate
+*   **Example:**
+    *   Select cells that are CD3+ AND CD4+ AND CD8-
+    *   Select cells that are CD19+ OR CD20+
+
+## **Tips for Effective Gating** {-}
+
+*   **Use Appropriate Controls:**
+    *   Use isotype controls, FMO controls, and single-stain controls to validate the gating strategy and to account for background noise
+*   **Base Gate Placement on Biology:**
+    *   The placement of the gates should be based on the known biology of the cells being studied
+    *   Consult the literature and use appropriate cell markers to identify the cell populations of interest
+*   **Use a Consistent Gating Strategy:**
+    *   Use the same gating strategy for all of the samples in the experiment to ensure consistency
+*   **Document the Gating Strategy:**
+    *   Document the gating strategy in detail, including the markers used, the gate names, and the rationale for the gate placement
+*   **Apply the same strategy to all samples:**
+    *   Any changes to the strategy or gate placement must be well documented
+
+## **Troubleshooting Gating Issues** {-}
+
+*   **Overlapping Populations:**
+    *   *Possible Causes:*
+        *   Poor resolution
+        *   Incorrect compensation
+        *   Inappropriate markers
+    *   *Troubleshooting Steps:*
+        *   Optimize staining protocol
+        *   Adjust instrument settings
+        *   Verify compensation settings
+        *   Select more appropriate markers
+*   **Low Event Count:**
+    *   *Possible Causes:*
+        *   Incorrect gating
+        *   Sample loss
+        *   Rare cell population
+    *   *Troubleshooting Steps:*
+        *   Review and adjust the gating strategy
+        *   Optimize sample preparation
+        *   Increase sample volume
+*   **Unexpected Results:**
+    *   *Possible Causes:*
+        *   Incorrect antibody selection
+        *   Improper gating
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Verify antibody specificity
+        *   Review gating strategies
+        *   Inspect instrument for malfunctions
+
+## **Key Terms** {-}
+
+*   **Gating:** The process of selecting specific cell populations for analysis based on their expression of cell surface markers, their size, and their granularity
+*   **Gate:** A boundary drawn on a flow cytometry plot that is used to select a specific population of cells
+*   **Region:** An area on a flow cytometry plot that is used to define a specific cell population
+*   **Hierarchical Gating:** A gating strategy in which cells are selected based on a series of sequential gates
+*   **Boolean Gating:** A gating strategy in which cells are selected based on the combination of multiple gates using Boolean logic operators
+*   **Control Samples:** Samples used to validate the gating strategy and to account for background noise

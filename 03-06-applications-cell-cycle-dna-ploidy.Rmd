@@ -1,0 +1,146 @@
+# Cell Cycle {-}
+
+## **Overview of Cell Cycle and DNA Ploidy Analysis** {-}
+
+*   **Cell Cycle:**
+    *   **Definition:** The series of events that a cell undergoes from one division to the next
+    *   **Phases:**
+        *   G0 (Quiescence): A resting phase where cells are not actively dividing
+        *   G1 (Gap 1): The cell grows and prepares for DNA replication
+        *   S (Synthesis): DNA replication occurs
+        *   G2 (Gap 2): The cell continues to grow and prepares for cell division
+        *   M (Mitosis): The cell divides into two daughter cells
+*   **DNA Ploidy:**
+    *   **Definition:** The number of sets of chromosomes in a cell
+    *   **Normal Ploidy:** Diploid (2n) cells have two sets of chromosomes
+    *   **Abnormal Ploidy:** Aneuploid cells have an abnormal number of chromosomes
+*   **Importance of Cell Cycle and DNA Ploidy Analysis:**
+    *   **Cell Proliferation:** To measure the rate of cell division and identify factors that regulate cell growth
+    *   **Cancer Diagnosis:** To identify and characterize tumors based on their cell cycle distribution and DNA ploidy
+    *   **Drug Discovery:** To screen for drugs that affect cell cycle progression
+    *   **Toxicology:** To assess the toxicity of chemicals on cell proliferation
+
+## **Methods for Cell Cycle and DNA Ploidy Analysis** {-}
+
+*   **DNA-Binding Dyes:**
+    *   *Principle:* Dyes that bind to DNA and fluoresce proportionally to the amount of DNA present
+    *   *Examples:*
+        *   Propidium Iodide (PI): A dye that binds to DNA and emits red fluorescence
+        *   7-Aminoactinomycin D (7-AAD): A dye that binds to DNA and emits far-red fluorescence
+        *   DAPI: A dye that binds to DNA and emits blue fluorescence
+        *   Hoechst 33342: A dye that binds to DNA and emits blue fluorescence
+*   **Procedure:**
+    1.  **Cell Preparation:**
+        *   Fix cells to preserve their DNA content
+        *   Permeabilize cells to allow the DNA-binding dye to enter
+    2.  **DNA Staining:**
+        *   Incubate cells with the DNA-binding dye
+        *   Ensure that the dye is evenly distributed throughout the sample
+    3.  **Flow Cytometry Acquisition:**
+        *   Acquire the samples on a flow cytometer
+        *   Collect a sufficient number of events to ensure accurate analysis
+    4.  **Data Analysis:**
+        *   Analyze the data using software that can model the cell cycle distribution
+        *   Calculate the percentage of cells in each phase of the cell cycle
+
+## **Interpreting Cell Cycle Histograms** {-}
+
+*   **G0/G1 Peak:**
+    *   Represents cells in the G0 or G1 phase of the cell cycle
+    *   Should be the largest peak in a normal cell cycle distribution
+*   **S Phase:**
+    *   Represents cells in the S phase of the cell cycle
+    *   Appears as a broad shoulder between the G0/G1 and G2/M peaks
+*   **G2/M Peak:**
+    *   Represents cells in the G2 or M phase of the cell cycle
+    *   Should have twice the DNA content of the G0/G1 peak
+*   **Sub-G1 Peak:**
+    *   Represents cells with fragmented DNA, typically apoptotic cells
+    *   Appears to the left of the G0/G1 peak
+
+## **DNA Ploidy Analysis** {-}
+
+*   **Principle:**
+    *   Comparing the DNA content of cells in a sample to the DNA content of normal diploid cells
+    *   Cells with a DNA content that is different from diploid are considered aneuploid
+*   **Procedure:**
+    1.  **Sample Preparation:**
+        *   Prepare a sample of normal diploid cells as a control
+        *   Fix and stain the control cells and the experimental samples with a DNA-binding dye
+    2.  **Flow Cytometry Acquisition:**
+        *   Acquire the samples on a flow cytometer
+        *   Collect a sufficient number of events to ensure accurate analysis
+    3.  **Data Analysis:**
+        *   Compare the DNA content of the cells in the experimental samples to the DNA content of the control cells
+        *   Identify cells with abnormal DNA content
+*   **Example of a good control:**
+    *   The use of normal lymphocytes as a diploid control
+
+## **Applications of Cell Cycle and DNA Ploidy Analysis** {-}
+
+*   **Cancer Diagnosis and Prognosis:**
+    *   Identifying tumors with abnormal cell cycle distributions or DNA ploidy
+    *   Predicting the aggressiveness of tumors based on their cell cycle characteristics
+*   **Drug Discovery:**
+    *   Screening for drugs that affect cell cycle progression
+    *   Identifying drugs that induce cell cycle arrest or apoptosis
+*   **Toxicology:**
+    *   Assessing the toxicity of chemicals on cell proliferation
+    *   Identifying chemicals that cause DNA damage or cell cycle arrest
+*   **Basic Research:**
+    *   Studying the mechanisms of cell cycle regulation
+    *   Investigating the role of DNA ploidy in development and disease
+
+## **Cell Cycle Analysis with Additional Markers** {-}
+
+*   **Cyclins and Cyclin-Dependent Kinases (CDKs):**
+    *   Proteins that regulate cell cycle progression
+    *   Can be used to identify cells in specific phases of the cell cycle
+*   **Ki-67:**
+    *   A nuclear protein that is expressed in proliferating cells
+    *   Can be used to identify cells that are actively cycling
+*   **Phospho-Histone H3 (pHH3):**
+    *   A histone protein that is phosphorylated during mitosis
+    *   Can be used to identify cells in the M phase of the cell cycle
+*   **Procedure:**
+    *   Combine DNA staining with antibody staining against cell cycle markers
+    *   Use appropriate controls to validate the staining protocol
+
+## **Troubleshooting Cell Cycle and DNA Ploidy Assays** {-}
+
+*   **Poor Resolution:**
+    *   *Possible Causes:*
+        *   Cell aggregates
+        *   Suboptimal staining
+        *   Instrument settings
+    *   *Troubleshooting Steps:*
+        *   Disaggregate cells
+        *   Optimize staining protocol
+        *   Adjust instrument settings
+*   **High Background Noise:**
+    *   *Possible Causes:*
+        *   Non-specific staining
+        *   Autofluorescence
+        *   Contamination
+    *   *Troubleshooting Steps:*
+        *   Use blocking reagents
+        *   Reduce autofluorescence
+        *   Clean samples
+*   **Unexpected Results:**
+    *   *Possible Causes:*
+        *   Incorrect protocol
+        *   Sample degradation
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Verify protocol
+        *   Use fresh samples
+        *   Inspect instrument for malfunctions
+
+## **Key Terms** {-}
+
+*   **Cell Cycle:** The series of events that a cell undergoes from one division to the next
+*   **DNA Ploidy:** The number of sets of chromosomes in a cell
+*   **Aneuploidy:** An abnormal number of chromosomes
+*   **DNA-Binding Dye:** A dye that binds to DNA and fluoresces proportionally to the amount of DNA present
+*   **Cell Cycle Marker:** A protein that is expressed in specific phases of the cell cycle
+*   **Gating Strategy:** A set of criteria used to identify specific cell populations

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Fluidics | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Fluidics: The Foundation of Flow Cytometry The fluidics system is the heart of any flow cytometer. It’s responsible for: Transporting cells or particles from the sample tube to the interrogation...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Fluidics | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Fluidics: The Foundation of Flow Cytometry The fluidics system is the heart of any flow cytometer. It’s responsible for: Transporting cells or particles from the sample tube to the interrogation...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Fluidics | Cytometry">
+<meta name="twitter:description" content="Fluidics: The Foundation of Flow Cytometry The fluidics system is the heart of any flow cytometer. It’s responsible for: Transporting cells or particles from the sample tube to the interrogation...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="active" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="fluidics" class="section level1 unnumbered">
+<h1>Fluidics<a class="anchor" aria-label="anchor" href="#fluidics"><i class="fas fa-link"></i></a>
+</h1>
+<div id="fluidics-the-foundation-of-flow-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Fluidics: The Foundation of Flow Cytometry</strong><a class="anchor" aria-label="anchor" href="#fluidics-the-foundation-of-flow-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<p>The fluidics system is the heart of any flow cytometer. It’s responsible for:</p>
+<ul>
+<li>
+<strong>Transporting</strong> cells or particles from the sample tube to the interrogation point</li>
+<li>
+<strong>Focusing</strong> those cells into a single-file stream for accurate measurement</li>
+<li>
+<strong>Maintaining</strong> a stable and controlled flow environment</li>
+</ul>
+<p>Without a well-designed and properly functioning fluidics system, the optical and electronic components wouldn’t have anything to analyze effectively!</p>
+</div>
+<div id="the-three-pillars-of-fluidics" class="section level2 unnumbered">
+<h2>
+<strong>The Three Pillars of Fluidics</strong><a class="anchor" aria-label="anchor" href="#the-three-pillars-of-fluidics"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Hydrodynamic Focusing:</strong>
+<ul>
+<li>
+<em>What it is:</em> A technique that uses a sheath fluid to constrict the sample stream into a narrow core, forcing cells to pass through the laser beam one at a time</li>
+<li>
+<em>Why it’s important:</em> Prevents coincidence (multiple cells being detected as one), optimizes signal detection, and improves resolution</li>
+<li>
+<em>Key factors:</em> Sheath fluid pressure, sample fluid pressure, flow cell geometry, and laminar flow</li>
+</ul>
+</li>
+<li>
+<strong>Sheath Fluids:</strong>
+<ul>
+<li>
+<em>What they are:</em> Clean, particle-free fluids that surround the sample core in hydrodynamic focusing</li>
+<li>
+<em>Why they’re important:</em> Enable hydrodynamic focusing, maintain cell viability, and prevent contamination</li>
+<li>
+<em>Key properties:</em> Purity, sterility, isotonicity, pH, viscosity, refractive index, electrical conductivity, and compatibility with reagents</li>
+</ul>
+</li>
+<li>
+<strong>Sample Delivery Systems:</strong>
+<ul>
+<li>
+<em>What they are:</em> The mechanisms used to transport the sample from its container to the flow cell</li>
+<li>
+<em>Why they’re important:</em> Ensure precise flow control, minimize sample loss, enable automation, and reduce carryover</li>
+<li>
+<em>Types:</em>
+<ul>
+<li>
+<strong>Syringe Pump Systems:</strong> Precise flow control, limited sample volume</li>
+<li>
+<strong>Pressure-Based Systems:</strong> Larger sample volumes, automated sampling</li>
+<li>
+<strong>Vacuum-Based Systems:</strong> Simple design, automated sampling (but less common now)</li>
+<li>
+<strong>Acoustic Focusing Systems:</strong> Label-free focusing, gentle cell handling</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="how-they-work-together" class="section level2 unnumbered">
+<h2>
+<strong>How They Work Together</strong><a class="anchor" aria-label="anchor" href="#how-they-work-together"><i class="fas fa-link"></i></a>
+</h2>
+<p>Imagine a well-orchestrated dance:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Sample Delivery</strong> introduces the sample (containing cells) into the fluidics system using a syringe pump, pressure, vacuum, or acoustic method</li>
+<li>The <strong>Sample</strong> meets the <strong>Sheath Fluid</strong>
+</li>
+<li>
+<strong>Hydrodynamic Focusing</strong> uses the sheath fluid to squeeze the sample stream into a narrow core</li>
+<li>This focused stream of cells passes single-file through the <strong>Interrogation Point</strong>, where lasers and detectors do their work</li>
+</ol>
+</div>
+<div id="importance-of-fluidics-in-flow-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Importance of Fluidics in Flow Cytometry</strong><a class="anchor" aria-label="anchor" href="#importance-of-fluidics-in-flow-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Accuracy:</strong> Ensures that each cell is analyzed individually, improving the accuracy of cell counts and signal measurements</li>
+<li>
+<strong>Resolution:</strong> Improves the ability to distinguish between different cell populations by minimizing coincidence and optimizing signal detection</li>
+<li>
+<strong>Reproducibility:</strong> Provides a stable and controlled flow environment, enhancing the reproducibility of results</li>
+<li>
+<strong>Throughput:</strong> Enables high-throughput analysis by rapidly processing samples and acquiring data</li>
+<li>
+<strong>Sensitivity:</strong> Optimizes signal detection, allowing for the detection of rare cell populations or weak signals</li>
+</ul>
+</div>
+<div id="troubleshooting-fluidic-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Fluidic Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-fluidic-issues"><i class="fas fa-link"></i></a>
+</h2>
+<p>Common problems and solutions:</p>
+<ul>
+<li>
+<strong>Clogging:</strong> Filter samples and sheath fluid, use cleaning solutions</li>
+<li>
+<strong>Bubble Formation:</strong> Check for leaks, degas sheath fluid</li>
+<li>
+<strong>Contamination:</strong> Use sterile techniques, replace contaminated fluids</li>
+<li>
+<strong>Pressure/Vacuum Issues:</strong> Check for blockages, inspect pump/vacuum function</li>
+<li>
+<strong>Carryover:</strong> Increase wash volume, use appropriate cleaning solutions</li>
+</ul>
+</div>
+<div id="key-takeaways" class="section level2 unnumbered">
+<h2>
+<strong>Key Takeaways</strong><a class="anchor" aria-label="anchor" href="#key-takeaways"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Fluidics is a critical component of flow cytometry, responsible for transporting, focusing, and maintaining a stable flow environment for cells</li>
+<li>Hydrodynamic focusing uses a sheath fluid to constrict the sample stream, ensuring single-file cell analysis</li>
+<li>Sheath fluids must be pure, sterile, isotonic, and compatible with cells and reagents</li>
+<li>Sample delivery systems transport the sample to the flow cell, with different systems offering varying degrees of precision, automation, and throughput</li>
+<li>Proper maintenance and troubleshooting of the fluidics system are essential for reliable flow cytometry results.</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="index.html">About</a></div>
+<div class="next"><a href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#fluidics">Fluidics</a></li>
+<li><a class="nav-link" href="#fluidics-the-foundation-of-flow-cytometry">Fluidics: The Foundation of Flow Cytometry</a></li>
+<li><a class="nav-link" href="#the-three-pillars-of-fluidics">The Three Pillars of Fluidics</a></li>
+<li><a class="nav-link" href="#how-they-work-together">How They Work Together</a></li>
+<li><a class="nav-link" href="#importance-of-fluidics-in-flow-cytometry">Importance of Fluidics in Flow Cytometry</a></li>
+<li><a class="nav-link" href="#troubleshooting-fluidic-issues">Troubleshooting Fluidic Issues</a></li>
+<li><a class="nav-link" href="#key-takeaways">Key Takeaways</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/01-01-instrumentation-fluidics.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/01-01-instrumentation-fluidics.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

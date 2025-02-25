@@ -1,0 +1,5 @@
+part-instrumentation
+part-panelexperiment-design
+part-applications
+part-data
+part-laboratory-operations

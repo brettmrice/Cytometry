@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Integrity | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Sample Integrity  Definition: Sample integrity refers to the quality and condition of the sample at the time of analysis, ensuring that it accurately represents the biological state of...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Integrity | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Sample Integrity  Definition: Sample integrity refers to the quality and condition of the sample at the time of analysis, ensuring that it accurately represents the biological state of...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Integrity | Cytometry">
+<meta name="twitter:description" content="Overview of Sample Integrity  Definition: Sample integrity refers to the quality and condition of the sample at the time of analysis, ensuring that it accurately represents the biological state of...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="active" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="integrity" class="section level1 unnumbered">
+<h1>Integrity<a class="anchor" aria-label="anchor" href="#integrity"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-sample-integrity" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Sample Integrity</strong><a class="anchor" aria-label="anchor" href="#overview-of-sample-integrity"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Sample integrity refers to the quality and condition of the sample at the time of analysis, ensuring that it accurately represents the biological state of the cells or particles of interest</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>
+<strong>Accurate Results:</strong> Poor sample integrity can lead to inaccurate and unreliable results</li>
+<li>
+<strong>Reproducibility:</strong> Maintaining sample integrity is essential for reproducible experiments</li>
+<li>
+<strong>Valid Conclusions:</strong> Only high-quality samples can provide valid conclusions about the biological system being studied</li>
+</ul>
+</li>
+<li>
+<strong>Key Factors Affecting Sample Integrity:</strong>
+<ul>
+<li><strong>Collection</strong></li>
+<li><strong>Handling</strong></li>
+<li><strong>Storage</strong></li>
+<li><strong>Viability</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="collection" class="section level2 unnumbered">
+<h2>
+<strong>Collection</strong><a class="anchor" aria-label="anchor" href="#collection"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Best Practices:</strong>
+<ul>
+<li>
+<strong>Proper Technique:</strong> Collect samples using appropriate techniques to minimize cell damage and contamination</li>
+<li>
+<strong>Appropriate Containers:</strong> Use containers that are compatible with the sample and that do not introduce contaminants</li>
+<li>
+<strong>Anticoagulants:</strong> Use appropriate anticoagulants (e.g., EDTA, heparin) to prevent clotting of blood samples</li>
+<li>
+<strong>Timeliness:</strong> Process samples as quickly as possible after collection to minimize changes in cell phenotype and viability</li>
+</ul>
+</li>
+<li>
+<strong>Specific Considerations:</strong>
+<ul>
+<li>
+<strong>Blood:</strong> Collect blood samples using a standardized protocol, and use appropriate needle size and collection tubes</li>
+<li>
+<strong>Bone Marrow:</strong> Collect bone marrow aspirates using sterile techniques, and ensure that the sample is representative of the bone marrow compartment</li>
+<li>
+<strong>Solid Tissue:</strong> Collect tissue samples using appropriate surgical techniques, and preserve the tissue in appropriate media or fixatives</li>
+<li>
+<strong>Body Fluids:</strong> Collect body fluids using sterile techniques, and ensure that the sample is free from contaminants</li>
+</ul>
+</li>
+<li>
+<strong>Potential Issues:</strong>
+<ul>
+<li>
+<strong>Cell Lysis:</strong> Mechanical stress during collection can cause cell lysis and release of intracellular components</li>
+<li>
+<strong>Clotting:</strong> Incomplete mixing of blood samples with anticoagulants can lead to clotting</li>
+<li>
+<strong>Contamination:</strong> Introduction of bacteria, fungi, or other microorganisms can compromise sample integrity</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="handling" class="section level2 unnumbered">
+<h2>
+<strong>Handling</strong><a class="anchor" aria-label="anchor" href="#handling"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Best Practices:</strong>
+<ul>
+<li>
+<strong>Gentle Handling:</strong> Handle samples gently to avoid cell damage and aggregation</li>
+<li>
+<strong>Temperature Control:</strong> Maintain samples at appropriate temperatures to preserve cell viability and phenotype</li>
+<li>
+<strong>Minimize Exposure:</strong> Minimize exposure to air, light, and other environmental factors that can degrade the sample</li>
+<li>
+<strong>Mixing:</strong> Mix samples gently to ensure that cells are evenly distributed</li>
+</ul>
+</li>
+<li>
+<strong>Specific Considerations:</strong>
+<ul>
+<li>
+<strong>Blood:</strong> Avoid vigorous shaking or vortexing of blood samples, and keep samples at room temperature or on ice</li>
+<li>
+<strong>Bone Marrow:</strong> Avoid prolonged exposure of bone marrow aspirates to air, and keep samples on ice or at 4°C</li>
+<li>
+<strong>Solid Tissue:</strong> Keep tissue samples in appropriate media or fixatives to prevent degradation</li>
+<li>
+<strong>Body Fluids:</strong> Handle body fluids carefully to avoid spillage or contamination</li>
+</ul>
+</li>
+<li>
+<strong>Potential Issues:</strong>
+<ul>
+<li>
+<strong>Cell Aggregation:</strong> Improper handling can lead to cell aggregation, which can interfere with analysis</li>
+<li>
+<strong>Enzymatic Degradation:</strong> Enzymes released from damaged cells can degrade proteins and other molecules</li>
+<li>
+<strong>Oxidation:</strong> Exposure to air can cause oxidation of cellular components</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="storage" class="section level2 unnumbered">
+<h2>
+<strong>Storage</strong><a class="anchor" aria-label="anchor" href="#storage"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Best Practices:</strong>
+<ul>
+<li>
+<strong>Appropriate Temperature:</strong> Store samples at appropriate temperatures to preserve cell viability and phenotype</li>
+<li>
+<strong>Cryopreservation:</strong> Cryopreserve samples in liquid nitrogen or at -80°C for long-term storage</li>
+<li>
+<strong>Stabilization:</strong> Use appropriate stabilization reagents (e.g., cell stabilizers) to prevent degradation during storage</li>
+<li>
+<strong>Controlled Thawing:</strong> Thaw cryopreserved samples rapidly and gently to minimize cell damage</li>
+</ul>
+</li>
+<li>
+<strong>Specific Considerations:</strong>
+<ul>
+<li>
+<strong>Blood:</strong> Store whole blood samples at room temperature or on ice for short-term storage, or cryopreserve PBMCs for long-term storage</li>
+<li>
+<strong>Bone Marrow:</strong> Store bone marrow aspirates at -80°C or in liquid nitrogen for long-term storage</li>
+<li>
+<strong>Solid Tissue:</strong> Store tissue samples in appropriate fixatives (e.g., formalin) or cryopreserve for long-term storage</li>
+<li>
+<strong>Body Fluids:</strong> Store body fluids at -80°C or in liquid nitrogen for long-term storage</li>
+</ul>
+</li>
+<li>
+<strong>Potential Issues:</strong>
+<ul>
+<li>
+<strong>Cell Death:</strong> Improper storage can lead to cell death and loss of viable cells</li>
+<li>
+<strong>Antigen Degradation:</strong> Antigens can degrade during storage, leading to inaccurate results</li>
+<li>
+<strong>Crystal Formation:</strong> Slow freezing can cause crystal formation, which can damage cells</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="viability" class="section level2 unnumbered">
+<h2>
+<strong>Viability</strong><a class="anchor" aria-label="anchor" href="#viability"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Best Practices:</strong>
+<ul>
+<li>
+<strong>Assess Viability:</strong> Assess cell viability using appropriate methods (e.g., dye exclusion, Annexin V staining)</li>
+<li>
+<strong>Use Viable Cells:</strong> Use only viable cells for analysis to ensure accurate results</li>
+<li>
+<strong>Remove Dead Cells:</strong> Remove dead cells and debris from the sample to improve data quality</li>
+<li>
+<strong>Optimize Staining:</strong> Optimize staining protocols to minimize cell damage and maximize signal intensity</li>
+</ul>
+</li>
+<li>
+<strong>Specific Considerations:</strong>
+<ul>
+<li>
+<strong>Dye Exclusion:</strong> Use dyes such as trypan blue or propidium iodide to identify dead cells</li>
+<li>
+<strong>Apoptosis Markers:</strong> Use markers such as Annexin V and caspase-3 to detect apoptotic cells</li>
+<li>
+<strong>Fixation:</strong> Fix cells to preserve cell morphology and prevent degradation</li>
+</ul>
+</li>
+<li>
+<strong>Potential Issues:</strong>
+<ul>
+<li>
+<strong>False Positives:</strong> Dead cells can bind non-specifically to antibodies, leading to false-positive results</li>
+<li>
+<strong>False Negatives:</strong> Dead cells can lose expression of certain antigens, leading to false-negative results</li>
+<li>
+<strong>Data Distortion:</strong> The presence of dead cells and debris can distort the data and make it difficult to interpret</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="methods-for-assessing-cell-viability" class="section level2 unnumbered">
+<h2>
+<strong>Methods for Assessing Cell Viability</strong><a class="anchor" aria-label="anchor" href="#methods-for-assessing-cell-viability"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Dye Exclusion:</strong>
+<em>Trypan Blue: A dye that is excluded by viable cells but enters cells with damaged membranes
+</em>Propidium Iodide (PI): A dye that only enters cells with damaged membranes and binds to DNA</li>
+<li>
+<strong>Metabolic Activity Assays:</strong>
+<em>MTT Assay: Measures the reduction of MTT (a yellow tetrazole) to formazan (a purple dye) by metabolically active cells
+</em>Resazurin Assay: Measures the reduction of resazurin (a blue dye) to resorufin (a pink fluorescent dye) by metabolically active cells</li>
+<li>
+<strong>Apoptosis Assays:</strong>
+<em>Annexin V Staining: Detects phosphatidylserine (PS) on the outer leaflet of the cell membrane, an early marker of apoptosis
+</em>Caspase Activation Assays: Detects the activation of caspases, a family of proteases that play a key role in apoptosis</li>
+<li>
+<strong>DNA Fragmentation Assays:</strong>
+*TUNEL Assay: Detects DNA fragmentation, a late marker of apoptosis</li>
+<li>
+<strong>Flow Cytometry-Based Viability Assays:</strong>
+*Combination of dye exclusion and apoptosis markers for multiparameter analysis</li>
+</ul>
+</div>
+<div id="troubleshooting-sample-integrity-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Sample Integrity Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-sample-integrity-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Event Count:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Cell death during collection, handling, or storage</li>
+<li>Loss of cells during sample preparation</li>
+<li>Incorrect instrument settings</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Optimize collection, handling, and storage protocols</li>
+<li>Minimize cell loss during sample preparation</li>
+<li>Verify instrument settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Dead cells and debris</li>
+<li>Autofluorescence</li>
+<li>Non-specific binding of antibodies</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Remove dead cells and debris</li>
+<li>Reduce autofluorescence</li>
+<li>Use blocking reagents</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Poor Resolution:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Cell aggregates</li>
+<li>Degraded antigens</li>
+<li>Incorrect staining</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Reduce cell aggregates</li>
+<li>Optimize staining protocols</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Inaccurate Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Compromised sample integrity</li>
+<li>Incorrect data analysis</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify sample integrity</li>
+<li>Review data analysis methods</li>
+<li>Inspect instrument for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-14" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-14"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Sample Integrity:</strong> The quality and condition of the sample at the time of analysis</li>
+<li>
+<strong>Collection:</strong> The process of obtaining the sample</li>
+<li>
+<strong>Handling:</strong> The process of manipulating the sample</li>
+<li>
+<strong>Storage:</strong> The process of preserving the sample</li>
+<li>
+<strong>Viability:</strong> The percentage of live cells in the sample</li>
+<li>
+<strong>Dye Exclusion:</strong> A method for assessing cell viability using dyes that are excluded by viable cells</li>
+<li>
+<strong>Apoptosis:</strong> Programmed cell death</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="source.html">Source</a></div>
+<div class="next"><a href="prep-and-stain.html">Prep and Stain</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#integrity">Integrity</a></li>
+<li><a class="nav-link" href="#overview-of-sample-integrity">Overview of Sample Integrity</a></li>
+<li><a class="nav-link" href="#collection">Collection</a></li>
+<li><a class="nav-link" href="#handling">Handling</a></li>
+<li><a class="nav-link" href="#storage">Storage</a></li>
+<li><a class="nav-link" href="#viability">Viability</a></li>
+<li><a class="nav-link" href="#methods-for-assessing-cell-viability">Methods for Assessing Cell Viability</a></li>
+<li><a class="nav-link" href="#troubleshooting-sample-integrity-issues">Troubleshooting Sample Integrity Issues</a></li>
+<li><a class="nav-link" href="#key-terms-14">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/02-03-panel-experiment-design-sample-integrity.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/02-03-panel-experiment-design-sample-integrity.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

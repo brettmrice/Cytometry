@@ -1,0 +1,119 @@
+# Sample State {-}
+
+## **Overview of Sample State in Functional Studies** {-}
+
+*   **Definition:** The sample state refers to the physiological or functional condition of the cells at the time of analysis. This includes their activation status, differentiation stage, metabolic activity, and other functional characteristics
+*   **Importance:**
+    *   **Accurate Interpretation:** The functional state of the cells can significantly affect the expression of surface markers and intracellular molecules, which can impact data interpretation
+    *   **Experimental Design:** The experimental design should take into account the expected functional state of the cells and how it may be altered by the experimental conditions
+    *   **Reproducibility:** Maintaining consistent sample state is essential for reproducible experiments
+*   **Key Functional States:**
+    *   **Activated**
+    *   **Resting**
+    *   **Proliferating**
+
+## **Activated State** {-}
+
+*   **Definition:** The state of a cell that has been stimulated or triggered to perform a specific function, such as cytokine production, antibody secretion, or cytotoxicity
+*   **Characteristics:**
+    *   **Increased Expression of Activation Markers:** Cells in an activated state often upregulate the expression of certain cell surface markers, such as CD69, CD25, or HLA-DR
+    *   **Production of Cytokines or Other Mediators:** Activated cells may produce cytokines, chemokines, or other mediators that regulate immune responses
+    *   **Changes in Intracellular Signaling:** Activation can trigger changes in intracellular signaling pathways, such as phosphorylation of proteins or changes in calcium flux
+*   **Considerations:**
+    *   **Stimulation Methods:** The method used to activate cells can affect the results of the assay
+    *   **Activation Time:** The optimal activation time may vary depending on the cell type and the stimulus used
+    *   **Activation Markers:** Choose appropriate activation markers to identify activated cells
+*   **Examples of cell activation analysis:**
+    *   **In T cells:** stimulation with anti-CD3 and anti-CD28 can lead to the upregulation of CD69 and the production of cytokines such as interferon-gamma and interleukin-2
+*   **Stimulation methods:**
+    *   Use of antibodies to bind to the cell-surface receptors
+    *   Use of pharmacological agent
+    *   Exposure to growth factors
+
+## **Resting State** {-}
+
+*   **Definition:** The state of a cell that is not actively engaged in a specific function
+*   **Characteristics:**
+    *   **Low Expression of Activation Markers:** Cells in a resting state typically have low expression of activation markers
+    *   **Minimal Production of Cytokines or Other Mediators:** Resting cells typically produce minimal amounts of cytokines or other mediators
+    *   **Stable Intracellular Signaling:** Resting cells typically have stable intracellular signaling pathways
+*   **Considerations:**
+    *   **Culture Conditions:** The culture conditions can affect the resting state of cells
+    *   **Storage Methods:** The storage method can affect the resting state of cells
+    *   **Controls:** Use appropriate controls to ensure that the cells are in a true resting state
+*   **Application:**
+    *   To establish the baseline reference
+
+## **Proliferating State** {-}
+
+*   **Definition:** The state of a cell that is actively dividing and replicating its DNA
+*   **Characteristics:**
+    *   **Increased DNA Content:** Proliferating cells have increased DNA content as they progress through the cell cycle
+    *   **Expression of Proliferation Markers:** Proliferating cells may express certain proliferation markers, such as Ki-67 or PCNA
+    *   **Increased Metabolic Activity:** Proliferating cells typically have increased metabolic activity
+*   **Considerations:**
+    *   **Cell Cycle Analysis:** Use cell cycle analysis techniques to determine the percentage of cells in each phase of the cell cycle
+    *   **Proliferation Assays:** Use proliferation assays to measure the rate of cell division
+    *   **Proliferation Markers:** Choose appropriate proliferation markers to identify proliferating cells
+*   **Analysis of proliferation:**
+    *   **Dyes that bind to DNA:** such as propidium iodide
+    *   **Incorporated nucleotides:** such as bromodeoxyuridine
+
+## **Connecting Sample State to Experimental Design** {-}
+
+*   **Antibody Selection:** Certain antibodies may only bind to activated or proliferating cells
+*   **Stimulation Protocols:** Functional studies often involve stimulating cells to induce a specific functional state
+*   **Time Course Analysis:** The functional state of cells may change over time, requiring a time course analysis
+*   **Controls:** Include appropriate controls to account for the functional state of the cells
+
+## **Methods for Assessing Functional States** {-}
+
+*   **Cell Surface Markers:**
+    *   Use antibodies to detect cell surface markers that are upregulated or downregulated during activation, differentiation, or other functional states
+*   **Intracellular Staining:**
+    *   Use antibodies to detect intracellular proteins that are involved in signaling pathways, cytokine production, or other cellular functions
+*   **Cytokine Assays:**
+    *   Measure the production of cytokines or other mediators by cells using ELISA, ELISPOT, or multiplex assays
+*   **Cell Cycle Analysis:**
+    *   Use DNA-binding dyes to measure the DNA content of cells and determine their cell cycle phase
+*   **Proliferation Assays:**
+    *   Measure the rate of cell division using incorporation of labeled nucleotides (e.g., BrdU) or dyes that track cell divisions (e.g., CFSE)
+
+## **Troubleshooting Sample State Issues** {-}
+
+*   **Unexpected Activation:**
+    *   *Possible Causes:*
+        *   Inappropriate cell handling
+        *   Contamination
+        *   Non-specific stimulation
+    *   *Troubleshooting Steps:*
+        *   Optimize cell handling procedures
+        *   Ensure that all reagents and materials are sterile
+        *   Use appropriate controls to identify non-specific stimulation
+*   **Lack of Activation:**
+    *   *Possible Causes:*
+        *   Ineffective stimulation method
+        *   Incorrect stimulation time
+        *   Cell dysfunction
+    *   *Troubleshooting Steps:*
+        *   Optimize stimulation method
+        *   Adjust stimulation time
+        *   Verify cell function
+*   **Variable Proliferation:**
+    *   *Possible Causes:*
+        *   Inconsistent culture conditions
+        *   Cell senescence
+        *   Nutrient depletion
+    *   *Troubleshooting Steps:*
+        *   Standardize culture conditions
+        *   Use fresh cells
+        *   Ensure adequate nutrient supply
+
+## **Key Terms** {-}
+
+*   **Sample State:** The physiological or functional condition of the cells at the time of analysis
+*   **Activated State:** The state of a cell that has been stimulated or triggered to perform a specific function
+*   **Resting State:** The state of a cell that is not actively engaged in a specific function
+*   **Proliferating State:** The state of a cell that is actively dividing and replicating its DNA
+*   **Activation Markers:** Cell surface markers that are upregulated during cell activation
+*   **Proliferation Markers:** Proteins that are expressed during cell proliferation

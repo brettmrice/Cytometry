@@ -1,0 +1,237 @@
+:root {
+  --theme-first-color: #363945;
+  --theme-second-color: #EFE1CE;
+}
+
+body {
+  color: var(--theme-first-color);;
+}
+
+li.book-part {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: sticky;
+  top: calc(1.5em + .75rem + 4px);
+  background: white;
+  padding-top: 1rem;
+  margin-top: 0 !important;
+}
+.sidebar .book-part {
+  border-bottom: 2px solid var(--theme-second-color) !important;
+}
+.book-extra {
+  border-top: 2px solid var(--theme-second-color);
+}
+
+.book-toc > li:nth-child(4),
+.book-toc > li:nth-child(5),
+.book-toc > li:nth-child(7),
+.book-toc > li:nth-child(8),
+.book-toc > li:nth-child(9),
+.book-toc > li:nth-child(10),
+.book-toc > li:nth-child(12),
+.book-toc > li:nth-child(13),
+.book-toc > li:nth-child(14),
+.book-toc > li:nth-child(15),
+.book-toc > li:nth-child(16),
+.book-toc > li:nth-child(17),
+.book-toc > li:nth-child(21),
+.book-toc > li:nth-child(22),
+.book-toc > li:nth-child(23),
+.book-toc > li:nth-child(24),
+.book-toc > li:nth-child(26),
+.book-toc > li:nth-child(27),
+.book-toc > li:nth-child(28),
+.book-toc > li:nth-child(29),
+.book-toc > li:nth-child(30),
+.book-toc > li:nth-child(31),
+.book-toc > li:nth-child(32),
+.book-toc > li:nth-child(57),
+.book-toc > li:nth-child(58),
+.book-toc > li:nth-child(59),
+.book-toc > li:nth-child(60),
+.book-toc > li:nth-child(61),
+.book-toc > li:nth-child(62),
+.book-toc > li:nth-child(64),
+.book-toc > li:nth-child(65),
+.book-toc > li:nth-child(67),
+.book-toc > li:nth-child(68),
+.book-toc > li:nth-child(69),
+.book-toc > li:nth-child(70),
+.book-toc > li:nth-child(72),
+.book-toc > li:nth-child(73),
+.book-toc > li:nth-child(74),
+.book-toc > li:nth-child(75) {
+  padding-left: 10px;
+}
+
+ul.list-unstyled:nth-child(1) > li:nth-child(1) {
+  display: none;
+}
+
+.d-flex > h1:nth-child(1) {
+  text-align: center;
+  width: 100%;
+}
+.d-flex > h1:nth-child(1) > a {
+  padding: 0 10px;
+}
+form[role="search"] {
+  position: sticky;
+  top: 0;
+}
+form[role="search"] > span {
+  width: 100%;
+}
+#search {
+  border: 3px solid var(--theme-second-color);
+  box-shadow: unset;
+}
+}
+
+
+.chapter-nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 0;
+}
+.chapter-nav .prev,
+.chapter-nav .next {
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.chapter-nav .prev > a,
+.chapter-nav .next > a {
+  padding: 10px;
+  background: var(--theme-second-color);
+  color: var(--theme-first-color);
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.chapter-nav .prev > a:hover,
+.chapter-nav .next > a:hover {
+  background: var(--theme-first-color);
+  color: var(--theme-second-color);
+  text-decoration: none;
+}
+
+a:hover {
+  background: var(--theme-second-color);
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+
+footer {
+  display: none;
+}
+
+
+.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+main {
+  margin-bottom: 2rem;
+}
+main h2 {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main ol, main ul {
+  margin-bottom: 1rem;
+}
+main li {
+  margin-bottom: 0;
+}
+
+ul.book-toc > li > a {
+  padding-left: 10px;
+}
+ul.book-toc > li > a.active,
+ul.book-toc > li > a:hover {
+  padding-right: 10px;
+  background: var(--theme-second-color);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.navbar-nav {
+  padding-left: 10px;
+}
+nav[data-toggle="toc"] .nav > li > a:hover {
+  text-decoration: none;
+}
+.navbar-nav > a:hover {
+  background: var(--theme-second-color);
+  text-decoration: none !important;
+  border-radius: 5px;
+}
+.nav-link.active {
+  background: var(--theme-second-color) !important;
+  border-radius: 5px;
+}
+#book-edit {
+  padding-left: 10px;
+}
+#book-edit:hover {
+  padding-right: 10px;
+  background: var(--theme-second-color);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+main li > a,
+main p > a {
+	font-weight: 600;
+}
+
+.sidebar .book-part {
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .collapse-lg {
+    display: none;
+    background: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px 2px #7F7F7F;
+  }
+}

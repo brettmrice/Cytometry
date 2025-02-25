@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Troubleshooting | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Troubleshooting  Definition: Troubleshooting is the systematic process of identifying and resolving problems or malfunctions in a flow cytometer Purpose: Maintain Instrument...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Troubleshooting | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Troubleshooting  Definition: Troubleshooting is the systematic process of identifying and resolving problems or malfunctions in a flow cytometer Purpose: Maintain Instrument...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Troubleshooting | Cytometry">
+<meta name="twitter:description" content="Overview of Troubleshooting  Definition: Troubleshooting is the systematic process of identifying and resolving problems or malfunctions in a flow cytometer Purpose: Maintain Instrument...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="active" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="troubleshooting" class="section level1 unnumbered">
+<h1>Troubleshooting<a class="anchor" aria-label="anchor" href="#troubleshooting"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-troubleshooting" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Troubleshooting</strong><a class="anchor" aria-label="anchor" href="#overview-of-troubleshooting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Troubleshooting is the systematic process of identifying and resolving problems or malfunctions in a flow cytometer</li>
+<li>
+<strong>Purpose:</strong>
+<ul>
+<li>
+<strong>Maintain Instrument Performance:</strong> To ensure that the flow cytometer is operating at its optimal level</li>
+<li>
+<strong>Prevent Data Loss:</strong> To minimize the impact of malfunctions on data quality and accuracy</li>
+<li>
+<strong>Reduce Downtime:</strong> To quickly identify and resolve problems, minimizing the amount of time the instrument is out of service</li>
+<li>
+<strong>Extend Instrument Lifespan:</strong> To prevent further damage to the instrument and extend its overall lifespan</li>
+</ul>
+</li>
+<li>
+<strong>Key Principles:</strong>
+<ul>
+<li>
+<strong>Systematic Approach:</strong> Follow a logical and methodical approach to identify the root cause of the problem</li>
+<li>
+<strong>Observation:</strong> Carefully observe the symptoms of the problem and gather as much information as possible</li>
+<li>
+<strong>Hypothesis Testing:</strong> Formulate hypotheses about the possible causes of the problem and test them one by one</li>
+<li>
+<strong>Documentation:</strong> Keep a detailed record of the troubleshooting process, including the symptoms, hypotheses, tests, and solutions</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="general-troubleshooting-steps" class="section level2 unnumbered">
+<h2>
+<strong>General Troubleshooting Steps</strong><a class="anchor" aria-label="anchor" href="#general-troubleshooting-steps"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Identify the Problem:</strong>
+<ul>
+<li>Clearly define the problem and its symptoms</li>
+<li>Gather information about when the problem started and what events led up to it</li>
+<li>Check for any error messages or warning signs</li>
+</ul>
+</li>
+<li>
+<strong>Check the Basics:</strong>
+<ul>
+<li>Verify that the instrument is properly powered on</li>
+<li>Check all cables and connections to ensure they are secure</li>
+<li>Inspect fluid levels and ensure that they are adequate</li>
+<li>Verify that all necessary reagents are available and properly prepared</li>
+</ul>
+</li>
+<li>
+<strong>Isolate the Problem:</strong>
+<ul>
+<li>Determine which component or system is causing the problem</li>
+<li>Test individual components or systems to narrow down the source of the malfunction</li>
+<li>Consider whether the problem is related to the fluidics, optics, electronics, or software</li>
+</ul>
+</li>
+<li>
+<strong>Formulate Hypotheses:</strong>
+<ul>
+<li>Based on the symptoms and the isolated problem, formulate hypotheses about the possible causes of the malfunction</li>
+<li>Consider common problems and known issues with the instrument</li>
+<li>Consult the instrument manual or online resources for troubleshooting tips</li>
+</ul>
+</li>
+<li>
+<strong>Test Hypotheses:</strong>
+<ul>
+<li>Test each hypothesis one by one, starting with the most likely cause</li>
+<li>Perform tests to verify whether the hypothesis is correct or incorrect</li>
+<li>Use control samples and known standards to validate the test results</li>
+</ul>
+</li>
+<li>
+<strong>Implement Solutions:</strong>
+<ul>
+<li>Based on the test results, implement the appropriate solution to resolve the problem</li>
+<li>This may involve replacing a component, adjusting a setting, or performing a cleaning procedure</li>
+<li>Ensure that the solution is implemented correctly and that it resolves the problem</li>
+</ul>
+</li>
+<li>
+<strong>Verify the Solution:</strong>
+<ul>
+<li>After implementing the solution, verify that the problem has been resolved</li>
+<li>Run control samples and compare the results to historical data</li>
+<li>Monitor the instrument performance to ensure that it is stable and reliable</li>
+</ul>
+</li>
+<li>
+<strong>Document the Process:</strong>
+<ul>
+<li>Keep a detailed record of the troubleshooting process, including the symptoms, hypotheses, tests, solutions, and results</li>
+<li>This documentation can be helpful for future troubleshooting and for identifying recurring problems</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="troubleshooting-common-fluidics-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Common Fluidics Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-common-fluidics-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Problem:</strong> No Flow
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Empty sheath fluid or waste container</li>
+<li>Blocked tubing or filters</li>
+<li>Pump malfunction</li>
+<li>Improper pressure settings</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Refill or empty containers</li>
+<li>Check for and clear any blockages</li>
+<li>Inspect pump function and pressure settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Erratic Flow
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Air bubbles in the system</li>
+<li>Loose connections</li>
+<li>Pump malfunction</li>
+<li>Fluctuating pressure</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Remove air bubbles by purging the system</li>
+<li>Tighten all connections</li>
+<li>Inspect pump function and pressure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Low Aspiration Rate
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Clogged probe</li>
+<li>Insufficient pressure</li>
+<li>Viscous sample</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Clean the probe</li>
+<li>Increase pressure</li>
+<li>Dilute the sample</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> High Carryover
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Insufficient washing</li>
+<li>Sticky samples</li>
+<li>Contaminated probe</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Increase wash volume and duration</li>
+<li>Use appropriate cleaning solutions</li>
+<li>Clean the probe</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-common-optics-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Common Optics Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-common-optics-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Problem:</strong> Weak Signal
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Low laser power</li>
+<li>Misaligned optics</li>
+<li>Dirty lenses or mirrors</li>
+<li>Incorrect filter selection</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Check laser power and stability</li>
+<li>Align the optical system</li>
+<li>Clean all lenses and mirrors</li>
+<li>Verify filter selection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> High Background Noise
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Stray light</li>
+<li>Autofluorescence</li>
+<li>Incorrect filter selection</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Shield from stray light</li>
+<li>Optimize staining protocols</li>
+<li>Verify filter selection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Unexpected Spectral Overlap
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect filter selection</li>
+<li>Broad fluorophore emission</li>
+<li>Laser bleed-through</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify filter selection</li>
+<li>Choose fluorophores with minimal overlap</li>
+<li>Adjust compensation settings</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-common-electronics-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Common Electronics Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-common-electronics-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Problem:</strong> No Signal
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Detector failure</li>
+<li>Amplifier malfunction</li>
+<li>Wiring issue</li>
+<li>ADC failure</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Check detector output</li>
+<li>Test amplifier functionality</li>
+<li>Inspect all wiring</li>
+<li>Verify ADC functionality</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> High Noise
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Noisy detector</li>
+<li>Poor shielding</li>
+<li>Grounding issue</li>
+<li>ADC quantization noise</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Replace detector</li>
+<li>Improve shielding</li>
+<li>Check grounding</li>
+<li>Adjust ADC settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Saturated Signal
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>High detector voltage</li>
+<li>Amplifier saturation</li>
+<li>ADC overflow</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Reduce detector voltage</li>
+<li>Reduce amplifier gain</li>
+<li>Adjust ADC range</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Distorted Signal
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Amplifier non-linearity</li>
+<li>Component failure</li>
+<li>ADC non-linearity</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Test amplifier linearity</li>
+<li>Replace faulty components</li>
+<li>Calibrate ADC</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-common-software-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Common Software Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-common-software-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Problem:</strong> Software Crash
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Software bug</li>
+<li>Hardware incompatibility</li>
+<li>Insufficient memory</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Restart software</li>
+<li>Update software</li>
+<li>Check hardware compatibility</li>
+<li>Increase memory allocation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Data Corruption
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Disk error</li>
+<li>Virus infection</li>
+<li>Software bug</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Run disk diagnostics</li>
+<li>Scan for viruses</li>
+<li>Update software</li>
+<li>Restore from backup</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Problem:</strong> Analysis Error
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect gate settings</li>
+<li>Faulty algorithms</li>
+<li>Data import error</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify gate settings</li>
+<li>Check algorithm parameters</li>
+<li>Re-import data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="preventive-maintenance" class="section level2 unnumbered">
+<h2>
+<strong>Preventive Maintenance</strong><a class="anchor" aria-label="anchor" href="#preventive-maintenance"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Regular maintenance procedures performed to prevent problems and extend the lifespan of the instrument</li>
+<li>
+<strong>Key Practices:</strong>
+<ul>
+<li>Follow the manufacturer’s recommended maintenance schedule</li>
+<li>Regularly clean and inspect all components</li>
+<li>Replace worn or damaged parts</li>
+<li>Calibrate the instrument</li>
+<li>Keep detailed maintenance logs</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-12" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-12"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Troubleshooting:</strong> The systematic process of identifying and resolving problems or malfunctions</li>
+<li>
+<strong>Preventive Maintenance:</strong> Regular maintenance procedures performed to prevent problems</li>
+<li>
+<strong>Symptoms:</strong> Observable signs of a problem</li>
+<li>
+<strong>Hypothesis:</strong> A proposed explanation for a problem</li>
+<li>
+<strong>Testing:</strong> Performing experiments or procedures to verify or refute a hypothesis</li>
+<li>
+<strong>Resolution:</strong> The process of fixing a problem</li>
+<li>
+<strong>Documentation:</strong> Keeping a detailed record of the troubleshooting process</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="thresholddiscriminator.html">Threshold/Discriminator</a></div>
+<div class="next"><a href="sample.html">Sample</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#troubleshooting">Troubleshooting</a></li>
+<li><a class="nav-link" href="#overview-of-troubleshooting">Overview of Troubleshooting</a></li>
+<li><a class="nav-link" href="#general-troubleshooting-steps">General Troubleshooting Steps</a></li>
+<li><a class="nav-link" href="#troubleshooting-common-fluidics-issues">Troubleshooting Common Fluidics Issues</a></li>
+<li><a class="nav-link" href="#troubleshooting-common-optics-issues">Troubleshooting Common Optics Issues</a></li>
+<li><a class="nav-link" href="#troubleshooting-common-electronics-issues">Troubleshooting Common Electronics Issues</a></li>
+<li><a class="nav-link" href="#troubleshooting-common-software-issues">Troubleshooting Common Software Issues</a></li>
+<li><a class="nav-link" href="#preventive-maintenance">Preventive Maintenance</a></li>
+<li><a class="nav-link" href="#key-terms-12">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/01-16-instrumentation-electronics-troubleshooting.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/01-16-instrumentation-electronics-troubleshooting.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

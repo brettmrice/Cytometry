@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Cell Enrichment | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Cell Enrichment  Definition: Cell enrichment refers to the process of increasing the proportion of specific cell types in a sample Purpose: Isolate Rare Cells: To isolate and analyze...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Cell Enrichment | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Cell Enrichment  Definition: Cell enrichment refers to the process of increasing the proportion of specific cell types in a sample Purpose: Isolate Rare Cells: To isolate and analyze...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cell Enrichment | Cytometry">
+<meta name="twitter:description" content="Overview of Cell Enrichment  Definition: Cell enrichment refers to the process of increasing the proportion of specific cell types in a sample Purpose: Isolate Rare Cells: To isolate and analyze...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="active" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="cell-enrichment" class="section level1 unnumbered">
+<h1>Cell Enrichment<a class="anchor" aria-label="anchor" href="#cell-enrichment"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-cell-enrichment" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Cell Enrichment</strong><a class="anchor" aria-label="anchor" href="#overview-of-cell-enrichment"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Cell enrichment refers to the process of increasing the proportion of specific cell types in a sample</li>
+<li>
+<strong>Purpose:</strong>
+<ul>
+<li>
+<strong>Isolate Rare Cells:</strong> To isolate and analyze rare cell populations that may be difficult to detect in a complex sample</li>
+<li>
+<strong>Reduce Complexity:</strong> To simplify the analysis by removing unwanted cell types</li>
+<li>
+<strong>Improve Signal-to-Noise Ratio:</strong> To increase the signal from the target cells while reducing background noise from other cells</li>
+</ul>
+</li>
+<li>
+<strong>Common Cell Enrichment Techniques:</strong>
+<ul>
+<li><strong>Cell Sorting (FACS)</strong></li>
+<li><strong>Density Gradient Isolation</strong></li>
+<li><strong>Magnetic Beads (MACS)</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="cell-sorting-facs---fluorescence-activated-cell-sorting" class="section level2 unnumbered">
+<h2>
+<strong>Cell Sorting (FACS - Fluorescence-Activated Cell Sorting)</strong><a class="anchor" aria-label="anchor" href="#cell-sorting-facs---fluorescence-activated-cell-sorting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Uses flow cytometry to identify and physically separate cells based on their fluorescence and scatter properties</li>
+<li>
+<strong>Mechanism:</strong>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Labeling:</strong> Cells are labeled with fluorescent antibodies or dyes</li>
+<li>
+<strong>Flow Cytometry Analysis:</strong> Cells are passed through a flow cytometer, where their fluorescence and scatter properties are measured</li>
+<li>
+<strong>Droplet Formation:</strong> The flow cytometer creates droplets containing individual cells</li>
+<li>
+<strong>Charging:</strong> Droplets containing cells of interest are given an electrical charge</li>
+<li>
+<strong>Deflection:</strong> Charged droplets are deflected by an electric field into collection tubes</li>
+<li>
+<strong>Collection:</strong> Sorted cells are collected in tubes for further analysis or culture</li>
+</ol>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>High Purity:</strong> Can achieve very high purity of sorted cells</li>
+<li>
+<strong>Flexibility:</strong> Can sort cells based on multiple parameters</li>
+<li>
+<strong>Viable Cells:</strong> Can sort viable cells for downstream applications</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Complex Procedure:</strong> Requires specialized equipment and expertise</li>
+<li>
+<strong>Cell Stress:</strong> Can be stressful for cells</li>
+<li>
+<strong>Throughput Limitations:</strong> Relatively slow compared to other methods</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Isolating rare cell populations</li>
+<li>Cloning cells</li>
+<li>Studying cell function</li>
+<li>Generating cell lines</li>
+</ul>
+</li>
+<li>
+<strong>Factors to consider:</strong>
+<ul>
+<li>Determine if you want to enrich for purity or yield</li>
+<li>The number of cells recovered depends on the cell preparation, staining, and sorting parameters</li>
+<li>Collection media impacts viability and further use</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="density-gradient-isolation" class="section level2 unnumbered">
+<h2>
+<strong>Density Gradient Isolation</strong><a class="anchor" aria-label="anchor" href="#density-gradient-isolation"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Separates cells based on their density using a density gradient medium</li>
+<li>
+<strong>Mechanism:</strong>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Density Gradient Medium:</strong> A solution with a density gradient, such as Ficoll or Percoll</li>
+<li>
+<strong>Sample Overlay:</strong> The cell sample is carefully layered on top of the density gradient medium</li>
+<li>
+<strong>Centrifugation:</strong> The tube is centrifuged, causing cells to migrate through the gradient based on their density</li>
+<li>
+<strong>Band Collection:</strong> Cells with different densities form distinct bands in the gradient, which can be collected separately</li>
+</ol>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>Simple Procedure:</strong> Relatively easy to perform</li>
+<li>
+<strong>Cost-Effective:</strong> Requires minimal equipment</li>
+<li>
+<strong>Large Sample Volume:</strong> Can process large sample volumes</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Limited Purity:</strong> May not achieve high purity of target cells</li>
+<li>
+<strong>Cell Loss:</strong> Can result in some loss of cells during separation</li>
+<li>
+<strong>Density Overlap:</strong> Cells with similar densities may not be well separated</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Isolating peripheral blood mononuclear cell (PBMCs) from whole blood</li>
+<li>Separating live and dead cells</li>
+<li>Enriching for specific cell types based on density</li>
+</ul>
+</li>
+<li>
+<strong>Commonly used gradients:</strong>
+<ul>
+<li>Ficoll</li>
+<li>Lymphoprep</li>
+<li>Percoll</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="magnetic-beads-macs---magnetic-activated-cell-sorting" class="section level2 unnumbered">
+<h2>
+<strong>Magnetic Beads (MACS - Magnetic-Activated Cell Sorting)</strong><a class="anchor" aria-label="anchor" href="#magnetic-beads-macs---magnetic-activated-cell-sorting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Uses magnetic beads conjugated to antibodies to selectively bind to target cells, which can then be separated using a magnetic field</li>
+<li>
+<strong>Mechanism:</strong>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Labeling:</strong> Cells are labeled with magnetic beads conjugated to antibodies specific for cell surface markers</li>
+<li>
+<strong>Magnetic Separation:</strong> The cell suspension is passed through a magnetic column</li>
+<li>
+<strong>Positive Selection:</strong> Target cells bound to magnetic beads are retained in the column, while unlabeled cells are washed away</li>
+<li>
+<strong>Elution:</strong> The magnetic field is removed, and the target cells are eluted from the column</li>
+<li>
+<strong>Negative Selection:</strong> Unwanted cells are labeled with magnetic beads and retained in the column, while target cells are collected in the flow-through</li>
+</ol>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>High Throughput:</strong> Can process large sample volumes quickly</li>
+<li>
+<strong>Ease of Use:</strong> Relatively easy to perform</li>
+<li>
+<strong>Scalability:</strong> Can be adapted to different sample sizes and cell types</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Limited Purity:</strong> May not achieve the same level of purity as cell sorting</li>
+<li>
+<strong>Bead Detachment:</strong> Magnetic beads can detach from cells, leading to contamination</li>
+<li>
+<strong>Column Clogging:</strong> Columns can clog if the sample contains a lot of debris</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Enriching for specific cell types</li>
+<li>Depleting unwanted cells</li>
+<li>Isolating rare cell populations</li>
+<li>Stem cell enrichment</li>
+</ul>
+</li>
+<li>
+<strong>Considerations for both positive and negative selection:</strong>
+<ul>
+<li>Positive selection will produce a more pure population</li>
+<li>Negative selection will yield a more native cell population</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="comparison-table-4" class="section level2 unnumbered">
+<h2>
+<strong>Comparison Table</strong><a class="anchor" aria-label="anchor" href="#comparison-table-4"><i class="fas fa-link"></i></a>
+</h2>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="18%">
+<col width="23%">
+<col width="32%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th>Feature</th>
+<th>Cell Sorting (FACS)</th>
+<th>Density Gradient Isolation</th>
+<th>Magnetic Beads (MACS)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Purity</td>
+<td>High</td>
+<td>Moderate</td>
+<td>Moderate</td>
+</tr>
+<tr class="even">
+<td>Throughput</td>
+<td>Low</td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Viability</td>
+<td>High</td>
+<td>Moderate</td>
+<td>Moderate</td>
+</tr>
+<tr class="even">
+<td>Complexity</td>
+<td>High</td>
+<td>Low</td>
+<td>Moderate</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>High</td>
+<td>Low</td>
+<td>Moderate</td>
+</tr>
+<tr class="even">
+<td>Sample Volume</td>
+<td>Small to Moderate</td>
+<td>Large</td>
+<td>Moderate to Large</td>
+</tr>
+<tr class="odd">
+<td>Rare Cell Isol.</td>
+<td>Yes</td>
+<td>Limited</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="combining-enrichment-techniques" class="section level2 unnumbered">
+<h2>
+<strong>Combining Enrichment Techniques</strong><a class="anchor" aria-label="anchor" href="#combining-enrichment-techniques"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Strategy:</strong> Combine multiple cell enrichment techniques to achieve higher purity or to isolate specific cell populations</li>
+<li>
+<strong>Example:</strong>
+<ul>
+<li>Use density gradient isolation to enrich for PBMCs, followed by magnetic bead selection to isolate CD4+ T cells, and then use FACS to isolate a population of CD4+ T cells that have a particular marker of interest.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-cell-enrichment-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Cell Enrichment Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-cell-enrichment-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Cell Recovery:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Cell loss during enrichment</li>
+<li>Incorrect technique</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Optimize enrichment protocols</li>
+<li>Check equipment</li>
+<li>Adjust technique for cell type and experiment</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Poor Purity:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Insufficient separation</li>
+<li>Contamination</li>
+<li>Incorrect gating strategy (FACS)</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Increase separation time</li>
+<li>Use proper laboratory procedures to reduce contamination</li>
+<li>Adjust gating and cell marker to be more specific</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Cell Damage:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Harsh enrichment techniques</li>
+<li>Improper handling</li>
+<li>Prolonged exposure to reagents</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Use gentler techniques</li>
+<li>Reduce the exposure times</li>
+<li>Optimize technique for specific cell type</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-16" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-16"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cell Enrichment:</strong> Increasing the proportion of specific cell types in a sample</li>
+<li>
+<strong>Cell Sorting (FACS):</strong> Using flow cytometry to identify and physically separate cells</li>
+<li>
+<strong>Density Gradient Isolation:</strong> Separating cells based on their density</li>
+<li>
+<strong>Magnetic Beads (MACS):</strong> Using magnetic beads to selectively bind to target cells</li>
+<li>
+<strong>Positive Selection:</strong> Retaining target cells in the column</li>
+<li>
+<strong>Negative Selection:</strong> Retaining unwanted cells in the column</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="prep-and-stain.html">Prep and Stain</a></div>
+<div class="next"><a href="assay-development.html">Assay Development</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#cell-enrichment">Cell Enrichment</a></li>
+<li><a class="nav-link" href="#overview-of-cell-enrichment">Overview of Cell Enrichment</a></li>
+<li><a class="nav-link" href="#cell-sorting-facs---fluorescence-activated-cell-sorting">Cell Sorting (FACS - Fluorescence-Activated Cell Sorting)</a></li>
+<li><a class="nav-link" href="#density-gradient-isolation">Density Gradient Isolation</a></li>
+<li><a class="nav-link" href="#magnetic-beads-macs---magnetic-activated-cell-sorting">Magnetic Beads (MACS - Magnetic-Activated Cell Sorting)</a></li>
+<li><a class="nav-link" href="#comparison-table-4">Comparison Table</a></li>
+<li><a class="nav-link" href="#combining-enrichment-techniques">Combining Enrichment Techniques</a></li>
+<li><a class="nav-link" href="#troubleshooting-cell-enrichment-issues">Troubleshooting Cell Enrichment Issues</a></li>
+<li><a class="nav-link" href="#key-terms-16">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/02-05-panel-experiment-design-sample-cell-enrichment.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/02-05-panel-experiment-design-sample-cell-enrichment.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+# Method Validation {-}
+
+## **Overview of Method Validation** {-}
+
+*   **Definition:** Method validation is the process of demonstrating that an analytical procedure is suitable for its intended purpose. It is an essential step in ensuring the accuracy, reliability, and reproducibility of laboratory results
+*   **Purpose:**
+    *   Ensure Accuracy and Reliability: To confirm that the assay is measuring what it is supposed to measure and is providing consistent results
+    *   Meet Regulatory Requirements: To comply with regulatory requirements and accreditation standards
+    *   Support Clinical Decision-Making: To provide reliable data that can be used to make informed clinical decisions
+*   **Key Validation Characteristics:**
+    *   Accuracy
+    *   Reproducibility/Precision
+    *   Sensitivity
+    *   Specificity
+    *   Linearity
+    *   Reference Range
+    *   Robustness
+
+## **Accuracy** {-}
+
+*   **Definition:** The closeness of agreement between the result obtained by the method and the true value of the analyte
+*   **Assessment:**
+    *   Use Reference Materials: Analyze certified reference materials (CRMs) or standard reference materials (SRMs) with known values for the analyte
+    *   Compare to a Gold Standard Method: Compare the results of the new method to those obtained using a well-established gold standard method
+    *   Spike Recovery: Add a known amount of the analyte to a sample and measure the recovery
+*   **Acceptance Criteria:**
+    *   The mean value obtained by the method should be within a specified percentage of the true value (e.g., ±10%)
+    *   The recovery of the analyte should be within a specified range (e.g., 90-110%)
+* **Mathematical formula:**
+    *   Percent recovery = (measured concentration/ true concentration) * 100
+*   **Use at least 3 concentration points to determine accuracy**
+
+## **Reproducibility/Precision** {-}
+
+*   **Definition:** The closeness of agreement between independent test results obtained under stipulated conditions
+*   **Types of Precision:**
+    *   Repeatability (Intra-Assay Precision): The precision of the method when repeated within a single run
+    *   Intermediate Precision (Inter-Assay Precision): The precision of the method when repeated on different days, by different operators, or using different instruments
+    *   Reproducibility (Inter-Laboratory Precision): The precision of the method when performed in different laboratories
+*   **Assessment:**
+    *   Analyze Multiple Replicates: Analyze multiple replicates of the same sample within a single run and across multiple runs
+    *   Calculate Standard Deviation (SD) and Coefficient of Variation (CV): Use SD and CV to quantify the variability of the results
+*   **Acceptance Criteria:**
+    *   The CV for repeatability should be within a specified range (e.g., <5%)
+    *   The CV for intermediate precision should be within a specified range (e.g., <10%)
+*   **Use the same material over multiple days**
+*   **The experimenter should use the same instrument**
+
+## **Sensitivity** {-}
+
+*   **Definition:** The ability of the method to detect small changes in the concentration of the analyte
+*   **Assessment:**
+    *   Limit of Detection (LOD): The lowest concentration of the analyte that can be detected but not necessarily quantified
+    *   Limit of Quantitation (LOQ): The lowest concentration of the analyte that can be quantified with acceptable accuracy and precision
+    *   Serial Dilutions: Analyze a series of serial dilutions of the analyte to determine the LOD and LOQ
+*   **Acceptance Criteria:**
+    *   The LOD should be below a specified level
+    *   The LOQ should be within a specified range
+*   **Use a series of low concentration samples**
+*   **The results should be compared to a blank sample**
+
+## **Specificity** {-}
+
+*   **Definition:** The ability of the method to measure only the analyte of interest without interference from other substances
+*   **Assessment:**
+    *   Analyze Samples Containing Potential Interferents: Analyze samples that contain substances that may interfere with the assay
+    *   Compare Results to a Reference Method: Compare the results of the new method to those obtained using a reference method that is known to be specific for the analyte of interest
+*   **Acceptance Criteria:**
+    *   The method should not be significantly affected by the presence of potential interferents
+    *   The results obtained by the new method should correlate well with those obtained by the reference method
+*   **Analyze a sample of the test substance only**
+
+## **Linearity** {-}
+
+*   **Definition:** The ability of the method to produce results that are directly proportional to the concentration of the analyte
+*   **Assessment:**
+    *   Analyze a series of samples with known concentrations of the analyte that span the expected range
+    *   Plot the measured values against the known concentrations
+    *   Calculate the correlation coefficient (r) and the slope of the line
+*   **Acceptance Criteria:**
+    *   The correlation coefficient should be close to 1 (e.g., >0.99)
+    *   The slope of the line should be close to 1
+*   **Linearity should be performed at least in triplicate with at least 5 concentration points**
+
+## **Reference Range** {-}
+
+*   **Definition:** The range of values that are expected to be found in healthy individuals
+*   **Establishment:**
+    *   Analyze Samples from a Representative Population: Analyze samples from a representative population of healthy individuals
+    *   Determine the Mean and Standard Deviation: Calculate the mean and standard deviation of the results
+    *   Establish the Reference Range: The reference range is typically defined as the mean ± 2 standard deviations
+*   **Considerations:**
+    *   Sample Size: A sufficient number of samples should be analyzed to establish a reliable reference range (e.g., >120 individuals)
+    *   Demographics: The reference range may vary depending on age, sex, ethnicity, and other demographic factors
+*   **A large sample size will provide the most accurate reference range**
+
+## **Robustness** {-}
+
+*   **Definition:** The ability of the method to withstand small, deliberate variations in the experimental conditions
+*   **Purpose:**
+    *   Assess Procedure Ruggedness: Evaluate if small changes to procedure impacts results
+*   **Parameters to Manipulate:**
+    *   Incubation Time: Vary the incubation time by a small amount (e.g., ±10%)
+    *   Temperature: Vary the temperature by a small amount (e.g., ±2°C)
+    *   Reagent Volume: Vary the reagent volume by a small amount (e.g., ±5%)
+*   **What to look for:**
+    *   The method should still provide acceptable results even when small variations in the experimental conditions are introduced
+
+## **Documentation** {-}
+
+*   **Detailed Protocol:**
+    *   Create a detailed protocol for the method that includes all of the steps, reagents, and equipment required
+*   **Validation Report:**
+    *   Prepare a validation report that summarizes the results of the validation experiments
+    *   The validation report should include all of the data, calculations, and conclusions
+*   **SOPs:**
+    *   Prepare Standard Operating Procedures (SOPs) for performing the method and for analyzing the data
+    *   The SOPs should be clear, concise, and easy to follow
+
+## **Troubleshooting Method Validation Issues** {-}
+
+*   **Failure to Meet Acceptance Criteria:**
+    *   *Possible Causes:*
+        *   Errors in the method
+        *   Suboptimal reagents
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Review the method for errors
+        *   Replace suspect reagents
+        *   Calibrate instrument
+*   **Inconsistent Results:**
+    *   *Possible Causes:*
+        *   Lack of precision
+        *   Inadequate controls
+    *   *Troubleshooting Steps:*
+        *   Standardize all measurements
+        *   Review and evaluate control results
+
+## **Key Terms** {-}
+
+*   **Method Validation:** Demonstrating that an analytical procedure is suitable for its intended purpose
+*   **Accuracy:** Closeness of agreement between the result and the true value
+*   **Precision:** Closeness of agreement between independent test results
+*   **Sensitivity:** Ability to detect small changes in the concentration of the analyte
+*   **Specificity:** Ability to measure only the analyte of interest
+*   **Linearity:** Ability to produce results that are directly proportional to the concentration of the analyte
+*   **Reference Range:** Range of values expected in healthy individuals
+*   **Robustness:** Ability to withstand small variations in the experimental conditions

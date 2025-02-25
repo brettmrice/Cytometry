@@ -1,0 +1,131 @@
+# Spectral Overlap {-}
+
+## **Overview of Spectral Overlap and Compensation** {-}
+
+*   **Definition:**
+    *   **Spectral Overlap:** Occurs when the emission spectra of two or more fluorochromes overlap, meaning that the light emitted by one fluorochrome can be detected in the channel intended for another fluorochrome. This can lead to inaccurate results if not corrected
+    *   **Compensation:** A mathematical process used to correct for spectral overlap by subtracting the contribution of one fluorochrome from the signal of another. This ensures that the fluorescence signal in each channel accurately reflects the expression of the target antigen
+*   **Importance:**
+    *   **Accurate Results:** Compensation is essential for accurate quantification of multiple antigens in a single sample
+    *   **Multi-Color Analysis:** Allows for the use of multiple fluorochromes in a single experiment, increasing the amount of information that can be obtained
+    *   **Panel Design:** Understanding spectral overlap is crucial for designing flow cytometry panels that maximize resolution and minimize spillover
+*   **Key Concepts:**
+    *   **Emission Spectra**
+    *   **Spillover**
+    *   **Compensation Controls**
+    *   **Compensation Matrix**
+    *   **Overcompensation and Undercompensation**
+
+## **Emission Spectra** {-}
+
+*   **Definition:** The range of wavelengths of light emitted by a fluorochrome when excited by a specific wavelength of light
+*   **Importance:**
+    *   Understanding the emission spectra of fluorochromes is essential for predicting spectral overlap and designing flow cytometry panels
+    *   Emission spectra are typically represented as graphs that show the relative intensity of light emitted at different wavelengths
+*   **Factors Affecting Emission Spectra:**
+    *   **Fluorochrome Type:** Different fluorochromes have different emission spectra
+    *   **Excitation Wavelength:** The wavelength of light used to excite the fluorochrome can affect the emission spectrum
+    *   **Environment:** The environment surrounding the fluorochrome can affect the emission spectrum
+*   **Spectral viewers can be used to select fluorochromes with minimal compensation values for optimal results.**
+
+## **Spillover** {-}
+
+*   **Definition:** The amount of fluorescence from one fluorochrome that is detected in the channel intended for another fluorochrome
+*   **Causes:**
+    *   **Spectral Overlap:** Overlapping emission spectra
+    *   **Imperfect Filters:** Optical filters may not completely block all wavelengths of light
+    *   **Detector Sensitivity:** Detectors may be sensitive to a wider range of wavelengths than intended
+*   **Consequences:**
+    *   **Inaccurate Quantification:** Can lead to inaccurate quantification of antigens
+    *   **False Positives:** Can cause false-positive results if cells expressing one antigen are incorrectly identified as expressing another antigen
+*   **Example:**
+    *   FITC fluorescence being detected in the PE channel
+
+## **Compensation Controls** {-}
+
+*   **Definition:** Samples used to calculate the compensation values needed to correct for spectral overlap
+*   **Types:**
+    *   **Single-Stain Controls:** Cells or beads stained with a single fluorochrome
+    *   **"CompBeads":** Antibody-capture beads are widely used and are designed to bind to any antibody of the same species, thus allowing for the capture of the antibody of interest and fluorophore
+    *   **Autofluorescence Controls:** Unstained cells used to measure the level of autofluorescence in the sample
+*   **Requirements:**
+    *   **Bright Signal:** Should have a bright signal in the channel being compensated
+    *   **Similar Autofluorescence:** Should have similar autofluorescence characteristics as the experimental samples
+    *   **Sufficient Events:** Should contain a sufficient number of events to accurately calculate compensation values
+*   **Compensation Strategy:**
+    *   Ideally, each fluorochrome in the panel should be accounted for through the creation of appropriate compensation controls
+*   **Compensation controls should be run with every experiment**
+*   **Compensation controls should be treated exactly the same as your samples**
+
+## **Compensation Matrix** {-}
+
+*   **Definition:** A matrix that contains the compensation values needed to correct for spectral overlap
+*   **Calculation:** Calculated using compensation controls
+*   **Application:** Applied to the experimental data to remove the contribution of each fluorochrome from the other channels
+*   **Software:** Most flow cytometry software packages have built-in tools for calculating and applying compensation matrices
+*   **Manual Compensation:**
+    *   Compensation can be performed manually by adjusting the compensation values until the spillover is eliminated
+    *   However, automatic compensation is highly recommended
+
+## **Overcompensation and Undercompensation** {-}
+
+*   **Overcompensation:**
+    *   *Definition:* Occurs when too much fluorescence is subtracted from a channel, resulting in negative values or distortion of the data
+    *   *Appearance:* Populations may appear to be skewed or have negative values
+    *   *Causes:* Incorrect compensation values or overestimation of spillover
+*   **Undercompensation:**
+    *   *Definition:* Occurs when not enough fluorescence is subtracted from a channel, resulting in residual spillover
+    *   *Appearance:* Populations may appear to be smeared or have a broader distribution
+    *   *Causes:* Incorrect compensation values or underestimation of spillover
+*   **Optimization:**
+    *   Proper compensation is essential for accurate results
+    *   Carefully review the compensation controls and adjust the compensation values as needed to achieve optimal compensation
+*   **Troubleshooting:**
+    *   Be sure to adjust the compensation with proper controls to avoid any false positive data
+
+## **Automated Compensation Tools** {-}
+
+*   **Definition:** Software algorithms that automatically calculate and apply compensation values
+*   **Advantages:**
+    *   **Simplified Process:** Simplifies the compensation process
+    *   **Increased Accuracy:** Can improve the accuracy of compensation
+    *   **Reduced User Bias:** Reduces the potential for user bias in the compensation process
+*   **Considerations:**
+    *   **Quality Controls:** Even with automated compensation tools, it is essential to review the compensation controls and verify that the compensation values are appropriate
+
+## **Manual Compensation** {-}
+
+*   **Definition:** Manual compensation involves adjusting compensation settings by eye
+*   **When To Use Manual Compensation:**
+    *   When automatic compensation tools are not available
+    *   To double check automatic compensation results
+*   **Challenges:**
+    *   Time-consuming
+    *   Requires experience
+    *   Can be less accurate
+
+## **Troubleshooting Compensation Issues** {-}
+
+*   **Smeared Populations:**
+    *   *Possible Cause:* Undercompensation
+    *   *Troubleshooting Step:* Increase compensation value
+*   **Populations That are Negative for All Markers:**
+    *   *Possible Cause:* Overcompensation
+    *   *Troubleshooting Step:* Reduce compensation value
+*   **Compensation Artifacts:**
+    *   *Possible Cause:* Complex compensation settings
+    *   *Troubleshooting Step:* Simplify panel design
+*   **Compensation Issues With Experimental Samples:**
+    *   *Possible Cause:* High auto-fluorescence
+    *   *Troubleshooting Step:* Adjust technique to prevent it from happening
+
+## **Key Terms** {-}
+
+*   **Spectral Overlap:** When one channel reads a signal from more than one fluorophore
+*   **Emission Spectrum:** A graph that shows the relative intensity of light emitted at different wavelengths for a particular fluorochrome
+*   **Spillover:** When the emission spectrum of one fluorochrome overlaps into the detection range of another fluorochrome
+*   **Compensation:** An adjustment to the raw data used to remove spillover
+*   **Under-Compensation:** Not enough spillover is removed from the data
+*   **Over-Compensation:** Too much spillover is removed from the data
+*   **Compensation Controls:** Necessary for setting proper compensation
+*   **Unstained Control:** Used to assess and remove background noise from the signals

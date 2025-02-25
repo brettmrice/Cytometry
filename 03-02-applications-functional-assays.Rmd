@@ -1,0 +1,141 @@
+# Functional Assays {-}
+
+## **Overview of Functional Assays** {-}
+
+*   **Definition:** Functional assays in flow cytometry measure the activity or function of cells, providing insights into their physiological state, signaling pathways, and response to stimuli
+*   **Purpose:**
+    *   **Assess Cell Activity:** To measure the production of cytokines, the expression of activation markers, or the activity of signaling pathways
+    *   **Study Cell Function:** To investigate the mechanisms of cell function and the effects of various stimuli
+    *   **Diagnose Diseases:** To diagnose and monitor diseases based on abnormal cell function
+    *   **Evaluate Therapies:** To evaluate the effectiveness of therapeutic interventions
+*   **Common Types of Functional Assays:**
+    *   Cytokine Assays
+    *   Chronic Granulomatous Disease (CGD) Assay
+    *   Calcium Flux Assay
+    *   Phospho Flow Assay
+
+## **Cytokine Assays** {-}
+
+*   **Definition:** Cytokine assays measure the production of cytokines by cells, providing information about their activation state and function
+*   **Types:**
+    *   **Intracellular Cytokine Staining (ICS):**
+        *   *Technique:* Cells are stimulated to produce cytokines, then fixed and permeabilized to allow antibodies to access intracellular cytokines
+        *   *Advantages:* Can measure cytokine production by specific cell populations
+        *   *Disadvantages:* Requires cell stimulation and permeabilization, which can affect cell viability and antibody binding
+    *   **Cytokine Secretion Assays:**
+        *   *Technique:* Cells are stimulated to secrete cytokines, which are then captured by antibodies on the cell surface or on beads
+        *   *Advantages:* Can measure cytokine secretion without cell permeabilization
+        *   *Disadvantages:* Requires specialized antibodies and may not be as sensitive as ICS
+*   **Considerations:**
+    *   **Stimulation Conditions:** The choice of stimulus, concentration, and duration can affect cytokine production
+    *   **Blocking Agents:** Use blocking agents to prevent cytokine secretion, allowing for accumulation of cytokines within the cell
+    *   **Antibody Selection:** Choose antibodies that are specific for the target cytokines and that have been validated for flow cytometry
+*   **Common cytokines:**
+    *   **IL-2**
+    *   **IL-4**
+    *   **IL-6**
+    *   **TNF-alpha**
+    *   **IFN-gamma**
+*   **How to optimize:**
+    *   Stimulating the cells effectively with PMA and ionomycin for the appropriate amount of time
+    *   Using GolgiPlug to retain the signal inside of the cells
+
+## **Chronic Granulomatous Disease (CGD) Assay** {-}
+
+*   **Definition:** CGD is a genetic disorder that affects the ability of phagocytes (e.g., neutrophils, macrophages) to produce reactive oxygen species (ROS)
+*   **Assay Principle:**
+    *   The CGD assay measures the production of ROS by phagocytes in response to stimulation
+    *   Cells are stimulated with phorbol myristate acetate (PMA) or other stimuli, and then incubated with a dye that fluoresces upon oxidation by ROS
+    *   Flow cytometry is used to measure the fluorescence intensity of the cells, which is proportional to the amount of ROS produced
+*   **Considerations:**
+    *   **Stimulation Conditions:** The choice of stimulus, concentration, and duration can affect ROS production
+    *   **Dye Selection:** Choose a dye that is sensitive to ROS and that has minimal spectral overlap with other fluorochromes in the panel
+    *   **Controls:** Include positive and negative controls to validate the assay
+*   **Reagents and Supplies:**
+    *   **Dihydrorhodamine 123 (DHR):** a nonfluorescent cell-permeable dye that can be oxidized by intracellular ROS to form the fluorescent product rhodamine
+*   **Helpful Hints:**
+    *   Whole blood samples must be tested within a reasonable timeframe
+    *   Proper amount of DHR and PMA must be used
+    *   The incubation temperature of the cell suspension must be at 37C
+
+## **Calcium Flux Assay** {-}
+
+*   **Definition:** The calcium flux assay measures the changes in intracellular calcium concentration in response to stimulation
+*   **Assay Principle:**
+    *   Cells are loaded with a calcium-sensitive dye, such as Fluo-4 or Indo-1
+    *   The cells are then stimulated with an agonist that triggers calcium release from intracellular stores or influx from the extracellular environment
+    *   Flow cytometry is used to monitor the fluorescence intensity of the cells over time, which is proportional to the intracellular calcium concentration
+*   **Considerations:**
+    *   **Dye Loading:** Proper dye loading is essential for accurate measurements
+    *   **Stimulation Conditions:** The choice of agonist, concentration, and duration can affect calcium flux
+    *   **Instrument Setup:** The flow cytometer must be set up to acquire data rapidly over time
+*   **How to optimize:**
+    *   Use Indo-1 as a ratiometric dye to avoid the need to wash the dye
+    *   Include a stimulant and ionophore to maximize the signal
+    *   Maintain the cells at 37C throughout the run
+
+## **Phospho Flow Assay** {-}
+
+*   **Definition:** The phospho flow assay measures the phosphorylation status of intracellular proteins, providing information about the activation of signaling pathways
+*   **Assay Principle:**
+    *   Cells are stimulated to activate signaling pathways, then fixed and permeabilized to allow antibodies to access intracellular phosphoproteins
+    *   The cells are then stained with antibodies that specifically recognize phosphorylated forms of the target proteins
+    *   Flow cytometry is used to measure the fluorescence intensity of the cells, which is proportional to the level of phosphorylation
+*   **Considerations:**
+    *   **Stimulation Conditions:** The choice of stimulus, concentration, and duration can affect protein phosphorylation
+    *   **Fixation and Permeabilization:** Proper fixation and permeabilization are essential for preserving phosphoproteins
+    *   **Antibody Selection:** Choose antibodies that are specific for the phosphorylated forms of the target proteins and that have been validated for flow cytometry
+    *   **Add phosphatase inhibitors:** Ensure that the cell medium or staining buffer is supplemented with phosphatase inhibitors to minimize unwanted dephosphorylation
+
+## **General Considerations for Functional Assays** {-}
+
+*   **Cell Viability:**
+    *   Many functional assays require live cells, so it is essential to maintain high cell viability throughout the experiment
+    *   Use appropriate cell culture techniques and handling procedures to minimize cell stress
+    *   Include a viability dye to exclude dead cells from analysis
+*   **Controls:**
+    *   Include appropriate controls to validate the assay and account for background noise
+    *   Unstimulated controls, positive controls, and isotype controls are all important for functional assays
+    *   For example, a positive control can be produced with the use of phorbol myristate acetate (PMA) and ionomycin
+*   **Compensation:**
+    *   Spectral overlap is a common problem in flow cytometry, and it is essential to use proper compensation techniques to correct for spillover
+    *   Use single-stain controls to accurately calculate compensation values
+
+## **Troubleshooting Functional Assay Issues** {-}
+
+*   **No Response:**
+    *   *Possible Causes:*
+        *   Ineffective stimulus
+        *   Non-responsive cells
+        *   Incorrect assay protocol
+    *   *Troubleshooting Steps:*
+        *   Optimize stimulation conditions
+        *   Use positive controls to verify cell responsiveness
+        *   Review assay protocol
+*   **High Background:**
+    *   *Possible Causes:*
+        *   Non-specific antibody binding
+        *   Autofluorescence
+        *   Contamination
+    *   *Troubleshooting Steps:*
+        *   Use blocking reagents
+        *   Reduce autofluorescence
+        *   Clean samples
+*   **Variable Results:**
+    *   *Possible Causes:*
+        *   Inconsistent technique
+        *   Instrument instability
+        *   Sample heterogeneity
+    *   *Troubleshooting Steps:*
+        *   Standardize assay protocols
+        *   Calibrate instrument
+        *   Increase sample size
+
+## **Key Terms** {-}
+
+*   **Functional Assay:** An assay that measures the activity or function of cells
+*   **Cytokine:** A signaling molecule that mediates communication between cells
+*   **Reactive Oxygen Species (ROS):** Molecules that are produced during cellular metabolism and that can damage cells
+*   **Calcium Flux:** Changes in intracellular calcium concentration
+*   **Phosphorylation:** The addition of a phosphate group to a protein
+*   **Stimulation:** The process of activating cells with a specific stimulus

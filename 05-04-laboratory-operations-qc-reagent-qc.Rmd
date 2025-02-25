@@ -1,0 +1,129 @@
+# Reagent QC {-}
+
+## **Overview of Reagent Quality Control (QC)** {-}
+
+*   **Definition:** Reagent quality control (QC) refers to the procedures and practices used to ensure that the reagents used in flow cytometry assays are of high quality and are performing according to their specifications
+*   **Importance:**
+    *   Accurate Results: To ensure that the flow cytometry data accurately reflects the biological system being studied
+    *   Reproducibility: To ensure that experiments can be reproduced over time
+    *   Compliance: To comply with regulatory requirements and accreditation standards
+*   **Key Aspects of Reagent Quality Control:**
+    *   Panel Verification
+    *   Titration
+    *   Lot-to-Lot Variation
+    *   Storage
+    *   Handling
+
+## **Panel Verification** {-}
+
+*   **Definition:** The process of confirming that the antibodies and dyes in a flow cytometry panel are working as expected
+*   **Purpose:**
+    *   Validate Specificity: To ensure that the antibodies and dyes are binding specifically to the intended targets
+    *   Confirm Performance: To confirm that the reagents are providing adequate signal intensity and resolution
+*   **Methods:**
+    1.  Positive and Negative Controls:
+        *   Use positive and negative control samples to verify that the antibodies and dyes are binding to the correct cell populations
+    2.  Literature Review:
+        *   Consult the literature to confirm that the antibodies and dyes have been validated for flow cytometry
+    3.  Manufacturer's Specifications:
+        *   Review the manufacturer's specifications to ensure that the reagents are being used according to their recommendations
+*   **Specific considerations:**
+    *   Ensure that there are no unexpected cross-reactivities with other targets
+
+## **Titration** {-}
+
+*   **Definition:** The process of determining the optimal concentration of antibody or dye to use for staining
+*   **Purpose:**
+    *   Maximize Signal-to-Noise Ratio: To maximize the signal from target cells while minimizing background noise
+    *   Optimize Resolution: To improve the ability to distinguish between different cell populations
+    *   Conserve Reagents: To use the minimum amount of reagent required to achieve optimal staining
+*   **Procedure:**
+    1.  Prepare a series of dilutions of the antibody or dye
+    2.  Stain a sample of cells with each dilution
+    3.  Acquire the samples on a flow cytometer
+    4.  Analyze the data to determine the optimal concentration
+        *   The optimal concentration is the one that provides the best separation between positive and negative populations with minimal background noise
+*   **Optimization points:**
+    *   The data should be carefully reviewed, and a concentration should be selected that provides for the accurate separation of cells
+    *   The data should be compared against the negative control
+
+## **Lot-to-Lot Variation** {-}
+
+*   **Definition:** The variability in performance that can occur between different lots of the same antibody or dye
+*   **Importance:**
+    *   Consistent Results: Lot-to-lot variation can affect the accuracy and reproducibility of flow cytometry experiments
+    *   Panel Longevity: By verifying each lot, you can ensure that the reagents that are being used are effective for the experiment
+*   **Methods for Addressing Lot-to-Lot Variation:**
+    1.  Reserve Samples: Reserve an adequate amount of reagent from the old lot for comparisons
+    2.  Side-by-Side Testing:
+        *   Test the new lot side-by-side with the old lot using the same sample and staining protocol
+        *   Compare the results to ensure that the new lot is performing as expected
+    3.  Titration:
+        *   Perform a titration of the new lot to determine the optimal concentration for staining
+        *   Compare the optimal concentration of the new lot to the optimal concentration of the old lot
+*   **Actions to Take if Lot-to-Lot Variation is Detected:**
+    *   Review reagents to ensure that the new lot is performing well
+    *   Compare the results to the old lot to establish new parameters
+
+## **Storage** {-}
+
+*   **Importance:**
+    *   Stability: Improper storage can lead to reagent degradation and loss of activity
+    *   Consistent Results: Proper storage is essential for maintaining the quality of reagents over time
+*   **Storage Recommendations:**
+    *   Follow the manufacturer's recommendations for storage temperature and conditions
+    *   Store reagents in a dark, dry place
+    *   Avoid repeated freeze-thaw cycles
+    *   Check expiration dates and discard expired reagents
+*   **Always use calibrated thermometers to ensure proper temperatures are being met**
+
+## **Handling** {-}
+
+*   **Importance:**
+    *   Prevent Contamination: Proper handling is essential for preventing contamination of reagents
+    *   Maintain Integrity: Improper handling can damage reagents and reduce their activity
+*   **Handling Recommendations:**
+    *   Use sterile techniques when handling reagents
+    *   Avoid touching the tips of reagent bottles or pipette tips
+    *   Use dedicated pipette tips and reagent bottles for each reagent
+    *   Do not return unused reagent to the stock bottle
+    *   Always work in a clean environment
+*   **Never return the reagent that has already been pipetted back into the container**
+
+## **Troubleshooting Reagent Quality Control Issues** {-}
+
+*   **Weak or No Signal:**
+    *   *Possible Causes:*
+        *   Reagent degradation
+        *   Incorrect storage
+        *   Outdated material
+    *   *Troubleshooting Steps:*
+        *   Replace the reagent with a fresh lot
+        *   Verify proper storage
+        *   Repeat analysis with new vial
+*   **High Background Noise:**
+    *   *Possible Causes:*
+        *   Non-specific binding
+        *   Contamination
+        *   Incorrectly used blocking agents
+    *   *Troubleshooting Steps:*
+        *   Use blocking reagents
+        *   Ensure fresh samples
+        *   Optimize staining protocols
+*   **Unexpected Results:**
+    *   *Possible Causes:*
+        *   Incorrect antibody selection
+        *   Improper titration
+        *   Contamination
+    *   *Troubleshooting Steps:*
+        *   Verify antibody selection
+        *   Repeat antibody titration
+        *   Ensure proper storage of new and old material
+
+## **Key Terms** {-}
+
+*   **Reagent Quality Control (QC):** Procedures to ensure reagents used in flow cytometry are of high quality
+*   **Panel Verification:** Confirming that antibodies and dyes are working as expected
+*   **Titration:** Determining the optimal concentration of antibody or dye
+*   **Lot-to-Lot Variation:** Variability in performance between different lots of the same reagent
+*   **Sterile Techniques:** To prevent contamination of reagents

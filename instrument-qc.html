@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Instrument QC | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Instrument Quality Control (QC)  Definition: Instrument quality control (IQC) refers to the procedures and practices used to ensure that a flow cytometer is operating according to its...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Instrument QC | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Instrument Quality Control (QC)  Definition: Instrument quality control (IQC) refers to the procedures and practices used to ensure that a flow cytometer is operating according to its...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Instrument QC | Cytometry">
+<meta name="twitter:description" content="Overview of Instrument Quality Control (QC)  Definition: Instrument quality control (IQC) refers to the procedures and practices used to ensure that a flow cytometer is operating according to its...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="active" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="instrument-qc" class="section level1 unnumbered">
+<h1>Instrument QC<a class="anchor" aria-label="anchor" href="#instrument-qc"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-instrument-quality-control-qc" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Instrument Quality Control (QC)</strong><a class="anchor" aria-label="anchor" href="#overview-of-instrument-quality-control-qc"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Instrument quality control (IQC) refers to the procedures and practices used to ensure that a flow cytometer is operating according to its specifications and is producing accurate and reliable data</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Data Accuracy: To ensure that the data accurately reflects the biological system being studied</li>
+<li>Reproducibility: To ensure that experiments can be reproduced over time</li>
+<li>Compliance: To comply with regulatory requirements and accreditation standards</li>
+</ul>
+</li>
+<li>
+<strong>Key Aspects of Instrument Quality Control:</strong>
+<ul>
+<li>Optical Alignment</li>
+<li>Detector Calibration</li>
+<li>Fluidics System Checks</li>
+<li>Electronic Stability</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="optical-alignment" class="section level2 unnumbered">
+<h2>
+<strong>Optical Alignment</strong><a class="anchor" aria-label="anchor" href="#optical-alignment"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The process of ensuring that the lasers, lenses, mirrors, and detectors in the flow cytometer are properly aligned</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Optimal Signal: To maximize the amount of light that reaches the detectors</li>
+<li>Consistent Performance: To ensure consistent performance of the flow cytometer over time</li>
+<li>Accurate Measurements: To ensure that the fluorescence and scatter measurements are accurate</li>
+</ul>
+</li>
+<li>
+<strong>Methods:</strong>
+<ul>
+<li>Visual Inspection:
+<ul>
+<li>Inspect the optical components for any signs of damage or misalignment</li>
+<li>Look for any obstructions or debris in the light path</li>
+</ul>
+</li>
+<li>Alignment Beads:
+<ul>
+<li>Use alignment beads to optimize the position of the lasers and detectors</li>
+<li>Adjust the alignment until the beads are centered in the flow cell and the signal intensity is maximized</li>
+</ul>
+</li>
+<li>Software Tools:
+<ul>
+<li>Use software tools to monitor the alignment of the optical system over time</li>
+<li>The software may provide guidance on how to adjust the alignment</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Troubleshooting Common Optical Misalignment Problems:</strong>
+<ul>
+<li>Weak Signals:
+<ul>
+<li>Make sure there are no obstructions, and verify laser function.</li>
+</ul>
+</li>
+<li>Variability:
+<ul>
+<li>Use the QC beads to assess instrument performance.</li>
+<li>Clean, repair, or replace parts, as needed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>General notes:</strong>
+<ul>
+<li>Optical alignment should occur when there are any known issues or at a fixed interval (e.g. weekly)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="detector-calibration" class="section level2 unnumbered">
+<h2>
+<strong>Detector Calibration</strong><a class="anchor" aria-label="anchor" href="#detector-calibration"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The process of adjusting the voltages of the detectors (PMTs or APDs) to ensure that they are responding linearly to changes in light intensity</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Accurate Quantification: To ensure that the fluorescence values accurately reflect the expression of the target antigens</li>
+<li>Data Comparison: To allow for comparison of data from different experiments or different instruments</li>
+</ul>
+</li>
+<li>
+<strong>Methods:</strong>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Calibration Beads:</strong>
+<ul>
+<li>Use a set of calibration beads with known fluorescence intensities</li>
+<li>The calibration beads are typically labeled with a range of fluorescence intensities that span the range of the flow cytometer</li>
+</ul>
+</li>
+<li>
+<strong>Voltage Adjustment:</strong>
+<ul>
+<li>Run the calibration beads on the flow cytometer</li>
+<li>Adjust the detector voltages until the fluorescence intensity values of the beads match their known values</li>
+</ul>
+</li>
+<li>
+<strong>Linearity Check:</strong>
+<ul>
+<li>Verify that the detectors are responding linearly to changes in light intensity</li>
+<li>This can be done by plotting the fluorescence intensity values of the calibration beads against their known MESF values</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>Linearity of Voltage should be carefully checked</strong></li>
+</ul>
+</div>
+<div id="fluidics-system-checks" class="section level2 unnumbered">
+<h2>
+<strong>Fluidics System Checks</strong><a class="anchor" aria-label="anchor" href="#fluidics-system-checks"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The process of verifying that the fluidics system is functioning properly</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Stable Flow Rate: To ensure a stable and consistent flow rate, which is essential for accurate cell counting and sizing</li>
+<li>Proper Focusing: To ensure that the cells are properly focused, which is essential for optimal signal intensity and resolution</li>
+<li>Prevention of Clogging: To prevent clogging of the flow cell or tubing, which can disrupt the flow of cells</li>
+</ul>
+</li>
+<li>
+<strong>Methods:</strong>
+<ul>
+<li>Flow Rate Measurement:
+<ul>
+<li>Measure the flow rate using a graduated cylinder and a timer</li>
+<li>Compare the measured flow rate to the expected flow rate</li>
+</ul>
+</li>
+<li>Bubble Check:
+<ul>
+<li>Inspect the tubing and flow cell for air bubbles</li>
+<li>Remove any air bubbles that are present</li>
+</ul>
+</li>
+<li>Pressure Check:
+<ul>
+<li>Monitor the pressure readings in the fluidics system</li>
+<li>Ensure that the pressure is within the acceptable range</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Examples of tests for fluidics system checks:</strong>
+<ul>
+<li>Verify that the sheath fluid is at the appropriate level</li>
+<li>Remove any air bubbles</li>
+<li>Clean the instrument with detergent, especially after running sticky samples</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="electronic-stability" class="section level2 unnumbered">
+<h2>
+<strong>Electronic Stability</strong><a class="anchor" aria-label="anchor" href="#electronic-stability"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Assessing the stability of the flow cytometer’s electronics, which can affect the accuracy and reproducibility of the measurements</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Ensure that the data is consistent.</li>
+<li>To allow results to be properly interpreted and to troubleshoot other aspects.</li>
+</ul>
+</li>
+<li>
+<strong>Electronic stability can be affected by:</strong>
+<ul>
+<li>Room temperature fluctuation</li>
+<li>Variances from normal conditions</li>
+</ul>
+</li>
+<li>
+<strong>How to troubleshoot:</strong>
+<ul>
+<li>Assess the flow rate and stability with calibration beads before and after running samples</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-instrument-quality-control-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Instrument Quality Control Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-instrument-quality-control-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Weak Signals:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Misaligned optics</li>
+<li>Low laser power</li>
+<li>Incorrect detector settings</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Align the optical system</li>
+<li>Check laser power</li>
+<li>Adjust detector settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Contaminated reagents</li>
+<li>Incorrect instrument settings</li>
+<li>Electrical interference</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Use clean reagents</li>
+<li>Optimize instrument settings</li>
+<li>Reduce electrical interference</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Variable Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Inconsistent technique</li>
+<li>Instrument instability</li>
+<li>Sample heterogeneity</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Standardize IQC protocols</li>
+<li>Calibrate instrument</li>
+<li>Increase sample size</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-44" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-44"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Instrument Quality Control (IQC):</strong> The process of ensuring that a flow cytometer is operating according to its specifications</li>
+<li>
+<strong>Optical Alignment:</strong> Ensuring that the lasers, lenses, mirrors, and detectors are properly aligned</li>
+<li>
+<strong>Detector Calibration:</strong> Adjusting the voltages of the detectors to ensure that they are responding linearly to changes in light intensity</li>
+<li>
+<strong>Fluidics System Checks:</strong> Verifying that the fluidics system is functioning properly</li>
+<li>
+<strong>Electronic Stability:</strong> Assessing the stability of the flow cytometer’s electronics</li>
+<li>
+<strong>Calibration Beads:</strong> Beads with known fluorescence intensities that are used to calibrate the flow cytometer</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="qaulity-control.html">Qaulity Control</a></div>
+<div class="next"><a href="instrument-optimization.html">Instrument Optimization</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#instrument-qc">Instrument QC</a></li>
+<li><a class="nav-link" href="#overview-of-instrument-quality-control-qc">Overview of Instrument Quality Control (QC)</a></li>
+<li><a class="nav-link" href="#optical-alignment">Optical Alignment</a></li>
+<li><a class="nav-link" href="#detector-calibration">Detector Calibration</a></li>
+<li><a class="nav-link" href="#fluidics-system-checks">Fluidics System Checks</a></li>
+<li><a class="nav-link" href="#electronic-stability">Electronic Stability</a></li>
+<li><a class="nav-link" href="#troubleshooting-instrument-quality-control-issues">Troubleshooting Instrument Quality Control Issues</a></li>
+<li><a class="nav-link" href="#key-terms-44">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/05-02-laboratory-operations-qc-instrument-qc.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/05-02-laboratory-operations-qc-instrument-qc.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

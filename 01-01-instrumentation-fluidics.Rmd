@@ -1,0 +1,67 @@
+# (PART\*) Instrumentation
+
+# Fluidics {-}
+
+## **Fluidics: The Foundation of Flow Cytometry** {-}
+
+The fluidics system is the heart of any flow cytometer. It's responsible for:
+
+*   **Transporting** cells or particles from the sample tube to the interrogation point
+*   **Focusing** those cells into a single-file stream for accurate measurement
+*   **Maintaining** a stable and controlled flow environment
+
+Without a well-designed and properly functioning fluidics system, the optical and electronic components wouldn't have anything to analyze effectively!
+
+## **The Three Pillars of Fluidics** {-}
+
+1.  **Hydrodynamic Focusing:**
+    *   *What it is:* A technique that uses a sheath fluid to constrict the sample stream into a narrow core, forcing cells to pass through the laser beam one at a time
+    *   *Why it's important:* Prevents coincidence (multiple cells being detected as one), optimizes signal detection, and improves resolution
+    *   *Key factors:* Sheath fluid pressure, sample fluid pressure, flow cell geometry, and laminar flow
+2.  **Sheath Fluids:**
+    *   *What they are:* Clean, particle-free fluids that surround the sample core in hydrodynamic focusing
+    *   *Why they're important:* Enable hydrodynamic focusing, maintain cell viability, and prevent contamination
+    *   *Key properties:* Purity, sterility, isotonicity, pH, viscosity, refractive index, electrical conductivity, and compatibility with reagents
+3.  **Sample Delivery Systems:**
+    *   *What they are:* The mechanisms used to transport the sample from its container to the flow cell
+    *   *Why they're important:* Ensure precise flow control, minimize sample loss, enable automation, and reduce carryover
+    *   *Types:*
+        *   **Syringe Pump Systems:** Precise flow control, limited sample volume
+        *   **Pressure-Based Systems:** Larger sample volumes, automated sampling
+        *   **Vacuum-Based Systems:** Simple design, automated sampling (but less common now)
+        *   **Acoustic Focusing Systems:** Label-free focusing, gentle cell handling
+
+## **How They Work Together** {-}
+
+Imagine a well-orchestrated dance:
+
+1.  **Sample Delivery** introduces the sample (containing cells) into the fluidics system using a syringe pump, pressure, vacuum, or acoustic method
+2.  The **Sample** meets the **Sheath Fluid**
+3.  **Hydrodynamic Focusing** uses the sheath fluid to squeeze the sample stream into a narrow core
+4.  This focused stream of cells passes single-file through the **Interrogation Point**, where lasers and detectors do their work
+
+## **Importance of Fluidics in Flow Cytometry** {-}
+
+*   **Accuracy:** Ensures that each cell is analyzed individually, improving the accuracy of cell counts and signal measurements
+*   **Resolution:** Improves the ability to distinguish between different cell populations by minimizing coincidence and optimizing signal detection
+*   **Reproducibility:** Provides a stable and controlled flow environment, enhancing the reproducibility of results
+*   **Throughput:** Enables high-throughput analysis by rapidly processing samples and acquiring data
+*   **Sensitivity:** Optimizes signal detection, allowing for the detection of rare cell populations or weak signals
+
+## **Troubleshooting Fluidic Issues** {-}
+
+Common problems and solutions:
+
+*   **Clogging:** Filter samples and sheath fluid, use cleaning solutions
+*   **Bubble Formation:** Check for leaks, degas sheath fluid
+*   **Contamination:** Use sterile techniques, replace contaminated fluids
+*   **Pressure/Vacuum Issues:** Check for blockages, inspect pump/vacuum function
+*   **Carryover:** Increase wash volume, use appropriate cleaning solutions
+
+## **Key Takeaways** {-}
+
+*   Fluidics is a critical component of flow cytometry, responsible for transporting, focusing, and maintaining a stable flow environment for cells
+*   Hydrodynamic focusing uses a sheath fluid to constrict the sample stream, ensuring single-file cell analysis
+*   Sheath fluids must be pure, sterile, isotonic, and compatible with cells and reagents
+*   Sample delivery systems transport the sample to the flow cell, with different systems offering varying degrees of precision, automation, and throughput
+*   Proper maintenance and troubleshooting of the fluidics system are essential for reliable flow cytometry results.

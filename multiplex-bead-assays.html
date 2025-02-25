@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Multiplex Bead Assays | Cytometry</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Multiplex Bead Assays  Definition: Multiplex bead assays are a type of immunoassay that uses beads conjugated to specific antibodies to simultaneously measure multiple analytes (e.g.,...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="Multiplex Bead Assays | Cytometry">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Multiplex Bead Assays  Definition: Multiplex bead assays are a type of immunoassay that uses beads conjugated to specific antibodies to simultaneously measure multiple analytes (e.g.,...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Multiplex Bead Assays | Cytometry">
+<meta name="twitter:description" content="Overview of Multiplex Bead Assays  Definition: Multiplex bead assays are a type of immunoassay that uses beads conjugated to specific antibodies to simultaneously measure multiple analytes (e.g.,...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel/Experiment Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="active" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Laboratory Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Clinical-Hematology">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="multiplex-bead-assays" class="section level1 unnumbered">
+<h1>Multiplex Bead Assays<a class="anchor" aria-label="anchor" href="#multiplex-bead-assays"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-multiplex-bead-assays" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Multiplex Bead Assays</strong><a class="anchor" aria-label="anchor" href="#overview-of-multiplex-bead-assays"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Multiplex bead assays are a type of immunoassay that uses beads conjugated to specific antibodies to simultaneously measure multiple analytes (e.g., cytokines, proteins, chemokines) in a single sample</li>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Different bead sets, each conjugated to a different capture antibody, are incubated with the sample</li>
+<li>The target analytes in the sample bind to the capture antibodies on the beads</li>
+<li>A mixture of detection antibodies, each specific for a different analyte and conjugated to a fluorochrome, is added</li>
+<li>The detection antibodies bind to the target analytes that are bound to the beads</li>
+<li>The beads are then analyzed by flow cytometry, and the fluorescence intensity of each bead is measured</li>
+<li>The concentration of each analyte is determined based on the fluorescence intensity of the corresponding bead set</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>High Throughput:</strong> Can measure multiple analytes simultaneously, increasing throughput</li>
+<li>
+<strong>Reduced Sample Volume:</strong> Requires less sample volume compared to traditional immunoassays</li>
+<li>
+<strong>Wide Dynamic Range:</strong> Can measure analytes over a wide range of concentrations</li>
+<li>
+<strong>Cost-Effective:</strong> Can reduce the cost per analyte compared to traditional immunoassays</li>
+</ul>
+</li>
+<li>
+<strong>Limitations:</strong>
+<ul>
+<li>Can be expensive to set up initially</li>
+<li>Requires specialized equipment and software</li>
+<li>Can be challenging to optimize and troubleshoot</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="components-of-a-multiplex-bead-assay" class="section level2 unnumbered">
+<h2>
+<strong>Components of a Multiplex Bead Assay</strong><a class="anchor" aria-label="anchor" href="#components-of-a-multiplex-bead-assay"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Beads:</strong>
+<ul>
+<li>
+<strong>Polystyrene or Magnetic Beads:</strong> Used as the solid support for the assay</li>
+<li>
+<strong>Unique Identification:</strong> Each bead set has a unique spectral signature that allows it to be distinguished from other bead sets</li>
+<li>
+<strong>Conjugated Antibodies:</strong> Each bead set is conjugated to a specific capture antibody that binds to a target analyte</li>
+</ul>
+</li>
+<li>
+<strong>Capture Antibodies:</strong>
+<ul>
+<li>
+<strong>High Affinity and Specificity:</strong> Antibodies that bind specifically to the target analytes with high affinity</li>
+<li>
+<strong>Validated for Multiplex Assays:</strong> Antibodies that have been validated for use in multiplex bead assays</li>
+</ul>
+</li>
+<li>
+<strong>Detection Antibodies:</strong>
+<ul>
+<li>
+<strong>High Affinity and Specificity:</strong> Antibodies that bind specifically to the target analytes with high affinity</li>
+<li>
+<strong>Fluorochrome Conjugation:</strong> Each detection antibody is conjugated to a fluorochrome with a distinct emission spectrum</li>
+</ul>
+</li>
+<li>
+<strong>Standards:</strong>
+<ul>
+<li>
+<strong>Known Concentrations:</strong> Used to generate a standard curve that relates fluorescence intensity to analyte concentration</li>
+<li>
+<strong>Calibrated to International Standards:</strong> Calibrated to international standards whenever possible</li>
+</ul>
+</li>
+<li>
+<strong>Controls:</strong>
+<ul>
+<li>
+<strong>Blank Controls:</strong> Samples that contain no analyte, used to measure background signal</li>
+<li>
+<strong>Positive Controls:</strong> Samples that contain known concentrations of the target analytes, used to validate the assay</li>
+<li>
+<strong>Quality Control Samples:</strong> Samples with known concentrations that are run periodically throughout the assay to monitor performance</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="assay-workflow" class="section level2 unnumbered">
+<h2>
+<strong>Assay Workflow</strong><a class="anchor" aria-label="anchor" href="#assay-workflow"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Sample Preparation:</strong>
+<ul>
+<li>Prepare samples according to the manufacturer’s instructions</li>
+<li>Remove any particulate matter that could interfere with the assay</li>
+</ul>
+</li>
+<li>
+<strong>Bead Incubation:</strong>
+<ul>
+<li>Incubate the beads with the samples, allowing the target analytes to bind to the capture antibodies</li>
+<li>Follow the recommended incubation time and temperature</li>
+</ul>
+</li>
+<li>
+<strong>Washing:</strong>
+<ul>
+<li>Wash the beads to remove any unbound analytes</li>
+<li>Use the recommended wash buffer and washing procedure</li>
+</ul>
+</li>
+<li>
+<strong>Detection Antibody Incubation:</strong>
+<ul>
+<li>Incubate the beads with the detection antibodies, allowing the antibodies to bind to the target analytes</li>
+<li>Follow the recommended incubation time and temperature</li>
+</ul>
+</li>
+<li>
+<strong>Washing:</strong>
+<ul>
+<li>Wash the beads to remove any unbound detection antibodies</li>
+<li>Use the recommended wash buffer and washing procedure</li>
+</ul>
+</li>
+<li>
+<strong>Data Acquisition:</strong>
+<ul>
+<li>Acquire the beads on a flow cytometer, following the manufacturer’s instructions</li>
+<li>Collect a sufficient number of events for each bead set</li>
+</ul>
+</li>
+<li>
+<strong>Data Analysis:</strong>
+<ul>
+<li>Analyze the data using software provided by the manufacturer or a compatible third-party software</li>
+<li>Generate standard curves and calculate the concentrations of the target analytes</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="common-analytes-measured-by-multiplex-bead-assays" class="section level2 unnumbered">
+<h2>
+<strong>Common Analytes Measured by Multiplex Bead Assays</strong><a class="anchor" aria-label="anchor" href="#common-analytes-measured-by-multiplex-bead-assays"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cytokines:</strong>
+<ul>
+<li>IL-2, IL-4, IL-6, IL-10, TNF-α, IFN-γ</li>
+</ul>
+</li>
+<li>
+<strong>Chemokines:</strong>
+<ul>
+<li>IL-8, MCP-1, RANTES</li>
+</ul>
+</li>
+<li>
+<strong>Growth Factors:</strong>
+<ul>
+<li>VEGF, EGF, FGF</li>
+</ul>
+</li>
+<li>
+<strong>Adhesion Molecules:</strong>
+<ul>
+<li>ICAM-1, VCAM-1</li>
+</ul>
+</li>
+<li>
+<strong>Other Proteins:</strong>
+<ul>
+<li>Enzymes, hormones, antibodies</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="considerations-for-panel-design" class="section level2 unnumbered">
+<h2>
+<strong>Considerations for Panel Design</strong><a class="anchor" aria-label="anchor" href="#considerations-for-panel-design"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Analyte Selection:</strong> Choose analytes that are relevant to the research question</li>
+<li>
+<strong>Assay Compatibility:</strong> Ensure that the assays for all of the analytes are compatible with each other</li>
+<li>
+<strong>Dynamic Range:</strong> Consider the dynamic range of the assays for each analyte</li>
+<li>
+<strong>Antibody Specificity:</strong> Verify that the antibodies are specific for the intended targets</li>
+<li>
+<strong>Sample Requirements:</strong> Ensure that the sample type and volume are compatible with the assays</li>
+</ul>
+</div>
+<div id="data-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Data Analysis</strong><a class="anchor" aria-label="anchor" href="#data-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Gating Strategy:</strong>
+<ul>
+<li>Define gates to identify the bead populations</li>
+<li>Exclude doublets and debris</li>
+</ul>
+</li>
+<li>
+<strong>Standard Curve Generation:</strong>
+<ul>
+<li>Use the standards to generate a standard curve for each analyte</li>
+<li>Use a curve-fitting algorithm that is appropriate for the data</li>
+</ul>
+</li>
+<li>
+<strong>Concentration Calculation:</strong>
+<ul>
+<li>Calculate the concentrations of the target analytes in the samples based on the standard curves</li>
+<li>Account for any dilutions or normalization factors</li>
+</ul>
+</li>
+<li>
+<strong>Quality Control:</strong>
+<ul>
+<li>Assess the quality of the data by examining the standard curves and control samples</li>
+<li>Exclude any data points that are outside of the acceptable range</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-multiplex-bead-assays" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Multiplex Bead Assays</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-multiplex-bead-assays"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>High Background:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Non-specific binding</li>
+<li>Contamination</li>
+<li>Improper washing</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Use blocking reagents</li>
+<li>Clean samples</li>
+<li>Optimize washing procedure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Low Signal:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Reagent degradation</li>
+<li>Incorrect assay protocol</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify reagent quality</li>
+<li>Review assay protocol</li>
+<li>Inspect instrument for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Inaccurate Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect standard curves</li>
+<li>Calibration errors</li>
+<li>Data analysis errors</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify standard curves</li>
+<li>Calibrate instrument</li>
+<li>Inspect data analysis methods</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Bead Aggregation:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Improper storage of beads</li>
+<li>Inefficient shaking or mixing</li>
+<li>Contamination</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Ensure beads are being stored correctly</li>
+<li>Adjust techniques to ensure proper mixing without damaging</li>
+<li>Clean samples</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-terms-26" class="section level2 unnumbered">
+<h2>
+<strong>Key Terms</strong><a class="anchor" aria-label="anchor" href="#key-terms-26"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Multiplex Bead Assay:</strong> An immunoassay that uses beads conjugated to specific antibodies to simultaneously measure multiple analytes</li>
+<li>
+<strong>Analyte:</strong> The target molecule being measured</li>
+<li>
+<strong>Bead Set:</strong> A population of beads with a unique spectral signature</li>
+<li>
+<strong>Capture Antibody:</strong> An antibody that binds specifically to the target analyte</li>
+<li>
+<strong>Detection Antibody:</strong> An antibody that binds to the target analyte and is conjugated to a fluorochrome</li>
+<li>
+<strong>Standard Curve:</strong> A curve that relates fluorescence intensity to analyte concentration</li>
+<li>
+<strong>Dynamic Range:</strong> The range of concentrations that can be accurately measured by the assay</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+</script><div class="chapter-nav">
+<div class="prev"><a href="functional-assays.html">Functional Assays</a></div>
+<div class="next"><a href="solid-organ-transplant.html">Solid Organ Transplant</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#multiplex-bead-assays">Multiplex Bead Assays</a></li>
+<li><a class="nav-link" href="#overview-of-multiplex-bead-assays">Overview of Multiplex Bead Assays</a></li>
+<li><a class="nav-link" href="#components-of-a-multiplex-bead-assay">Components of a Multiplex Bead Assay</a></li>
+<li><a class="nav-link" href="#assay-workflow">Assay Workflow</a></li>
+<li><a class="nav-link" href="#common-analytes-measured-by-multiplex-bead-assays">Common Analytes Measured by Multiplex Bead Assays</a></li>
+<li><a class="nav-link" href="#considerations-for-panel-design">Considerations for Panel Design</a></li>
+<li><a class="nav-link" href="#data-analysis">Data Analysis</a></li>
+<li><a class="nav-link" href="#troubleshooting-multiplex-bead-assays">Troubleshooting Multiplex Bead Assays</a></li>
+<li><a class="nav-link" href="#key-terms-26">Key Terms</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Clinical-Hematology/blob/main/03-03-applications-multiplex-bead-assays.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Clinical-Hematology/edit/main/03-03-applications-multiplex-bead-assays.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3" style="text-align: center; flex: 100%; max-width: 100%;">
+    <p>Written by Brett M. Rice | Updated 2025-02-25 | Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div>
+
+  <!--div class="col-12 col-md-6 mt-3">
+    <p>Built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package</p>
+  </div-->
+
+</div></div>
+</footer>
+</body>
+</html>

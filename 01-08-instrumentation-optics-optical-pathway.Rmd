@@ -1,0 +1,146 @@
+# Optical Pathway {-}
+
+## **Overview of the Optical Pathway** {-}
+
+*   **Definition:** The optical pathway is the route that light takes from the light source, through the sample, and to the detectors in a flow cytometer
+*   **Purpose:**
+    *   **Excitation:** To deliver excitation light to the cells or particles, inducing fluorescence
+    *   **Collection:** To collect the emitted fluorescence and scattered light from the cells
+    *   **Separation:** To separate the different wavelengths of light and direct them to the appropriate detectors
+    *   **Detection:** To convert the light signals into electrical signals that can be processed and analyzed
+*   **Key Components:**
+    *   Light Source (Laser, LED, etc.)
+    *   Lenses (Focusing, Collimating, Collecting)
+    *   Mirrors (Dichroic, Reflective)
+    *   Filters (Bandpass, Longpass, Shortpass)
+    *   Beam Splitters
+    *   Flow Cell (Interrogation Point)
+    *   Detectors (PMTs, APDs, etc.)
+*   **Key Concepts:**
+    *   Transmission
+    *   Reflection
+    *   Interrogation Point
+    *   Collinear vs. Spatial Separation
+    *   Light Scatter
+
+## **Transmission** {-}
+
+*   **Definition:** The passage of light through a material
+*   **In Flow Cytometry:**
+    *   Light must be transmitted through lenses, filters, and the flow cell to reach the sample and detectors
+    *   The efficiency of transmission is critical for maximizing signal strength
+*   **Factors Affecting Transmission:**
+    *   Material Properties: The transparency and refractive index of the material
+    *   Wavelength: Some materials transmit certain wavelengths of light better than others
+    *   Surface Coatings: Anti-reflective coatings can improve transmission
+    *   Cleanliness: Dust, dirt, and fingerprints can reduce transmission
+
+## **Reflection** {-}
+
+*   **Definition:** The bouncing of light off a surface
+*   **In Flow Cytometry:**
+    *   Mirrors are used to redirect light beams along the optical pathway
+    *   Dichroic mirrors are used to selectively reflect certain wavelengths of light while transmitting others
+*   **Types of Mirrors:**
+    *   **Flat Mirrors:** Reflect light at an angle equal to the angle of incidence
+    *   **Concave Mirrors:** Focus light to a point
+    *   **Convex Mirrors:** Diverge light
+    *   **Dichroic Mirrors:** Reflect certain wavelengths and transmit others, used to separate excitation and emission light
+*   **Factors Affecting Reflection:**
+    *   Surface Material: The reflectivity of the material
+    *   Angle of Incidence: The angle at which light strikes the surface
+    *   Wavelength: Some materials reflect certain wavelengths of light better than others
+    *   Surface Smoothness: A smooth surface is essential for specular reflection (mirror-like reflection)
+
+## **Interrogation Point** {-}
+
+*   **Definition:** The specific location in the flow cell where the laser beam intersects the focused stream of cells or particles
+*   **Importance:**
+    *   Precise Alignment: The interrogation point must be precisely aligned with the optical pathway to ensure optimal excitation and detection
+    *   Small Volume: The interrogation volume should be small to minimize coincidence and improve resolution
+    *   Uniform Illumination: The laser beam should provide uniform illumination across the interrogation volume
+*   **Factors Affecting the Interrogation Point:**
+    *   Lens Alignment: Proper alignment of focusing lenses is critical for creating a sharp and well-defined interrogation point
+    *   Flow Cell Design: The geometry of the flow cell affects the shape and size of the focused stream of cells
+    *   Laser Beam Quality: A high-quality laser beam is essential for creating a uniform illumination spot
+
+## **Collinear vs. Spatial Separation** {-}
+
+*   **Collinear Optical Pathway:**
+    *   *Definition:* The excitation and emission light travel along the same optical axis
+    *   *Advantages:* Simple optical design
+    *   *Disadvantages:* Requires efficient filters to separate excitation and emission light, can be more susceptible to stray light
+    *   *Example:* Some older flow cytometer designs
+*   **Spatial Separation Optical Pathway:**
+    *   *Definition:* The excitation and emission light travel along different optical axes
+    *   *Advantages:* Easier to separate excitation and emission light, reduced stray light
+    *   *Disadvantages:* More complex optical design, requires precise alignment of multiple optical components
+    *   *Example:* Many modern flow cytometer designs
+
+## **Light Scatter** {-}
+
+*   **Definition:** The deflection of light by cells or particles
+*   **In Flow Cytometry:**
+    *   Provides information about cell size, shape, and internal complexity
+    *   Used to differentiate between different cell populations
+*   **Types of Light Scatter:**
+    *   **Forward Scatter (FSC):**
+        *   Measured in the forward direction, close to the laser beam
+        *   Primarily related to cell size
+        *   Used to distinguish between cells of different sizes
+    *   **Side Scatter (SSC):**
+        *   Measured at a 90-degree angle to the laser beam
+        *   Related to cell granularity and internal complexity
+        *   Used to distinguish between cells with different internal structures
+*   **Factors Affecting Light Scatter:**
+    *   Cell Size: Larger cells scatter more light
+    *   Cell Shape: Irregularly shaped cells scatter light differently than spherical cells
+    *   Internal Complexity: Cells with more internal structures (e.g., granules, nuclei) scatter more light at side angles
+    *   Refractive Index: The difference in refractive index between the cell and the surrounding medium affects the amount of light scattered
+    *   Wavelength: Shorter wavelengths of light are scattered more efficiently than longer wavelengths
+*   **Applications of Light Scatter:**
+    *   Cell Identification: Differentiating between different cell populations based on size and granularity
+    *   Cell Sorting: Selecting cells based on their light scatter properties
+    *   Cell Health Assessment: Detecting changes in cell size and granularity that may indicate cell stress or damage
+
+## **Common Optical Configurations** {-}
+
+*   **Single Laser, Multiple Detectors:**
+    *   A single laser is used to excite multiple fluorophores
+    *   Dichroic mirrors and bandpass filters are used to separate the emission light and direct it to different detectors
+    *   Compensation is used to correct for spectral overlap between fluorophores
+*   **Multiple Lasers, Multiple Detectors:**
+    *   Multiple lasers are used to excite different fluorophores
+    *   Each laser has its own set of filters and detectors
+    *   Allows for the simultaneous detection of a larger number of parameters
+*   **Imaging Flow Cytometry:**
+    *   Combines flow cytometry with microscopy
+    *   Uses an objective lens to form an image of the cells as they flow through the cytometer
+    *   Allows for the analysis of cell morphology and intracellular localization of fluorescent markers
+
+## **Troubleshooting Optical Pathway Issues** {-}
+
+*   **Weak Signals:**
+    *   *Causes:* Misaligned optics, dirty lenses or mirrors, low laser power, incorrect filter selection
+    *   *Solutions:* Align optics, clean lenses and mirrors, check laser power, verify filter selection
+*   **High Background Noise:**
+    *   *Causes:* Stray light, autofluorescence, incorrect filter selection
+    *   *Solutions:* Shield from stray light, optimize staining protocols, verify filter selection
+*   **Unexpected Spectral Overlap:**
+    *   *Causes:* Incorrect filter selection, broad fluorophore emission spectra, bleed-through of laser light
+    *   *Solutions:* Verify filter selection, choose fluorophores with minimal spectral overlap, use appropriate compensation techniques
+*   **Poor Resolution:**
+    *   *Causes:* Misaligned optics, aberrations, incorrect focusing
+    *   *Solutions:* Align optics, correct for aberrations, adjust focusing
+
+## **Key Terms** {-}
+
+*   **Transmission:** The passage of light through a material
+*   **Reflection:** The bouncing of light off a surface
+*   **Interrogation Point:** The location where the laser beam intersects the focused stream of cells
+*   **Collinear:** Aligned along the same axis
+*   **Spatial Separation:** Separated in space
+*   **Light Scatter:** The deflection of light by cells or particles
+*   **Forward Scatter (FSC):** Light scattered in the forward direction, related to cell size
+*   **Side Scatter (SSC):** Light scattered at a 90-degree angle, related to cell granularity
+*   **Dichroic Mirror:** A mirror that reflects certain wavelengths and transmits others
