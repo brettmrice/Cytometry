@@ -1,0 +1,55 @@
+# Content Areas {-}
+
+Source: <a href="https://www.ascp.org/boc/explore-credentials/view-all-credentials/SCYM" target="_blank">Specialist in Cytometry - SCYM</a>
+
+Major content areas covered:
+
+## **Instrumentation** {-}
+
+*   [Fluidics](fluidics.html)
+*   [Optics](optics.html)
+*   [Electronics](electronics.html)
+*   [Troubleshooting](troubleshooting.html)
+
+## **Panel/Experiment Design** {-}
+
+*   [Sample](sample.html)
+*   [Assay Development](assay-development.html)
+
+## **Applications** {-}
+
+*   [Immunophenotyping](immunophenotyping.html)
+*   [Functional Assays]()
+*   [Multiplex Bead Assays]()
+*   [Solid Organ Transplant]()
+*   [Stem Cell Analysis]()
+*   [Cell Cycle / DNA Ploidy]()
+*   [Rare Event Analysis]()
+*   [Small Particle Analysis]()
+*   [Fetal Hemoglobin Assay]()
+*   [Cell Sorting]()
+*   [Imaging Cytometry]()
+*   [Mass Cytometry]()
+
+## **Data** {-}
+
+*   [Data Standards]()
+*   [Signal Processing]()
+*   [Data Display]()
+*   [Gating]()
+*   [Statistical Methods]()
+*   [Common Data Modeling Techniques]()
+*   [Quantitative Cytometry]()
+*   [Troubleshooting]()
+
+## **Laboratory Operations** {-}
+
+*   [Quality Control]()
+*   [Assay Validation]()
+*   [Safety]()
+*   [Laboratory Administration]()
+
+## Last Updated {-}
+
+Last edit pushed to this site was on <span id="last_updated">`r Sys.Date()`</span>
+

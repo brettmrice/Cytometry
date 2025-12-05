@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Mass Cytometry | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Mass Cytometry (CyTOF)  Definition: Mass cytometry, also known as cytometry by time-of-flight (CyTOF), is a technique that uses antibodies conjugated to heavy metal isotopes to...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Mass Cytometry | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Mass Cytometry (CyTOF)  Definition: Mass cytometry, also known as cytometry by time-of-flight (CyTOF), is a technique that uses antibodies conjugated to heavy metal isotopes to...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mass Cytometry | CYM">
+<meta name="twitter:description" content="Overview of Mass Cytometry (CyTOF)  Definition: Mass cytometry, also known as cytometry by time-of-flight (CyTOF), is a technique that uses antibodies conjugated to heavy metal isotopes to...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="active" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mass-cytometry" class="section level1 unnumbered">
+<h1>Mass Cytometry<a class="anchor" aria-label="anchor" href="#mass-cytometry"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-mass-cytometry-cytof" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Mass Cytometry (CyTOF)</strong><a class="anchor" aria-label="anchor" href="#overview-of-mass-cytometry-cytof"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Mass cytometry, also known as cytometry by time-of-flight (CyTOF), is a technique that uses antibodies conjugated to heavy metal isotopes to quantify multiple cellular markers simultaneously</li>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Cells are labeled with antibodies conjugated to unique heavy metal isotopes</li>
+<li>The cells are introduced into an inductively coupled plasma mass spectrometer (ICP-MS)</li>
+<li>The ICP-MS atomizes and ionizes the cells, and then measures the mass-to-charge ratio of the metal isotopes</li>
+<li>The abundance of each metal isotope is proportional to the amount of antibody bound to the cell, which in turn is proportional to the expression level of the target marker</li>
+</ul>
+</li>
+<li>
+<strong>Advantages Over Traditional Flow Cytometry:</strong>
+<ul>
+<li>High Dimensionality: Can measure 40+ markers simultaneously, compared to the limited number of fluorochromes that can be used in traditional flow cytometry</li>
+<li>Minimal Spectral Overlap: Uses mass-to-charge ratio instead of fluorescence, eliminating the problem of spectral overlap</li>
+<li>High Sensitivity: Can detect low levels of protein expression</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>Lower Throughput: Slower than traditional flow cytometry</li>
+<li>Cell Destruction: The cells are destroyed during the ionization process, preventing cell sorting</li>
+<li>Specialized Equipment: Requires a specialized mass cytometer</li>
+<li>High Cost: More expensive than traditional flow cytometry</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Immunology</li>
+<li>Cancer Research</li>
+<li>Stem Cell Research</li>
+<li>Drug Discovery</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-components-of-a-mass-cytometer" class="section level2 unnumbered">
+<h2>
+<strong>Key Components of a Mass Cytometer</strong><a class="anchor" aria-label="anchor" href="#key-components-of-a-mass-cytometer"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Fluidics System:</strong>
+<ul>
+<li>Transports the cells from the sample tube to the nebulizer</li>
+<li>Maintains a stable and consistent flow rate</li>
+</ul>
+</li>
+<li>
+<strong>Nebulizer:</strong>
+<ul>
+<li>Converts the liquid sample into a fine aerosol</li>
+</ul>
+</li>
+<li>
+<strong>Inductively Coupled Plasma (ICP):</strong>
+<ul>
+<li>A high-temperature plasma that atomizes and ionizes the sample</li>
+<li>The ICP is generated by passing argon gas through a radiofrequency field</li>
+</ul>
+</li>
+<li>
+<strong>Mass Analyzer:</strong>
+<ul>
+<li>Separates the ions based on their mass-to-charge ratio</li>
+<li>The mass analyzer in a CyTOF instrument is typically a time-of-flight (TOF) mass spectrometer</li>
+</ul>
+</li>
+<li>
+<strong>Detector:</strong>
+<ul>
+<li>Detects the ions and measures their abundance</li>
+<li>The detector in a CyTOF instrument is typically an electron multiplier</li>
+</ul>
+</li>
+<li>
+<strong>Software System:</strong>
+<ul>
+<li>Controls the instrument</li>
+<li>Acquires and processes the data</li>
+<li>Provides data visualization and analysis tools</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="antibodies-and-metal-conjugation" class="section level2 unnumbered">
+<h2>
+<strong>Antibodies and Metal Conjugation</strong><a class="anchor" aria-label="anchor" href="#antibodies-and-metal-conjugation"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Antibodies:</strong>
+<ul>
+<li>Use high-quality antibodies that are specific for the target markers</li>
+<li>Validate antibodies for use in mass cytometry</li>
+</ul>
+</li>
+<li>
+<strong>Metal Conjugation:</strong>
+<ul>
+<li>Antibodies are conjugated to unique heavy metal isotopes using specialized conjugation kits</li>
+<li>The choice of metal isotope depends on its abundance, purity, and the availability of conjugation chemistry</li>
+</ul>
+</li>
+<li>
+<strong>Examples of Metal Isotopes:</strong>
+<ul>
+<li>Lanthanides: 139La, 141Pr, 142Nd, 143Nd, 144Nd, 145Nd, 146Nd, 147Sm, 148Sm, 149Sm, 150Nd, 151Eu, 152Sm, 153Eu, 154Sm, 155Gd, 156Gd, 157Gd, 158Gd, 159Tb, 160Gd, 161Dy, 162Dy, 163Dy, 164Dy, 165Ho, 166Er, 167Ho, 168Er, 169Tm, 170Er, 171Yb, 172Yb, 173Yb, 174Yb, 175Lu, 176Yb</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Metal Purity:</strong> Use high-purity metal isotopes to minimize background noise</li>
+<li>
+<strong>Conjugation Efficiency:</strong> Optimize the conjugation reaction to maximize the number of metal atoms per antibody molecule</li>
+<li>
+<strong>Antibody Titration:</strong> Titrate the metal-conjugated antibodies to determine the optimal concentration for staining</li>
+</ul>
+</li>
+<li>
+<strong>Barcoding and debarcoding:</strong>
+<ul>
+<li>Use of a metal conjugated to a DNA linker to label the sample</li>
+<li>This allows for multiple samples to be combined and to be analyzed at the same time, saving time and resources</li>
+<li>This needs to be removed from the data prior to analysis</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="sample-preparation-for-mass-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Sample Preparation for Mass Cytometry</strong><a class="anchor" aria-label="anchor" href="#sample-preparation-for-mass-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Cell Staining:</strong>
+<ul>
+<li>Label cells with metal-conjugated antibodies</li>
+<li>Use appropriate staining protocols to maximize signal intensity and minimize background noise</li>
+</ul>
+</li>
+<li>
+<strong>Fixation and Permeabilization:</strong>
+<ul>
+<li>Fix and permeabilize the cells to preserve cell structure and allow antibody access to intracellular targets</li>
+<li>Use appropriate fixation and permeabilization methods for the target antigens</li>
+</ul>
+</li>
+<li>
+<strong>DNA Intercalation:</strong>
+<ul>
+<li>Intercalate a metal-labeled DNA intercalator (e.g., iridium) into the DNA to allow for cell identification and doublet discrimination</li>
+</ul>
+</li>
+<li>
+<strong>Washing:</strong>
+<ul>
+<li>Wash the cells thoroughly to remove unbound antibodies and other contaminants</li>
+</ul>
+</li>
+<li>
+<strong>Filtration:</strong>
+<ul>
+<li>Filter the sample through a 35 um filter</li>
+</ul>
+</li>
+<li>
+<strong>Cell Concentration:</strong>
+<ul>
+<li>Ensure that the cell concentration is within the optimal range for the mass cytometer</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="data-analysis-for-mass-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Data Analysis for Mass Cytometry</strong><a class="anchor" aria-label="anchor" href="#data-analysis-for-mass-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Normalization:</strong>
+<ul>
+<li>Normalize the data to account for variations in instrument performance over time</li>
+<li>Use normalization beads to correct for signal drift</li>
+</ul>
+</li>
+<li>
+<strong>Deconvolution:</strong>
+<ul>
+<li>Deconvolve the data to remove signal from metal isotopes that have overlapping mass-to-charge ratios</li>
+</ul>
+</li>
+<li>
+<strong>Gating:</strong>
+<ul>
+<li>Use a hierarchical gating strategy to identify specific cell populations based on their marker expression</li>
+<li>Use appropriate controls to define gating boundaries</li>
+</ul>
+</li>
+<li>
+<strong>Visualization:</strong>
+<ul>
+<li>Use visualization tools to explore the high-dimensional data</li>
+<li>Common visualization methods include t-distributed stochastic neighbor embedding (t-SNE), uniform manifold approximation and projection (UMAP), and viSNE</li>
+</ul>
+</li>
+<li>
+<strong>Clustering:</strong>
+<ul>
+<li>Use clustering algorithms to identify groups of cells with similar marker expression profiles</li>
+<li>Common clustering algorithms include k-means clustering and hierarchical clustering</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="applications-of-mass-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Applications of Mass Cytometry</strong><a class="anchor" aria-label="anchor" href="#applications-of-mass-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Immunology:</strong>
+<ul>
+<li>Deep phenotyping of immune cell populations</li>
+<li>Studying immune responses to infection and vaccination</li>
+<li>Investigating the mechanisms of autoimmune diseases</li>
+</ul>
+</li>
+<li>
+<strong>Cancer Research:</strong>
+<ul>
+<li>Identifying and characterizing cancer stem cells</li>
+<li>Studying the tumor microenvironment</li>
+<li>Developing new cancer therapies</li>
+</ul>
+</li>
+<li>
+<strong>Stem Cell Research:</strong>
+<ul>
+<li>Characterizing stem cell differentiation and self-renewal</li>
+<li>Identifying novel stem cell markers</li>
+<li>Developing new stem cell therapies</li>
+</ul>
+</li>
+<li>
+<strong>Drug Discovery:</strong>
+<ul>
+<li>Screening for drugs that affect cellular signaling pathways</li>
+<li>Identifying drug targets</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-mass-cytometry-assays" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Mass Cytometry Assays</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-mass-cytometry-assays"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Event Rate:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Clogged nebulizer</li>
+<li>Low cell concentration</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Clean nebulizer</li>
+<li>Increase cell concentration</li>
+<li>Inspect instrument for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Contaminated reagents</li>
+<li>Poor antibody staining</li>
+<li>Instrument settings</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Use clean reagents</li>
+<li>Optimize antibody staining</li>
+<li>Adjust instrument settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Unexpected Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect antibody selection</li>
+<li>Improper sample preparation</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify antibody specificity</li>
+<li>Review sample preparation protocols</li>
+<li>Inspect instrument for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Data Normalization Issues:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Poor bead distribution</li>
+<li>Insufficient events acquired</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Improve bead mixing in samples</li>
+<li>Acquire adequate number of events</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="imaging-cytometry.html">Imaging Cytometry</a></div>
+<div class="next"><a href="standards.html">Standards</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#mass-cytometry">Mass Cytometry</a></li>
+<li><a class="nav-link" href="#overview-of-mass-cytometry-cytof">Overview of Mass Cytometry (CyTOF)</a></li>
+<li><a class="nav-link" href="#key-components-of-a-mass-cytometer">Key Components of a Mass Cytometer</a></li>
+<li><a class="nav-link" href="#antibodies-and-metal-conjugation">Antibodies and Metal Conjugation</a></li>
+<li><a class="nav-link" href="#sample-preparation-for-mass-cytometry">Sample Preparation for Mass Cytometry</a></li>
+<li><a class="nav-link" href="#data-analysis-for-mass-cytometry">Data Analysis for Mass Cytometry</a></li>
+<li><a class="nav-link" href="#applications-of-mass-cytometry">Applications of Mass Cytometry</a></li>
+<li><a class="nav-link" href="#troubleshooting-mass-cytometry-assays">Troubleshooting Mass Cytometry Assays</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/03-L.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/03-L.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+# (PART\*) Data
+
+# Standards {-}
+
+## **Overview of Data Standards** {-}
+
+*   **Definition:** Data standards are a set of guidelines and specifications that ensure data is collected, stored, and analyzed in a consistent and reproducible manner
+*   **Importance:**
+    *   Data Sharing: Facilitates data sharing and collaboration among researchers
+    *   Reproducibility: Ensures that experiments can be reproduced by others
+    *   Data Integration: Enables the integration of data from different experiments and different laboratories
+    *   Long-Term Archiving: Ensures that data can be accessed and analyzed in the future
+*   **Key Data Standards in Flow Cytometry:**
+    *   Image File Format
+    *   FCS Format
+    *   Listmode
+    *   MIFlowCyt Checklist
+    *   Storage Requirements
+
+## **Image File Format** {-}
+
+*   **Definition:** The format in which images from imaging flow cytometers are stored
+*   **Common Formats:**
+    *   TIFF (Tagged Image File Format): A flexible and widely supported format for storing images
+    *   JPEG (Joint Photographic Experts Group): A lossy compression format that is suitable for storing images with complex scenes
+    *   PNG (Portable Network Graphics): A lossless compression format that is suitable for storing images with sharp lines and text
+*   **Considerations:**
+    *   Lossy vs. Lossless Compression: Lossy compression reduces file size but can also reduce image quality; lossless compression preserves image quality but results in larger file sizes
+    *   Metadata: The image file should contain metadata that describes the image, such as the date and time it was acquired, the instrument settings, and the staining protocol
+* **For flow cytometry, it is recommend to keep all files in the lossless compression to maintain image quality**
+
+## **FCS Format (Flow Cytometry Standard)** {-}
+
+*   **Definition:** A data file format specifically designed for flow cytometry data
+*   **Purpose:**
+    *   Standardize data storage: Provides a standardized way to store flow cytometry data, ensuring that it can be read and analyzed by different software packages
+    *   Preserve Metadata: Stores metadata about the experiment, such as the instrument settings, the sample preparation protocol, and the antibody information
+*   **Versions:**
+    *   FCS 2.0: The original FCS standard, released in 1990
+    *   FCS 3.0: An updated version of the FCS standard, released in 1997
+    *   FCS 3.1: A further updated version of the FCS standard, released in 2010
+*   **Structure:**
+    *   Header: Contains information about the FCS file, such as the version number and the location of the text and data segments
+    *   Text Segment: Contains metadata about the experiment, such as the instrument settings, the sample preparation protocol, and the antibody information
+    *   Data Segment: Contains the raw data from the flow cytometer, such as the fluorescence and scatter values for each cell
+* **FCS files must include the following:**
+    *   Keywords: instrument settings (e.g. PMT voltages)
+    *   Units: values or parameters
+    *   Scaling: such as linear or logarithmic
+
+## **Listmode Data** {-}
+
+*   **Definition:** A method of storing flow cytometry data in which each event (cell or particle) is recorded as a list of values for each parameter being measured
+*   **Advantages:**
+    *   Flexibility: Allows for the analysis of the data using different gating strategies and analysis methods
+    *   Preservation of Raw Data: Preserves the raw data from the flow cytometer, allowing for reanalysis of the data in the future
+*   **Storage:**
+    *   Listmode data is typically stored in FCS files
+    *   The data segment of the FCS file contains the listmode data
+*   **Parameters:**
+    *   Each parameter in the listmode data corresponds to a specific measurement made by the flow cytometer, such as forward scatter, side scatter, or fluorescence intensity
+
+## **MIFlowCyt Checklist (Minimum Information About a Flow Cytometry Experiment)** {-}
+
+*   **Definition:** A checklist of the minimum information that should be reported about a flow cytometry experiment to ensure reproducibility and data quality
+*   **Purpose:**
+    *   Promote Transparency: Encourages researchers to be transparent about their methods and results
+    *   Improve Reproducibility: Provides a standardized way to report flow cytometry experiments, making it easier for others to reproduce the results
+    *   Enhance Data Quality: Ensures that all relevant information is included in the data analysis
+*   **Categories:**
+    *   Experiment Information: Details about the experiment, such as the title, the date, and the investigators
+    *   Sample Information: Details about the samples being analyzed, such as the source, the treatment, and the cell type
+    *   Instrument Information: Details about the flow cytometer used, such as the manufacturer, the model number, and the laser configuration
+    *   Reagent Information: Details about the antibodies and dyes used, such as the manufacturer, the clone number, and the fluorochrome
+    *   Data Analysis Information: Details about the data analysis methods used, such as the gating strategy and the compensation method
+* **Before submitting a study report, be sure that the MI flow Cyt checklist has been reviewed!**
+
+## **Storage Requirements** {-}
+
+*   **File Size:** Flow cytometry data files can be quite large, especially for high-dimensional experiments
+*   **Storage Media:**
+    *   Use reliable storage media, such as hard drives, solid-state drives, or cloud storage
+    *   Back up the data regularly to prevent data loss
+*   **Long-Term Archiving:**
+    *   Store the data in a format that is likely to be readable in the future (e.g., FCS)
+    *   Include metadata that describes the experiment and the data analysis methods
+    *   Consider using a data repository to archive the data
+
+## **Practical Data Management Tips** {-}
+
+*   **Consistent Naming Conventions:**
+    *   Develop and adhere to a consistent naming convention for files and folders
+    *   Include information about the experiment, the date, and the sample in the file name
+*   **Folder Organization:**
+    *   Organize data into folders based on experiment, date, or other relevant criteria
+    *   Use a hierarchical folder structure to make it easy to find data
+*   **Documentation:**
+    *   Keep detailed notes about the experiment, the data analysis methods, and any problems that were encountered
+    *   Store the notes in a text file or spreadsheet in the same folder as the data
+*   **Version Control:**
+    *   Use version control software to track changes to data and analysis scripts
+    *   This makes it easy to revert to previous versions if needed
+
+## **Troubleshooting Data Standard Issues** {-}
+
+*   **Incompatible Files:**
+    *   *Possible Causes:*
+        *   Incorrect file format
+        *   Corrupted file
+    *   *Troubleshooting Steps:*
+        *   Convert the file to the correct format
+        *   Repair or restore the file
+*   **Missing Metadata:**
+    *   *Possible Causes:*
+        *   Incomplete data entry
+        *   Software error
+    *   *Troubleshooting Steps:*
+        *   Enter the missing metadata manually
+        *   Update the software
+*   **Data Loss:**
+    *   *Possible Causes:*
+        *   Hardware failure
+        *   Human error
+    *   *Troubleshooting Steps:*
+        *   Restore from backup
+        *   Implement better data management practices

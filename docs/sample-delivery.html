@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Sample Delivery | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Sample Delivery Systems The sample delivery system is responsible for transporting the sample (containing cells or particles) from its container to the flow cell, where hydrodynamic...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Sample Delivery | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Sample Delivery Systems The sample delivery system is responsible for transporting the sample (containing cells or particles) from its container to the flow cell, where hydrodynamic...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sample Delivery | CYM">
+<meta name="twitter:description" content="Overview of Sample Delivery Systems The sample delivery system is responsible for transporting the sample (containing cells or particles) from its container to the flow cell, where hydrodynamic...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="active" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="sample-delivery" class="section level1 unnumbered">
+<h1>Sample Delivery<a class="anchor" aria-label="anchor" href="#sample-delivery"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-sample-delivery-systems" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Sample Delivery Systems</strong><a class="anchor" aria-label="anchor" href="#overview-of-sample-delivery-systems"><i class="fas fa-link"></i></a>
+</h2>
+<p>The sample delivery system is responsible for transporting the sample (containing cells or particles) from its container to the flow cell, where hydrodynamic focusing and interrogation occur. Different systems are used depending on the instrument design, sample volume, flow rate requirements, and the need for automation</p>
+<ul>
+<li>
+<p><strong>Key Requirements for Sample Delivery:</strong> {-}</p>
+<ul>
+<li>
+<strong>Precise Flow Control:</strong> Maintaining a consistent and accurate flow rate is crucial for stable hydrodynamic focusing and reliable data acquisition</li>
+<li>
+<strong>Minimal Sample Loss:</strong> Especially important when dealing with limited or precious samples</li>
+<li>
+<strong>Automation:</strong> The system needs to be compatible with automated sampling (e.g., from multiwell plates) for high-throughput applications</li>
+<li>
+<strong>Low Carryover:</strong> Minimizing cross-contamination between samples is essential for accurate results</li>
+<li>
+<strong>Biocompatibility:</strong> The system materials should be compatible with cells and reagents to avoid damage or interference</li>
+</ul>
+</li>
+<li>
+<p><strong>Types of Sample Delivery Systems</strong> {-}</p>
+<ul>
+<li>Syringe Pump Systems</li>
+<li>Pressure-Based Systems</li>
+<li>Vacuum-Based Systems</li>
+<li>Acoustic Focusing Systems</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="syringe-pump-systems" class="section level2 unnumbered">
+<h2>
+<strong>Syringe Pump Systems</strong><a class="anchor" aria-label="anchor" href="#syringe-pump-systems"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> A syringe pump uses a motor-driven plunger to precisely dispense the sample from a syringe at a controlled rate</li>
+<li>
+<strong>Mechanism:</strong>
+<ul>
+<li>A syringe containing the sample is mounted in the pump</li>
+<li>The motor drives the plunger forward, pushing the sample through tubing into the flow cell</li>
+<li>The flow rate is determined by the syringe size and the motor speed</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>Precise flow control:</strong> Excellent for maintaining consistent and accurate flow rates</li>
+<li>
+<strong>Low sample consumption:</strong> Can deliver very small volumes with high accuracy</li>
+<li>
+<strong>Closed system:</strong> Reduces the risk of contamination</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Limited sample volume:</strong> Syringe size restricts the total volume that can be analyzed</li>
+<li>
+<strong>Manual operation:</strong> Typically requires manual loading and unloading of syringes</li>
+<li>
+<strong>Potential for bubble formation:</strong> Air bubbles can form in the syringe or tubing, affecting flow</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Applications requiring precise sample delivery at a specific rate</li>
+<li>Good choice for precious samples when only a limited volume is available</li>
+<li>Particularly suitable for research applications</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="pressure-based-systems" class="section level2 unnumbered">
+<h2>
+<strong>Pressure-Based Systems</strong><a class="anchor" aria-label="anchor" href="#pressure-based-systems"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> A pressure differential is used to drive the sample from its container into the flow cell</li>
+<li>
+<strong>Mechanism:</strong>
+<ul>
+<li>A sample tube is connected to a pressurized gas source (e.g., air or nitrogen)</li>
+<li>The pressure forces the sample through tubing into the flow cell</li>
+<li>The flow rate is controlled by adjusting the pressure and the size of the tubing or a flow restrictor</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>Larger sample volumes:</strong> Can handle larger volumes compared to syringe pumps</li>
+<li>
+<strong>Faster aspiration:</strong> Samples can be introduced into the system more quickly</li>
+<li>
+<strong>Automated sampling:</strong> Well-suited for automated sampling from multiwell plates or tubes</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Less precise flow control:</strong> Flow rate can be more variable compared to syringe pumps</li>
+<li>
+<strong>Potential for cell damage:</strong> High pressure can potentially damage fragile cells</li>
+<li>
+<strong>Open system:</strong> Increased risk of contamination compared to closed systems</li>
+<li>
+<strong>Carryover risk:</strong> Inefficient washing protocols can result in sample carryover</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>High-throughput screening</li>
+<li>Clinical diagnostics</li>
+<li>Applications where larger sample volumes are analyzed</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="vacuum-based-systems" class="section level2 unnumbered">
+<h2>
+<strong>Vacuum-Based Systems</strong><a class="anchor" aria-label="anchor" href="#vacuum-based-systems"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> A vacuum is applied to the waste container to draw the sample through the flow cell</li>
+<li>
+<strong>Mechanism:</strong>
+<ul>
+<li>The sample tube is connected to the flow cell</li>
+<li>A vacuum pump creates a negative pressure in the waste container, pulling the sample through the flow cell</li>
+<li>The flow rate is controlled by adjusting the vacuum level or using a flow restrictor</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>Simplicity:</strong> Relatively simple design</li>
+<li>
+<strong>Automated sampling:</strong> Compatible with automated sampling systems</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Less precise flow control:</strong> Flow rate can be affected by variations in sample viscosity or tubing resistance</li>
+<li>
+<strong>Potential for cell damage:</strong> High vacuum can potentially damage cells</li>
+<li>
+<strong>Risk of contamination:</strong> Open system with potential for contamination</li>
+<li>
+<strong>Carryover:</strong> Inefficient washing protocols can result in sample carryover</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Applications where simplicity is favored over high precision</li>
+<li>Used in some older flow cytometer designs</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="acoustic-focusing-systems" class="section level2 unnumbered">
+<h2>
+<strong>Acoustic Focusing Systems</strong><a class="anchor" aria-label="anchor" href="#acoustic-focusing-systems"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Principle:</strong> Acoustic waves are used to focus and move the sample through the flow cell</li>
+<li>
+<strong>Mechanism:</strong>
+<ul>
+<li>Acoustic transducers generate sound waves that create pressure gradients in the fluid</li>
+<li>These pressure gradients focus the sample into a narrow stream and propel it through the interrogation point</li>
+</ul>
+</li>
+<li>
+<strong>Advantages:</strong>
+<ul>
+<li>
+<strong>Label-free cell focusing:</strong> Can focus cells without the need for sheath fluid in some designs</li>
+<li>
+<strong>Gentle cell handling:</strong> Minimizes cell damage compared to pressure-based systems</li>
+<li>
+<strong>Precise control:</strong> Can be used to manipulate and position cells in three dimensions</li>
+</ul>
+</li>
+<li>
+<strong>Disadvantages:</strong>
+<ul>
+<li>
+<strong>Complexity:</strong> More complex instrumentation compared to other systems</li>
+<li>
+<strong>Throughput limitations:</strong> Acoustic focusing can be slower than other methods</li>
+<li>
+<strong>Specialized applications:</strong> Not as widely used as other sample delivery methods</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Cell sorting</li>
+<li>Microfluidics</li>
+<li>Rare cell detection</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="comparison-table" class="section level2 unnumbered">
+<h2>
+<strong>Comparison Table</strong><a class="anchor" aria-label="anchor" href="#comparison-table"><i class="fas fa-link"></i></a>
+</h2>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="20%">
+<col width="19%">
+<col width="20%">
+<col width="20%">
+<col width="19%">
+</colgroup>
+<thead><tr class="header">
+<th>Feature</th>
+<th>Syringe Pump</th>
+<th>Pressure-Based</th>
+<th>Vacuum-Based</th>
+<th>Acoustic Focusing</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Flow Control</td>
+<td>Precise</td>
+<td>Less Precise</td>
+<td>Less Precise</td>
+<td>Precise</td>
+</tr>
+<tr class="even">
+<td>Sample Volume</td>
+<td>Limited</td>
+<td>Larger</td>
+<td>Larger</td>
+<td>Variable</td>
+</tr>
+<tr class="odd">
+<td>Automation</td>
+<td>Limited</td>
+<td>Good</td>
+<td>Good</td>
+<td>Variable</td>
+</tr>
+<tr class="even">
+<td>Cell Damage</td>
+<td>Low</td>
+<td>Moderate to High</td>
+<td>Moderate to High</td>
+<td>Very Low</td>
+</tr>
+<tr class="odd">
+<td>Contamination Risk</td>
+<td>Low</td>
+<td>Moderate</td>
+<td>Moderate</td>
+<td>Variable</td>
+</tr>
+<tr class="even">
+<td>Complexity</td>
+<td>Moderate</td>
+<td>Simple</td>
+<td>Simple</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>Moderate</td>
+<td>Low</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="troubleshooting-sample-delivery-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Sample Delivery Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-sample-delivery-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>No Flow:</strong>
+<ul>
+<li>
+<em>Causes:</em> Empty syringe or sample tube, blocked tubing, pump malfunction, or improper pressure/vacuum settings</li>
+<li>
+<em>Solutions:</em> Refill syringe/tube, check for blockages, inspect pump function, verify pressure/vacuum settings</li>
+</ul>
+</li>
+<li>
+<strong>Erratic Flow:</strong>
+<ul>
+<li>
+<em>Causes:</em> Air bubbles in the system, loose connections, pump malfunction, or fluctuating pressure/vacuum</li>
+<li>
+<em>Solutions:</em> Remove air bubbles, tighten connections, inspect pump function, stabilize pressure/vacuum</li>
+</ul>
+</li>
+<li>
+<strong>Low Aspiration Rate:</strong>
+<ul>
+<li>
+<em>Causes:</em> Clogged probe, insufficient pressure/vacuum, or viscous sample</li>
+<li>
+<em>Solutions:</em> Clean probe, increase pressure/vacuum, dilute sample</li>
+</ul>
+</li>
+<li>
+<strong>High Carryover:</strong>
+<ul>
+<li>
+<em>Causes:</em> Insufficient washing between samples, sticky samples, or contamination of the sampling probe</li>
+<li>
+<em>Solutions:</em> Increase wash volume, use appropriate cleaning solutions, and clean the sampling probe</li>
+</ul>
+</li>
+<li>
+<strong>Cell Damage:</strong>
+<ul>
+<li>
+<em>Causes:</em> Excessive pressure or vacuum, turbulent flow, or incompatible materials</li>
+<li>
+<em>Solutions:</em> Reduce pressure/vacuum, optimize flow conditions, and use biocompatible materials</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></div>
+<div class="next"><a href="optics.html">Optics</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#sample-delivery">Sample Delivery</a></li>
+<li><a class="nav-link" href="#overview-of-sample-delivery-systems">Overview of Sample Delivery Systems</a></li>
+<li><a class="nav-link" href="#syringe-pump-systems">Syringe Pump Systems</a></li>
+<li><a class="nav-link" href="#pressure-based-systems">Pressure-Based Systems</a></li>
+<li><a class="nav-link" href="#vacuum-based-systems">Vacuum-Based Systems</a></li>
+<li><a class="nav-link" href="#acoustic-focusing-systems">Acoustic Focusing Systems</a></li>
+<li><a class="nav-link" href="#comparison-table">Comparison Table</a></li>
+<li><a class="nav-link" href="#troubleshooting-sample-delivery-issues">Troubleshooting Sample Delivery Issues</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/01-A-02.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/01-A-02.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

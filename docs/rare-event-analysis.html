@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Rare Event Analysis | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Rare Event Analysis  Definition: Rare event analysis is the process of identifying and quantifying cell populations that occur at very low frequencies in a sample. Challenges: Low...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Rare Event Analysis | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Rare Event Analysis  Definition: Rare event analysis is the process of identifying and quantifying cell populations that occur at very low frequencies in a sample. Challenges: Low...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rare Event Analysis | CYM">
+<meta name="twitter:description" content="Overview of Rare Event Analysis  Definition: Rare event analysis is the process of identifying and quantifying cell populations that occur at very low frequencies in a sample. Challenges: Low...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="active" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="rare-event-analysis" class="section level1 unnumbered">
+<h1>Rare Event Analysis<a class="anchor" aria-label="anchor" href="#rare-event-analysis"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-rare-event-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Rare Event Analysis</strong><a class="anchor" aria-label="anchor" href="#overview-of-rare-event-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Rare event analysis is the process of identifying and quantifying cell populations that occur at very low frequencies in a sample.</li>
+<li>
+<strong>Challenges:</strong>
+<ul>
+<li>Low Frequency: Target cells may be present at very low frequencies, making them difficult to detect</li>
+<li>Background Noise: High background noise can obscure the signal from the target cells</li>
+<li>Sample Volume: Limited sample volume may restrict the number of events that can be acquired</li>
+<li>Specificity: Distinguishing rare events from background noise requires careful consideration of the specificity of the assay</li>
+</ul>
+</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Disease Diagnosis: To detect early signs of disease or monitor treatment response</li>
+<li>Therapeutic Monitoring: To monitor the effectiveness of therapies that target rare cell populations</li>
+<li>Research: To study the biology of rare cell populations and their role in disease</li>
+</ul>
+</li>
+<li>
+<strong>Common Applications:</strong>
+<ul>
+<li>Circulating Tumor Cells (CTCs)</li>
+<li>Measurable (Minimal) Residual Disease (MRD)</li>
+<li>Circulating Endothelial Cells (CECs)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="circulating-tumor-cells-ctcs" class="section level2 unnumbered">
+<h2>
+<strong>Circulating Tumor Cells (CTCs)</strong><a class="anchor" aria-label="anchor" href="#circulating-tumor-cells-ctcs"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Cells that have shed from a primary tumor and are circulating in the bloodstream</li>
+<li>
+<strong>Clinical Significance:</strong>
+<ul>
+<li>Prognosis: CTC counts can be used to predict the course of the disease</li>
+<li>Therapeutic Monitoring: Changes in CTC counts can be used to monitor the response to treatment</li>
+<li>Early Detection: CTC detection may allow for earlier detection of cancer recurrence</li>
+</ul>
+</li>
+<li>
+<strong>Methods for CTC Detection:</strong>
+<ul>
+<li>
+<strong>Enrichment:</strong>
+<ul>
+<li>
+<em>Immunomagnetic Enrichment:</em> Uses antibodies against cell surface markers to capture CTCs from the sample</li>
+<li>
+<em>Microfluidic Devices:</em> Uses microfluidic devices to separate CTCs from other cells based on size or other properties</li>
+</ul>
+</li>
+<li>
+<strong>Detection:</strong>
+<ul>
+<li>
+<em>Immunofluorescence Staining:</em> Uses fluorescent antibodies to identify CTCs based on their expression of specific markers (e.g., epithelial cell adhesion molecule (EpCAM), cytokeratins)</li>
+<li>
+<em>Flow Cytometry:</em> Uses flow cytometry to quantify the number of CTCs in the sample</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Markers Used for CTC Detection:</strong>
+<ul>
+<li>
+<strong>Epithelial Markers:</strong>
+<ul>
+<li>EpCAM: A cell surface protein that is expressed on most epithelial cells</li>
+<li>Cytokeratins: A family of intermediate filament proteins that are expressed in epithelial cells</li>
+</ul>
+</li>
+<li>
+<strong>Tumor-Specific Markers:</strong>
+<ul>
+<li>Markers that are specific for the type of cancer being studied</li>
+</ul>
+</li>
+<li>
+<strong>Markers to Exclude White Blood Cells:</strong>
+<ul>
+<li>CD45: A cell surface protein that is expressed on all leukocytes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>CTCs can be difficult to distinguish from normal cells</li>
+<li>The gating strategy must account for this and identify any cells that are epithelial, do not express CD45, and are also cancer specific</li>
+</ul>
+</li>
+<li><strong>Triple positive cells will be confirmed as CTCs</strong></li>
+</ul>
+</div>
+<div id="measurable-minimal-residual-disease-mrd" class="section level2 unnumbered">
+<h2>
+<strong>Measurable (Minimal) Residual Disease (MRD)</strong><a class="anchor" aria-label="anchor" href="#measurable-minimal-residual-disease-mrd"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The small number of cancer cells that remain in the body after treatment</li>
+<li>
+<strong>Clinical Significance:</strong>
+<ul>
+<li>Prognosis: MRD status is a strong predictor of relapse</li>
+<li>Therapeutic Monitoring: MRD monitoring can be used to guide treatment decisions</li>
+</ul>
+</li>
+<li>
+<strong>Methods for MRD Detection:</strong>
+<ul>
+<li>
+<strong>Flow Cytometry:</strong>
+<ul>
+<li>
+<em>Principle:</em> Uses flow cytometry to identify and quantify cancer cells based on their expression of specific markers</li>
+<li>
+<em>Advantages:</em> Can detect MRD at very low levels</li>
+<li>
+<em>Disadvantages:</em> Requires highly sensitive and specific antibodies</li>
+</ul>
+</li>
+<li>
+<strong>Polymerase Chain Reaction (PCR):</strong>
+<ul>
+<li>
+<em>Principle:</em> Uses PCR to amplify and detect cancer-specific DNA or RNA sequences</li>
+<li>
+<em>Advantages:</em> Can detect MRD at even lower levels than flow cytometry</li>
+<li>
+<em>Disadvantages:</em> Requires knowledge of cancer-specific DNA or RNA sequences</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Markers Used for MRD Detection:</strong>
+<ul>
+<li>
+<strong>Leukemia-Associated Immunophenotypes (LAIPs):</strong>
+<ul>
+<li>Abnormal patterns of marker expression that are specific for the type of leukemia being studied</li>
+</ul>
+</li>
+<li>
+<strong>Aberrant Marker Expression:</strong>
+<ul>
+<li>Expression of markers that are not normally expressed on the cell type being studied</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>How to optimize:</strong>
+<ul>
+<li>The use of at least eight different markers allows for the identification of LAIPs and greatly increases sensitivity</li>
+<li>In B-ALL, it has been shown to identify 1/10,000 events</li>
+</ul>
+</li>
+<li>
+<strong>Troubleshooting:</strong>
+<ul>
+<li>Lack of normal cells can mean the instrument is not sensitive enough</li>
+<li>The samples must be acquired with at least 2 million cells to ensure accurate results</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="circulating-endothelial-cells-cecs" class="section level2 unnumbered">
+<h2>
+<strong>Circulating Endothelial Cells (CECs)</strong><a class="anchor" aria-label="anchor" href="#circulating-endothelial-cells-cecs"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Cells that have detached from the lining of blood vessels and are circulating in the bloodstream</li>
+<li>
+<strong>Clinical Significance:</strong>
+<ul>
+<li>Angiogenesis: CECs are involved in the formation of new blood vessels</li>
+<li>Vascular Damage: Elevated levels of CECs can indicate damage to the blood vessels</li>
+<li>Disease Monitoring: CEC counts can be used to monitor the progression of diseases that affect the blood vessels</li>
+</ul>
+</li>
+<li>
+<strong>Methods for CEC Detection:</strong>
+<ul>
+<li>
+<strong>Enrichment:</strong>
+<ul>
+<li>
+<em>Immunomagnetic Enrichment:</em> Uses antibodies against endothelial cell markers to capture CECs from the sample</li>
+</ul>
+</li>
+<li>
+<strong>Detection:</strong>
+<ul>
+<li>
+<em>Immunofluorescence Staining:</em> Uses fluorescent antibodies to identify CECs based on their expression of specific markers (e.g., CD31, CD146, von Willebrand factor (vWF))</li>
+<li>
+<em>Flow Cytometry:</em> Uses flow cytometry to quantify the number of CECs in the sample</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Markers Used for CEC Detection:</strong>
+<ul>
+<li>
+<strong>Endothelial Cell Markers:</strong>
+<ul>
+<li>CD31 (PECAM-1): A cell surface protein that is expressed on endothelial cells and platelets</li>
+<li>CD146 (MCAM): A cell surface protein that is expressed on endothelial cells and some tumor cells</li>
+<li>vWF: A protein that is involved in blood clotting and is stored in endothelial cells</li>
+</ul>
+</li>
+<li>
+<strong>Markers to Exclude White Blood Cells:</strong>
+<ul>
+<li>CD45: A cell surface protein that is expressed on all leukocytes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Common CEC markers:</strong>
+<ul>
+<li>CD45 (negative), CD31 (positive), CD146 (positive)</li>
+</ul>
+</li>
+<li>
+<strong>Limitations:</strong>
+<ul>
+<li>CECs can be difficult to distinguish from endothelial progenitor cells (EPCs)</li>
+<li>The gating strategy must account for this</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>CECs are very rare, special techniques must be implemented to ensure accurate results
+<ul>
+<li>A large number of events should be required</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="general-strategies-for-rare-event-analysis" class="section level2 unnumbered">
+<h2>
+<strong>General Strategies for Rare Event Analysis</strong><a class="anchor" aria-label="anchor" href="#general-strategies-for-rare-event-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Enrichment:</strong>
+<ul>
+<li>Use cell enrichment techniques to increase the frequency of the target cells</li>
+<li>Immunomagnetic enrichment, microfluidic devices, and cell sorting can be used</li>
+</ul>
+</li>
+<li>
+<strong>High-Sensitivity Flow Cytometers:</strong>
+<ul>
+<li>Use flow cytometers with high sensitivity and low background noise</li>
+<li>Optimize instrument settings to maximize signal intensity</li>
+</ul>
+</li>
+<li>
+<strong>Large Sample Volumes:</strong>
+<ul>
+<li>Process large sample volumes to increase the number of target cells</li>
+<li>Use specialized tubes and collection devices to maximize sample recovery</li>
+</ul>
+</li>
+<li>
+<strong>Optimized Staining Protocols:</strong>
+<ul>
+<li>Use high-quality antibodies and dyes</li>
+<li>Optimize antibody concentrations and incubation times</li>
+<li>Use appropriate blocking reagents to reduce non-specific binding</li>
+</ul>
+</li>
+<li>
+<strong>Gating Strategies:</strong>
+<ul>
+<li>Use a hierarchical gating strategy to accurately identify the target cells</li>
+<li>Use appropriate controls to define gating boundaries and account for background noise</li>
+<li>Use Boolean gating to combine multiple markers and improve specificity</li>
+</ul>
+</li>
+<li>
+<strong>Statistical Analysis:</strong>
+<ul>
+<li>Use statistical methods to estimate the true frequency of the target cells and to assess the significance of the results</li>
+<li>Consider using Poisson statistics to account for the random distribution of rare events</li>
+</ul>
+</li>
+<li>
+<strong>Cell Acquisition Number:</strong>
+<ul>
+<li>Since a low number of events can skew the data, it is important to acquire as many events as possible</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-rare-event-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Rare Event Analysis</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-rare-event-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>No Events Detected:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Extremely low frequency of target cells</li>
+<li>Sample loss</li>
+<li>Technical error</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Check reagents, redo staining, and assess instrument function</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Gating Difficulties:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Lack of clear separation between target and non-target events</li>
+<li>High background noise</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Select new, more specific, markers or adjust concentrations and techniques to reduce background events</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Spurious Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Technical artifacts, high background</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Implement proper controls, and carefully re-evaluate data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="cell-cycle.html">Cell Cycle</a></div>
+<div class="next"><a href="small-particle-analysis.html">Small Particle Analysis</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#rare-event-analysis">Rare Event Analysis</a></li>
+<li><a class="nav-link" href="#overview-of-rare-event-analysis">Overview of Rare Event Analysis</a></li>
+<li><a class="nav-link" href="#circulating-tumor-cells-ctcs">Circulating Tumor Cells (CTCs)</a></li>
+<li><a class="nav-link" href="#measurable-minimal-residual-disease-mrd">Measurable (Minimal) Residual Disease (MRD)</a></li>
+<li><a class="nav-link" href="#circulating-endothelial-cells-cecs">Circulating Endothelial Cells (CECs)</a></li>
+<li><a class="nav-link" href="#general-strategies-for-rare-event-analysis">General Strategies for Rare Event Analysis</a></li>
+<li><a class="nav-link" href="#troubleshooting-rare-event-analysis">Troubleshooting Rare Event Analysis</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/03-G.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/03-G.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

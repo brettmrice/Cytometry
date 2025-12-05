@@ -1,0 +1,118 @@
+# Threshold/Discriminator {-}
+
+## **Overview of Threshold/Discriminator** {-}
+
+*   **Definition:** A threshold, also known as a discriminator, is a set value that an electronic signal must exceed in order to be recorded as an event by the flow cytometer
+*   **Purpose in Flow Cytometry:**
+    *   **Reduce Noise:** To eliminate background noise and low-amplitude signals from being recorded as events
+    *   **Discriminate Events:** To selectively record events of interest while ignoring unwanted events
+    *   **Improve Data Quality:** By reducing noise and unwanted events, the overall quality of the data is improved
+*   **Key Concepts:**
+    *   **Threshold Level:** The specific value that the signal must exceed
+    *   **Trigger Parameter:** The parameter that is used to determine whether the threshold is exceeded (e.g., forward scatter, side scatter, fluorescence channel)
+    *   **Event Recording:** Only events that exceed the threshold level are recorded and analyzed
+    *   **Data Analysis:** The threshold setting can affect the number of events recorded and the overall distribution of data
+
+## **Types of Thresholds** {-}
+
+*   **Single Threshold:**
+    *   *Definition:* A single value that the signal must exceed on a specific parameter
+    *   *Example:* A threshold set on forward scatter to exclude debris and small particles
+*   **Multiple Thresholds:**
+    *   *Definition:* Multiple values that the signal must exceed on different parameters
+    *   *Example:* A threshold set on forward scatter and a threshold set on side scatter to select a specific population of cells
+*   **Software Thresholds:**
+    *   *Definition:* Thresholds that are set and adjusted using software controls
+    *   *Advantages:* More flexible and easier to adjust than hardware thresholds
+*   **Hardware Thresholds:**
+    *   *Definition:* Thresholds that are set using physical components on the flow cytometer
+    *   *Advantages:* More stable and less susceptible to software glitches
+
+## **Setting Thresholds** {-}
+
+*   **Considerations:**
+    *   **Cell Type:** The size and complexity of the cells being analyzed
+    *   **Fluorophore Brightness:** The intensity of the fluorescence signal
+    *   **Background Noise:** The level of background noise in the system
+    *   **Experimental Goals:** The specific objectives of the experiment
+*   **Methods:**
+    1.  **Visual Inspection:** Examine the data on a scatter plot or histogram to identify the region of interest
+    2.  **Control Samples:** Use control samples (e.g., unstained cells) to determine the level of background noise
+    3.  **Titration:** Titrate the threshold level to optimize the separation between positive and negative populations
+    4.  **Automated Thresholding:** Use software algorithms to automatically set the threshold level based on the data
+
+## **Trigger Parameter Selection** {-}
+
+*   **Definition:** The parameter that is used to determine whether the threshold is exceeded
+*   **Common Trigger Parameters:**
+    *   **Forward Scatter (FSC):** Used to trigger on cells based on size
+    *   **Side Scatter (SSC):** Used to trigger on cells based on granularity
+    *   **Fluorescence Channel:** Used to trigger on cells based on fluorescence intensity
+*   **Considerations:**
+    *   **Cell Population of Interest:** Select a trigger parameter that is expressed by the cell population of interest
+    *   **Background Noise:** Avoid trigger parameters with high levels of background noise
+    *   **Experiment Objectives:** Select a trigger parameter that is relevant to the specific objectives of the experiment
+
+## **Impact of Threshold Settings** {-}
+
+*   **Low Threshold:**
+    *   *Advantages:*
+        *   Captures more events
+        *   Detects rare cell populations
+    *   *Disadvantages:*
+        *   Increases noise
+        *   Records unwanted events
+        *   Decreases data quality
+*   **High Threshold:**
+    *   *Advantages:*
+        *   Reduces noise
+        *   Records fewer unwanted events
+        *   Improves data quality
+    *   *Disadvantages:*
+        *   Loses events
+        *   May miss rare cell populations
+
+## **Optimizing Threshold Settings** {-}
+
+*   **Objective:** To find the optimal balance between capturing events of interest and reducing noise
+*   **Strategies:**
+    1.  **Start with a Low Threshold:** Begin with a low threshold to capture all possible events
+    2.  **Gradually Increase the Threshold:** Gradually increase the threshold level while monitoring the data
+    3.  **Monitor the Noise Level:** Pay close attention to the level of background noise
+    4.  **Optimize Separation:** Adjust the threshold to optimize the separation between positive and negative populations
+    5.  **Confirm with Controls:** Use control samples to confirm that the threshold setting is appropriate
+*   **General Considerations:**
+    *   If you are performing immunophenotyping, you will want to trigger on the cells of interest
+        *   If you are performing immunophenotyping on lymphocytes, trigger on CD45
+    *   If you are performing rare event analysis, you want to cast a very wide net by setting the threshold low
+    *   If you want to remove any carryover from the sheath fluid as well as remove debris, you will want to set the threshold on forward scatter (FSC)
+
+## **Troubleshooting Threshold Issues** {-}
+
+*   **Low Event Count:**
+    *   *Possible Causes:*
+        *   High threshold setting
+        *   Incorrect trigger parameter
+        *   Sample preparation issues
+    *   *Troubleshooting Steps:*
+        *   Reduce threshold setting
+        *   Verify trigger parameter
+        *   Optimize sample preparation
+*   **High Background Noise:**
+    *   *Possible Causes:*
+        *   Low threshold setting
+        *   Contaminated samples
+        *   Incorrect instrument settings
+    *   *Troubleshooting Steps:*
+        *   Increase threshold setting
+        *   Clean samples
+        *   Optimize instrument settings
+*   **Unexpected Event Populations:**
+    *   *Possible Causes:*
+        *   Incorrect threshold settings
+        *   Sample contamination
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Verify threshold settings
+        *   Check for sample contamination
+        *   Inspect instrument for malfunctions

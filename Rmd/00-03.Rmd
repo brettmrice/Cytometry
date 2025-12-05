@@ -1,0 +1,35 @@
+# ASCP BOC {-}
+
+Source: <a href="https://www.ascp.org/content/board-of-certification/get-credentialed#" target="_blank">MB(ASCP) and SMB(ASCP) Certifications > Applicant Resources > Content Guideline</a>
+
+ASCP BOC's Content Guideline for the Technologist in Molecular Biology, MB(ASCP), and the Specialist in Molecular Biology, SMB(ASCP), certification exams consists of five major content areas. The information below was last revised on ASCP's website June 2023
+
+## **Instrumentation** {-}
+
+**Exam Percentage:** 15% - 20%
+
+**Description:** Principles of fluidic, optical, and electronic instrumentation including troubleshooting
+
+## **Panel/Experiment Design** {-}
+
+**Exam Percentage:** 25% - 30%
+
+**Description:** Sample source, sample integrity, sample preparation and staining, cell enrichment, and assay development (including target, sample state for functional studies, probe types, fluorochrome selection, spectral overlap and compensation, assay controls, and assay optimization)
+
+## **Applications** {-}
+
+**Exam Percentage:** 25% - 30%
+
+**Description:** Immunophenotyping, functional assays, multiplex bead assays, solid organ transplant, stem cell analysis, cell cycle / DNA ploidy, rare event analysis, small particle analysis, fetal hemoglobin assay, cell sorting, imaging cytometry, and mass cytometry
+
+## **Data** {-}
+
+**Exam Percentage:** 15% - 20%
+
+**Description:** Data standards, signal processing, data display, gating, statistical methods, common data modeling techniques, quantitative cytometry, and troubleshooting
+
+## **Laboratory Operations** {-}
+
+**Exam Percentage:** 10% - 15%
+
+**Description:** Quality control, assay validation, safety, and laboratory administration 

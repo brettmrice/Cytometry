@@ -1,0 +1,122 @@
+# Instrument QC {-}
+
+## **Overview of Instrument Quality Control (QC)** {-}
+
+*   **Definition:** Instrument quality control (IQC) refers to the procedures and practices used to ensure that a flow cytometer is operating according to its specifications and is producing accurate and reliable data
+*   **Importance:**
+    *   Data Accuracy: To ensure that the data accurately reflects the biological system being studied
+    *   Reproducibility: To ensure that experiments can be reproduced over time
+    *   Compliance: To comply with regulatory requirements and accreditation standards
+*   **Key Aspects of Instrument Quality Control:**
+    *   Optical Alignment
+    *   Detector Calibration
+    *   Fluidics System Checks
+    *   Electronic Stability
+
+## **Optical Alignment** {-}
+
+*   **Definition:** The process of ensuring that the lasers, lenses, mirrors, and detectors in the flow cytometer are properly aligned
+*   **Importance:**
+    *   Optimal Signal: To maximize the amount of light that reaches the detectors
+    *   Consistent Performance: To ensure consistent performance of the flow cytometer over time
+    *   Accurate Measurements: To ensure that the fluorescence and scatter measurements are accurate
+*   **Methods:**
+    *   Visual Inspection:
+        *   Inspect the optical components for any signs of damage or misalignment
+        *   Look for any obstructions or debris in the light path
+    *   Alignment Beads:
+        *   Use alignment beads to optimize the position of the lasers and detectors
+        *   Adjust the alignment until the beads are centered in the flow cell and the signal intensity is maximized
+    *   Software Tools:
+        *   Use software tools to monitor the alignment of the optical system over time
+        *   The software may provide guidance on how to adjust the alignment
+*   **Troubleshooting Common Optical Misalignment Problems:**
+    *   Weak Signals:
+        *   Make sure there are no obstructions, and verify laser function.
+    *   Variability:
+        *   Use the QC beads to assess instrument performance.
+        *   Clean, repair, or replace parts, as needed.
+*   **General notes:**
+    *   Optical alignment should occur when there are any known issues or at a fixed interval (e.g. weekly)
+
+## **Detector Calibration** {-}
+
+*   **Definition:** The process of adjusting the voltages of the detectors (PMTs or APDs) to ensure that they are responding linearly to changes in light intensity
+*   **Importance:**
+    *   Accurate Quantification: To ensure that the fluorescence values accurately reflect the expression of the target antigens
+    *   Data Comparison: To allow for comparison of data from different experiments or different instruments
+*   **Methods:**
+    1.  **Calibration Beads:**
+        *   Use a set of calibration beads with known fluorescence intensities
+        *   The calibration beads are typically labeled with a range of fluorescence intensities that span the range of the flow cytometer
+    2.  **Voltage Adjustment:**
+        *   Run the calibration beads on the flow cytometer
+        *   Adjust the detector voltages until the fluorescence intensity values of the beads match their known values
+    3.  **Linearity Check:**
+        *   Verify that the detectors are responding linearly to changes in light intensity
+        *   This can be done by plotting the fluorescence intensity values of the calibration beads against their known MESF values
+*   **Linearity of Voltage should be carefully checked**
+
+## **Fluidics System Checks** {-}
+
+*   **Definition:** The process of verifying that the fluidics system is functioning properly
+*   **Importance:**
+    *   Stable Flow Rate: To ensure a stable and consistent flow rate, which is essential for accurate cell counting and sizing
+    *   Proper Focusing: To ensure that the cells are properly focused, which is essential for optimal signal intensity and resolution
+    *   Prevention of Clogging: To prevent clogging of the flow cell or tubing, which can disrupt the flow of cells
+*   **Methods:**
+    *   Flow Rate Measurement:
+        *   Measure the flow rate using a graduated cylinder and a timer
+        *   Compare the measured flow rate to the expected flow rate
+    *   Bubble Check:
+        *   Inspect the tubing and flow cell for air bubbles
+        *   Remove any air bubbles that are present
+    *   Pressure Check:
+        *   Monitor the pressure readings in the fluidics system
+        *   Ensure that the pressure is within the acceptable range
+*   **Examples of tests for fluidics system checks:**
+    *   Verify that the sheath fluid is at the appropriate level
+    *   Remove any air bubbles
+    *   Clean the instrument with detergent, especially after running sticky samples
+
+## **Electronic Stability** {-}
+
+*   **Definition:** Assessing the stability of the flow cytometer's electronics, which can affect the accuracy and reproducibility of the measurements
+*   **Importance:**
+    *   Ensure that the data is consistent.
+    *   To allow results to be properly interpreted and to troubleshoot other aspects.
+*   **Electronic stability can be affected by:**
+    *   Room temperature fluctuation
+    *   Variances from normal conditions
+*   **How to troubleshoot:**
+    *   Assess the flow rate and stability with calibration beads before and after running samples
+
+## **Troubleshooting Instrument Quality Control Issues** {-}
+
+*   **Weak Signals:**
+    *   *Possible Causes:*
+        *   Misaligned optics
+        *   Low laser power
+        *   Incorrect detector settings
+    *   *Troubleshooting Steps:*
+        *   Align the optical system
+        *   Check laser power
+        *   Adjust detector settings
+*   **High Background Noise:**
+    *   *Possible Causes:*
+        *   Contaminated reagents
+        *   Incorrect instrument settings
+        *   Electrical interference
+    *   *Troubleshooting Steps:*
+        *   Use clean reagents
+        *   Optimize instrument settings
+        *   Reduce electrical interference
+*   **Variable Results:**
+    *   *Possible Causes:*
+        *   Inconsistent technique
+        *   Instrument instability
+        *   Sample heterogeneity
+    *   *Troubleshooting Steps:*
+        *   Standardize IQC protocols
+        *   Calibrate instrument
+        *   Increase sample size

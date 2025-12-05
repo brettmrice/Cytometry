@@ -1,0 +1,5 @@
+part-instrumentation
+part-panel-design
+part-applications
+part-data
+part-lab-operations

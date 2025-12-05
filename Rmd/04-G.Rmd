@@ -1,0 +1,119 @@
+# Quantitative Cytometry {-}
+
+## **Overview of Quantitative Cytometry** {-}
+
+*   **Definition:** Quantitative cytometry is the process of measuring cellular characteristics in absolute, standardized units rather than arbitrary fluorescence units
+*   **Purpose:**
+    *   Standardization: To standardize flow cytometry measurements, making them comparable across different instruments, laboratories, and time points
+    *   Calibration: To calibrate the flow cytometer and ensure accurate measurements
+    *   Quantification: To quantify the absolute number of molecules on the cell surface or within the cell
+*   **Key Concepts:**
+    *   Molecules of Equivalent Soluble Fluorochrome (MESF)
+    *   Absolute Counts
+
+## **Molecules of Equivalent Soluble Fluorochrome (MESF)** {-}
+
+*   **Definition:** A unit of measurement that is used to express the amount of fluorescence emitted by a cell in terms of the number of equivalent molecules of a soluble fluorochrome (e.g., FITC, PE, APC)
+*   **Purpose:**
+    *   Standardization: To standardize flow cytometry measurements across different instruments and laboratories
+    *   Calibration: To calibrate the flow cytometer and ensure accurate fluorescence measurements
+*   **Methods:**
+    1.  **Calibration Beads:**
+        *   Use a set of calibration beads with known MESF values for different fluorochromes
+        *   The calibration beads are typically labeled with a range of fluorescence intensities that span the range of the flow cytometer
+    2.  **Standard Curve:**
+        *   Run the calibration beads on the flow cytometer and measure their fluorescence intensity
+        *   Create a standard curve that relates fluorescence intensity to MESF values
+    3.  **Sample Measurement:**
+        *   Run the experimental samples on the flow cytometer and measure their fluorescence intensity
+    4.  **Conversion to MESF:**
+        *   Use the standard curve to convert the fluorescence intensity values of the experimental samples to MESF values
+*   **Calculating MESF values:**
+    *   When a cell is run, the data is collected in an arbitrary unit
+    *   There is no direct information on the amount of bound antibody
+    *   Using fluorescent beads with known levels of fluorescence, you can make a relationship between the flow cytometer output and the amount of fluorescence that is present
+*   **Troubleshooting:**
+    *   Check laser delay before each test, as the delay can vary.
+
+## **Absolute Counts** {-}
+
+*   **Definition:** The number of cells per unit volume (e.g., cells/μL)
+*   **Purpose:**
+    *   Quantification: To quantify the absolute number of cells in a sample
+    *   Clinical Applications: To diagnose and monitor diseases based on the absolute counts of specific cell populations
+*   **Methods:**
+    *   **Manual Counting:**
+        *   Use a hemocytometer to manually count the cells in a known volume of sample
+        *   Calculate the cell concentration using the following formula: Cell concentration = (Number of cells counted / Volume of counting chamber) x Dilution factor
+        *   Advantage: Simple and inexpensive
+        *   Disadvantages: Labor-intensive and prone to error
+    *   **Automated Cell Counters:**
+        *   Use an automated cell counter to measure the cell concentration
+        *   Automated cell counters use various techniques to count cells, such as impedance counting, light scattering, or fluorescence
+        *   Advantage: Fast and accurate
+        *   Disadvantage: Can be expensive
+    *   **Flow Cytometry with Counting Beads:**
+        *   Add a known concentration of fluorescent beads to the sample as an internal control
+        *   Acquire the sample on a flow cytometer, counting the number of cells and beads
+        *   Calculate the cell concentration using the following formula: Cell concentration = (Number of cells / Number of beads) x (Number of beads added / Sample volume)
+        *   Advantage: Accurate and precise
+        *   Disadvantage: Requires a flow cytometer and fluorescent beads
+        *   **This method is the most common and accurate**
+*   **Mathematical formula:**
+    *   [Cells] = (Events<sub>cells</sub>/Events<sub>beads</sub>) x [Beads]
+
+## **Applications of Quantitative Cytometry** {-}
+
+*   **Clinical Diagnostics:**
+    *   Monitoring CD4+ T cell counts in HIV/AIDS patients
+    *   Measuring minimal residual disease (MRD) in leukemia patients
+    *   Quantifying circulating tumor cells (CTCs) in cancer patients
+*   **Research:**
+    *   Studying the effects of drugs or other treatments on cell marker expression
+    *   Identifying novel cell subsets based on their marker expression profiles
+    *   Developing new diagnostic or therapeutic strategies
+
+## **Considerations for Quantitative Cytometry** {-}
+
+*   **Sample Preparation:**
+    *   Use consistent sample preparation protocols to minimize variability
+    *   Remove cell aggregates and debris
+*   **Instrument Calibration:**
+    *   Calibrate the flow cytometer regularly to ensure accurate measurements
+    *   Use calibration beads to calibrate the instrument for fluorescence and scatter
+*   **Controls:**
+    *   Use appropriate controls to validate the assay and to account for background noise
+    *   Use isotype controls, FMO controls, and compensation controls
+*   **Data Analysis:**
+    *   Use appropriate data analysis methods to quantify the expression of cell markers and to calculate absolute counts
+    *   Use statistical methods to assess the significance of the results
+
+## **Troubleshooting Quantitative Cytometry Assays** {-}
+
+*   **Inaccurate MESF Values:**
+    *   *Possible Causes:*
+        *   Incorrect calibration
+        *   Poor compensation
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Re-calibrate the instrument
+        *   Verify compensation settings
+        *   Inspect instrument for malfunctions
+*   **Inaccurate Absolute Counts:**
+    *   *Possible Causes:*
+        *   Incorrect counting
+        *   Sample loss
+        *   Cell aggregation
+    *   *Troubleshooting Steps:*
+        *   Re-count samples
+        *   Optimize sample preparation
+        *   Inspect instrument for malfunctions
+*   **Variable Results:**
+    *   *Possible Causes:*
+        *   Inconsistent technique
+        *   Instrument instability
+        *   Sample heterogeneity
+    *   *Troubleshooting Steps:*
+        *   Standardize assay protocols
+        *   Calibrate instrument
+        *   Increase sample size

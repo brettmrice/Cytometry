@@ -1,0 +1,110 @@
+# Biosafety Procedures {-}
+
+## **Overview of Biosafety Procedures** {-}
+
+*   **Definition:** Biosafety procedures are practices and protocols designed to prevent or minimize the exposure of laboratory workers and the environment to potentially infectious materials or biohazards
+*   **Importance:**
+    *   Protect Laboratory Workers: To prevent infections and other health hazards
+    *   Prevent Environmental Contamination: To prevent the release of biohazards into the environment
+    *   Comply with Regulations: To comply with regulatory requirements and accreditation standards
+*   **Key Components of Biosafety Procedures:**
+    *   Biosafety Categories
+    *   Personal Protective Equipment (PPE)
+    *   Specimen Transport and Preparation Precautions
+    *   Aerosol Control
+    *   Decontamination
+
+## **Biosafety Categories (Biosafety Levels - BSLs)** {-}
+
+*   **Definition:** A system for classifying biological agents based on their potential to cause disease and the severity of the disease
+*   **Purpose:**
+    *   Determine Appropriate Containment: To determine the appropriate level of containment and safety practices for working with different biological agents
+    *   Protect Laboratory Workers: To protect laboratory workers from exposure to potentially infectious materials
+*   **Biosafety Levels:**
+    *   **Biosafety Level 1 (BSL-1):**
+        *   *Agents:* Agents that are not known to cause disease in healthy adults
+        *   *Practices:* Standard microbiological practices, such as handwashing and use of personal protective equipment (PPE)
+        *   *Facilities:* Basic laboratory facilities with standard equipment
+        *   *Example Agents:* Non-pathogenic strains of E. coli, Bacillus subtilis
+    *   **Biosafety Level 2 (BSL-2):**
+        *   *Agents:* Agents that can cause disease in humans but are not typically transmitted through the air
+        *   *Practices:* BSL-1 practices, plus limited access, use of biological safety cabinets (BSCs), and appropriate waste disposal
+        *   *Facilities:* BSL-1 facilities, plus self-closing doors and eyewash stations
+        *   *Example Agents:* HIV, hepatitis B virus, Salmonella, Staphylococcus aureus
+    *   **Biosafety Level 3 (BSL-3):**
+        *   *Agents:* Agents that can cause serious or potentially lethal disease and can be transmitted through the air
+        *   *Practices:* BSL-2 practices, plus controlled access, respiratory protection, and specialized ventilation systems
+        *   *Facilities:* BSL-2 facilities, plus sealed windows, filtered air exhaust, and negative air pressure
+        *   *Example Agents:* Mycobacterium tuberculosis, Bacillus anthracis, SARS-CoV-2
+    *   **Biosafety Level 4 (BSL-4):**
+        *   *Agents:* Agents that can cause highly dangerous or lethal disease and for which there are no vaccines or treatments
+        *   *Practices:* BSL-3 practices, plus complete isolation of the laboratory worker from the agent
+        *   *Facilities:* BSL-3 facilities, plus a separate, sealed building with specialized ventilation and waste management systems
+        *   *Example Agents:* Ebola virus, Marburg virus
+* **Personnel must have proper training before working in these environments!**
+
+## **Personal Protective Equipment (PPE)** {-}
+
+*   **Definition:** Equipment worn by laboratory workers to protect them from exposure to potentially infectious materials
+*   **Common Types of PPE:**
+    *   Gloves: Protect hands from contamination
+    *   Gowns: Protect clothing from contamination
+    *   Eye Protection (e.g., safety glasses, face shields): Protect eyes from splashes or aerosols
+    *   Respiratory Protection (e.g., N95 respirators): Protect respiratory system from airborne pathogens
+*   **Proper Use of PPE:**
+    *   Select the appropriate PPE for the task being performed
+    *   Inspect PPE for any damage or defects before use
+    *   Put on PPE in the correct order
+    *   Remove PPE carefully to avoid contamination
+    *   Dispose of contaminated PPE properly
+*  **PPE must be provided to every worker in the laboratory**
+
+## **Specimen Transport and Preparation Precautions** {-}
+
+*   **Proper Containment:** Use leak-proof containers to transport specimens
+    *   Seal specimens to avoid any leak during the transportation process
+*   **Appropriate Labeling:** Label all specimen containers with the biohazard symbol and the appropriate biosafety level
+*   **Specimen Preparation in Biological Safety Cabinet (BSC):**
+    *   Preparation involving infectious material must be performed in a BSC
+
+## **Aerosols** {-}
+
+*   **Definition:** Airborne particles that can carry infectious agents
+*   **Sources of Aerosols in Flow Cytometry:**
+    *   Cell Sorting: High-pressure droplet formation can generate aerosols
+    *   Pipetting: Forceful pipetting can generate aerosols
+    *   Centrifugation: Improperly sealed centrifuge tubes can release aerosols
+    *   Opening Specimen Containers: Opening containers with internal pressure can release aerosols
+*   **Aerosol Control Measures:**
+    *   Use Biological Safety Cabinets (BSCs): To contain aerosols
+    *   Use Sealed Centrifuge Rotors: To prevent aerosols from being released during centrifugation
+    *   Use Safety Pipettes: To prevent aerosols from being generated during pipetting
+    *   Disinfect Work Surfaces: Regularly disinfect work surfaces with appropriate disinfectant
+*   **Instruments should be routinely inspected for aerosol reduction, as well as follow the operation and maintenance manual**
+
+## **Decontamination** {-}
+
+*   **Definition:** The process of removing or neutralizing contaminants on surfaces or in materials
+*   **Purpose:**
+    *   Prevent Infections: To prevent the spread of infectious agents
+    *   Create a Safe Working Environment: To create a safe working environment for laboratory workers
+*   **Common Decontamination Methods:**
+    *   Chemical Disinfection: Use of chemical disinfectants (e.g., bleach, alcohol) to kill or inactivate microorganisms
+    *   Autoclaving: Use of high-pressure steam to sterilize equipment and materials
+    *   Incineration: Burning contaminated materials to destroy infectious agents
+*   **Choice of Disinfectant:**
+    *   Select a disinfectant that is effective against the specific agents being used
+    *   Follow the manufacturer's instructions for use
+*   **Biohazardous waste must be discarded properly into biohazard disposal containers**
+
+## **Emergency Procedures** {-}
+
+*   **Spill Response:**
+    *   Have a written spill response plan in place
+    *   Provide spill kits with all of the necessary materials
+*   **Exposure Response:**
+    *   Have a written exposure response plan in place
+    *   Provide medical attention if a worker has been exposed
+*   **Training for all Laboratory Personnel:**
+    *   Ensure that all laboratory personnel are trained in biosafety procedures
+    *   Provide regular refresher training

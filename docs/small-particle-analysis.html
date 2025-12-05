@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Small Particle Analysis | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Small Particle Analysis  Definition: Small particle analysis refers to the use of flow cytometry to characterize particles that are smaller than typical cells, ranging in size from...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Small Particle Analysis | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Small Particle Analysis  Definition: Small particle analysis refers to the use of flow cytometry to characterize particles that are smaller than typical cells, ranging in size from...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Small Particle Analysis | CYM">
+<meta name="twitter:description" content="Overview of Small Particle Analysis  Definition: Small particle analysis refers to the use of flow cytometry to characterize particles that are smaller than typical cells, ranging in size from...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="active" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="small-particle-analysis" class="section level1 unnumbered">
+<h1>Small Particle Analysis<a class="anchor" aria-label="anchor" href="#small-particle-analysis"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-small-particle-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Small Particle Analysis</strong><a class="anchor" aria-label="anchor" href="#overview-of-small-particle-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Small particle analysis refers to the use of flow cytometry to characterize particles that are smaller than typical cells, ranging in size from approximately 50 nm to 1 μm</li>
+<li>
+<strong>Challenges:</strong>
+<ul>
+<li>
+<strong>Size Limitations:</strong> Conventional flow cytometers are not optimized for detecting particles below 1 μm</li>
+<li>
+<strong>Low Signal Intensity:</strong> Small particles scatter less light and emit less fluorescence than larger cells, resulting in weak signals</li>
+<li>
+<strong>High Background Noise:</strong> High background noise can obscure the signal from small particles</li>
+<li>
+<strong>Resolution:</strong> Resolving different populations of small particles can be challenging</li>
+</ul>
+</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>Extracellular Vesicle (EV) Research: To study the role of EVs in cell-cell communication and disease</li>
+<li>Virus Detection: To detect and quantify viruses</li>
+<li>Nanoparticle Characterization: To characterize the size, concentration, and surface properties of nanoparticles</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Extracellular Vesicles (EVs)</li>
+<li>Viruses</li>
+<li>Nanoparticles</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="extracellular-vesicles-evs" class="section level2 unnumbered">
+<h2>
+<strong>Extracellular Vesicles (EVs)</strong><a class="anchor" aria-label="anchor" href="#extracellular-vesicles-evs"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Membrane-bound vesicles that are released by cells and can transport proteins, nucleic acids, and other molecules to other cells</li>
+<li>
+<strong>Types:</strong>
+<ul>
+<li>Exosomes: Small vesicles (30-150 nm) that are formed inside cells and released upon fusion of multivesicular bodies with the plasma membrane</li>
+<li>Microvesicles: Larger vesicles (100-1000 nm) that are shed directly from the plasma membrane</li>
+<li>Apoptotic Bodies: Vesicles that are released during apoptosis</li>
+</ul>
+</li>
+<li>
+<strong>Clinical Significance:</strong>
+<ul>
+<li>Cell-Cell Communication: EVs play a role in cell-cell communication</li>
+<li>Disease Biomarkers: EVs can serve as biomarkers for various diseases</li>
+<li>Therapeutic Delivery: EVs can be used as vehicles for delivering drugs or other therapeutic agents</li>
+</ul>
+</li>
+<li>
+<strong>Methods for EV Analysis:</strong>
+<ul>
+<li>
+<strong>Sample Preparation:</strong>
+<ul>
+<li>Remove Cells and Debris: Centrifuge or filter the sample to remove cells and debris</li>
+<li>Concentrate EVs: Use ultracentrifugation, ultrafiltration, or other methods to concentrate the EVs</li>
+</ul>
+</li>
+<li>
+<strong>Staining:</strong>
+<ul>
+<li>Label EVs with fluorescent antibodies against surface markers</li>
+<li>Use appropriate controls to account for non-specific binding</li>
+</ul>
+</li>
+<li>
+<strong>Flow Cytometry:</strong>
+<ul>
+<li>Use a flow cytometer that is optimized for small particle detection</li>
+<li>Use appropriate gating strategies to identify EVs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="virus-detection" class="section level2 unnumbered">
+<h2>
+<strong>Virus Detection</strong><a class="anchor" aria-label="anchor" href="#virus-detection"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Identifying and quantifying viruses using flow cytometry</li>
+<li>
+<strong>Methods:</strong>
+<ul>
+<li>
+<strong>Direct Detection:</strong>
+<ul>
+<li>
+<em>Principle:</em> Uses fluorescent antibodies that bind directly to viral antigens</li>
+<li>
+<em>Advantages:</em> Can detect viruses without amplification</li>
+<li>
+<em>Disadvantages:</em> Requires high-affinity antibodies</li>
+</ul>
+</li>
+<li>
+<strong>Indirect Detection:</strong>
+<ul>
+<li>
+<em>Principle:</em> Uses fluorescent antibodies that bind to cells that are infected with the virus</li>
+<li>
+<em>Advantages:</em> Can detect viruses even if antibodies against viral antigens are not available</li>
+<li>
+<em>Disadvantages:</em> Requires cell culture</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Virus-Specific Antibodies:</strong> You must have antibodies that bind to the virus of interest</li>
+<li>
+<strong>Techniques:</strong> Due to the small size of viruses, they can be difficult to detect by flow cytometry</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Tracking a viral infection</li>
+<li>Assessing the efficacy of anti-viral compounds</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="nanoparticle-characterization" class="section level2 unnumbered">
+<h2>
+<strong>Nanoparticle Characterization</strong><a class="anchor" aria-label="anchor" href="#nanoparticle-characterization"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Characterizing the size, concentration, and surface properties of nanoparticles using flow cytometry</li>
+<li>
+<strong>Methods:</strong>
+<ul>
+<li>
+<strong>Size Measurement:</strong> Use calibrated beads to create a standard curve for size measurement</li>
+<li>
+<strong>Concentration Measurement:</strong> Add a known concentration of fluorescent beads to the sample as an internal standard</li>
+<li>
+<strong>Surface Characterization:</strong> Use fluorescent antibodies or dyes to label the surface of the nanoparticles</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Nanoparticle Aggregation:</strong> Nanoparticles can aggregate, which can affect the accuracy of the measurements</li>
+<li>
+<strong>Nanoparticle Stability:</strong> Nanoparticles can degrade over time, which can affect the results</li>
+</ul>
+</li>
+<li>
+<strong>Applications:</strong>
+<ul>
+<li>Confirm the delivery of a drug</li>
+<li>Determine the purity of the sample</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="instrument-considerations-for-small-particle-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Instrument Considerations for Small Particle Analysis</strong><a class="anchor" aria-label="anchor" href="#instrument-considerations-for-small-particle-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>High-Sensitivity Flow Cytometer:</strong>
+<ul>
+<li>Blue laser for optimal light scatter properties</li>
+<li>Flow cytometers with optimized optics can detect smaller particles</li>
+</ul>
+</li>
+<li>
+<strong>Triggering:</strong>
+<ul>
+<li>Use a trigger parameter that is sensitive to small particles (e.g., side scatter or fluorescence)</li>
+<li>Adjust the trigger threshold to minimize background noise</li>
+</ul>
+</li>
+<li>
+<strong>Sheath Fluid:</strong>
+<ul>
+<li>Use particle-free sheath fluid to minimize background noise</li>
+<li>Filter the sheath fluid through a 0.1 μm filter</li>
+</ul>
+</li>
+<li>
+<strong>Cleaning Protocols:</strong>
+<ul>
+<li>Use rigorous cleaning protocols to remove contaminants from the flow cytometer</li>
+<li>Flush the flow cytometer with cleaning solutions before and after each experiment</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="sample-preparation-considerations-for-small-particle-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Sample Preparation Considerations for Small Particle Analysis</strong><a class="anchor" aria-label="anchor" href="#sample-preparation-considerations-for-small-particle-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Sample Filtration:</strong>
+<ul>
+<li>Filter samples through a 0.2 μm or 0.1 μm filter to remove large particles and debris</li>
+</ul>
+</li>
+<li>
+<strong>Sample Concentration:</strong>
+<ul>
+<li>Concentrate samples to increase the number of small particles</li>
+<li>Use ultracentrifugation, ultrafiltration, or other methods to concentrate the samples</li>
+</ul>
+</li>
+<li>
+<strong>Blocking Reagents:</strong>
+<ul>
+<li>Use blocking reagents to reduce non-specific binding</li>
+<li>Use appropriate controls to validate the blocking protocol</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="gating-strategies-for-small-particle-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Gating Strategies for Small Particle Analysis</strong><a class="anchor" aria-label="anchor" href="#gating-strategies-for-small-particle-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Size-Based Gating:</strong>
+<ul>
+<li>Use forward scatter (FSC) to gate on particles of a specific size range</li>
+<li>Use calibrated beads to create a standard curve for size measurement</li>
+</ul>
+</li>
+<li>
+<strong>Fluorescence-Based Gating:</strong>
+<ul>
+<li>Use fluorescent antibodies or dyes to identify particles that express specific markers</li>
+<li>Use appropriate controls to define gating boundaries and account for background noise</li>
+</ul>
+</li>
+<li>
+<strong>Sequential Gating:</strong>
+<ul>
+<li>Use a combination of size-based and fluorescence-based gating to identify specific populations of small particles</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="controls-for-small-particle-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Controls for Small Particle Analysis</strong><a class="anchor" aria-label="anchor" href="#controls-for-small-particle-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Blank Controls:</strong>
+<ul>
+<li>Samples that contain no particles, used to measure background noise</li>
+</ul>
+</li>
+<li>
+<strong>Bead Controls:</strong>
+<ul>
+<li>Samples that contain calibrated beads of known size and fluorescence intensity, used to calibrate the flow cytometer</li>
+</ul>
+</li>
+<li>
+<strong>Isotype Controls:</strong>
+<ul>
+<li>Antibodies that are the same isotype as the primary antibody but do not bind to the target antigen, used to assess non-specific antibody binding</li>
+</ul>
+</li>
+<li>
+<strong>Buffer Controls:</strong>
+<ul>
+<li>Samples that contain only the buffer used for staining, without any particles or antibodies, used to measure background fluorescence</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-small-particle-analysis" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Small Particle Analysis</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-small-particle-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>No Events Detected:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Low concentration of small particles</li>
+<li>Instrument settings</li>
+<li>Sample loss</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Increase concentration by adjusting sample</li>
+<li>Inspect equipment for malfunctions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Instrument Noise, non-specific binding</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Make sure proper control are in place and reagents/settings are optimal</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Aggregation:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Inadequate mixing or cell stress</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Adjust preparation methods</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="rare-event-analysis.html">Rare Event Analysis</a></div>
+<div class="next"><a href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#small-particle-analysis">Small Particle Analysis</a></li>
+<li><a class="nav-link" href="#overview-of-small-particle-analysis">Overview of Small Particle Analysis</a></li>
+<li><a class="nav-link" href="#extracellular-vesicles-evs">Extracellular Vesicles (EVs)</a></li>
+<li><a class="nav-link" href="#virus-detection">Virus Detection</a></li>
+<li><a class="nav-link" href="#nanoparticle-characterization">Nanoparticle Characterization</a></li>
+<li><a class="nav-link" href="#instrument-considerations-for-small-particle-analysis">Instrument Considerations for Small Particle Analysis</a></li>
+<li><a class="nav-link" href="#sample-preparation-considerations-for-small-particle-analysis">Sample Preparation Considerations for Small Particle Analysis</a></li>
+<li><a class="nav-link" href="#gating-strategies-for-small-particle-analysis">Gating Strategies for Small Particle Analysis</a></li>
+<li><a class="nav-link" href="#controls-for-small-particle-analysis">Controls for Small Particle Analysis</a></li>
+<li><a class="nav-link" href="#troubleshooting-small-particle-analysis">Troubleshooting Small Particle Analysis</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/03-H.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/03-H.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

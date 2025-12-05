@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Optimization | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Assay Optimization  Definition: Assay optimization is the process of refining and improving a flow cytometry assay to achieve the best possible performance in terms of sensitivity,...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Optimization | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Assay Optimization  Definition: Assay optimization is the process of refining and improving a flow cytometry assay to achieve the best possible performance in terms of sensitivity,...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Optimization | CYM">
+<meta name="twitter:description" content="Overview of Assay Optimization  Definition: Assay optimization is the process of refining and improving a flow cytometry assay to achieve the best possible performance in terms of sensitivity,...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="active" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="optimization" class="section level1 unnumbered">
+<h1>Optimization<a class="anchor" aria-label="anchor" href="#optimization"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-assay-optimization" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Assay Optimization</strong><a class="anchor" aria-label="anchor" href="#overview-of-assay-optimization"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Assay optimization is the process of refining and improving a flow cytometry assay to achieve the best possible performance in terms of sensitivity, specificity, accuracy, precision, and throughput</li>
+<li>
+<strong>Importance:</strong>
+<ul>
+<li>
+<strong>Accurate Results:</strong> Optimizing the assay ensures that the results accurately reflect the biological system being studied</li>
+<li>
+<strong>Maximize Signal:</strong> Optimizing the assay can increase the signal from target cells while reducing background noise</li>
+<li>
+<strong>Increase Efficiency:</strong> Optimizing the assay can reduce the amount of time, resources, and sample required for each experiment</li>
+</ul>
+</li>
+<li>
+<strong>Key Aspects of Assay Optimization:</strong>
+<ul>
+<li>Appropriate Use of Limited Sample</li>
+<li>Frequency of Target</li>
+<li>Cell Concentration</li>
+<li>Kinetics</li>
+<li>Scalability</li>
+<li>Blocking</li>
+<li>Statistical Design</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="appropriate-use-of-limited-sample" class="section level2 unnumbered">
+<h2>
+<strong>Appropriate Use of Limited Sample</strong><a class="anchor" aria-label="anchor" href="#appropriate-use-of-limited-sample"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Challenge:</strong> Flow cytometry often requires a significant number of cells, which can be a limiting factor when working with rare or precious samples</li>
+<li>
+<strong>Strategies:</strong>
+<ul>
+<li>
+<strong>Prioritize Markers:</strong> Focus on the most informative markers for the experiment</li>
+<li>
+<strong>Optimize Antibody Titration:</strong> Use the minimum amount of antibody required to achieve optimal staining</li>
+<li>
+<strong>Minimize Dead Volume:</strong> Use low-volume tubes and pipette tips to minimize sample loss</li>
+<li>
+<strong>Conserve Sample:</strong> Run several assays from one aliquot of sample to reduce sample usage</li>
+</ul>
+</li>
+<li><strong>Minimizing the amount of antibodies is especially important in the setting where resources and sample material are limiting</strong></li>
+</ul>
+</div>
+<div id="frequency-of-target" class="section level2 unnumbered">
+<h2>
+<strong>Frequency of Target</strong><a class="anchor" aria-label="anchor" href="#frequency-of-target"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Consideration:</strong> The frequency of the target cell population can affect the choice of fluorochromes and the gating strategy</li>
+<li>
+<strong>Strategies:</strong>
+<ul>
+<li>
+<strong>Enrichment:</strong> If the target population is rare, consider using cell enrichment techniques to increase its frequency</li>
+<li>
+<strong>Bright Fluorochromes:</strong> Use bright fluorochromes for rare populations to improve their detection</li>
+<li>
+<strong>Optimized Gating:</strong> Use a hierarchical gating strategy to accurately identify and quantify the target population</li>
+</ul>
+</li>
+<li><strong>The smaller the target population, the more refined the approach should be</strong></li>
+</ul>
+</div>
+<div id="cell-concentration" class="section level2 unnumbered">
+<h2>
+<strong>Cell Concentration</strong><a class="anchor" aria-label="anchor" href="#cell-concentration"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Impact:</strong> The cell concentration can affect the flow rate, the number of events acquired, and the potential for cell aggregation</li>
+<li>
+<strong>Strategies:</strong>
+<ul>
+<li>
+<strong>Optimal Concentration:</strong> Determine the optimal cell concentration for the assay by testing a range of concentrations</li>
+<li>
+<strong>Flow Rate Adjustment:</strong> Adjust the flow rate to maintain a consistent event rate and minimize coincidence</li>
+<li>
+<strong>Cell Filtration:</strong> Filter samples to remove cell aggregates and debris</li>
+</ul>
+</li>
+<li><strong>Concentration too high or too low can affect the flow and cause instrument malfunction</strong></li>
+</ul>
+</div>
+<div id="kinetics" class="section level2 unnumbered">
+<h2>
+<strong>Kinetics</strong><a class="anchor" aria-label="anchor" href="#kinetics"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The time course of the cellular response being measured</li>
+<li>
+<strong>Impact:</strong> The timing of the assay can affect the results, especially for functional assays that measure dynamic processes</li>
+<li>
+<strong>Strategies:</strong>
+<ul>
+<li>
+<strong>Time Course Analysis:</strong> Perform a time course analysis to determine the optimal time point for measuring the response</li>
+<li>
+<strong>Kinetic Measurements:</strong> Use kinetic measurements to track changes in the cellular response over time</li>
+<li>
+<strong>Time Optimization:</strong> Adjust instrument parameters to optimize time resolution</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="scalability" class="section level2 unnumbered">
+<h2>
+<strong>Scalability</strong><a class="anchor" aria-label="anchor" href="#scalability"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The ability of the assay to be adapted to different sample sizes or throughput requirements</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Automation:</strong> Consider automating the assay to increase throughput and reduce variability</li>
+<li>
+<strong>Multiplexing:</strong> Consider multiplexing the assay to measure multiple parameters simultaneously</li>
+<li>
+<strong>Reagent Availability:</strong> Ensure that reagents are available in sufficient quantities for larger experiments</li>
+</ul>
+</li>
+<li>
+<strong>For example:</strong> Scaling the amount of antibodies proportionally with the amount of sample</li>
+</ul>
+</div>
+<div id="blocking" class="section level2 unnumbered">
+<h2>
+<strong>Blocking</strong><a class="anchor" aria-label="anchor" href="#blocking"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The process of blocking non-specific binding sites to reduce background noise and improve the signal-to-noise ratio</li>
+<li>
+<strong>Methods:</strong>
+<ul>
+<li>
+<strong>Fc Receptor Blocking:</strong> Use Fc receptor blocking reagents to prevent antibodies from binding to Fc receptors on immune cells</li>
+<li>
+<strong>Protein Blocking:</strong> Use protein blocking reagents (e.g., BSA, serum) to block non-specific binding sites on cells or in the staining buffer</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Blocking Efficiency:</strong> Ensure that the blocking reagents are effective in reducing non-specific binding</li>
+<li>
+<strong>Blocking Time:</strong> Optimize the blocking time to maximize blocking efficiency without affecting antibody binding</li>
+</ul>
+</li>
+<li>
+<strong>Application:</strong>
+<ul>
+<li>Prevent non-specific binding that can affect the accuracy of the data</li>
+<li>Isotype controls, FMOs, and other controls are important components of the blocking protocol</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="statistical-design" class="section level2 unnumbered">
+<h2>
+<strong>Statistical Design</strong><a class="anchor" aria-label="anchor" href="#statistical-design"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> The use of statistical principles to design experiments that are efficient, powerful, and reproducible</li>
+<li>
+<strong>Principles:</strong>
+<ul>
+<li>
+<strong>Randomization:</strong> Randomly assign samples to different treatment groups to minimize bias</li>
+<li>
+<strong>Replication:</strong> Use multiple replicates per treatment group to increase statistical power</li>
+<li>
+<strong>Blocking:</strong> Group samples into blocks to reduce variability</li>
+<li>
+<strong>Factorial Design:</strong> Use factorial designs to study the effects of multiple factors and their interactions</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>
+<strong>Statistical Power:</strong> Ensure that the experiment has sufficient statistical power to detect meaningful differences</li>
+<li>
+<strong>Sample Size:</strong> Determine the appropriate sample size based on the desired statistical power</li>
+<li>
+<strong>Data Analysis:</strong> Use appropriate statistical methods to analyze the data</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-assay-optimization-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Assay Optimization Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-assay-optimization-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Low Signal:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Suboptimal antibody concentration</li>
+<li>Poor staining protocol</li>
+<li>Instrument settings</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Optimize antibody titration</li>
+<li>Review staining protocol</li>
+<li>Adjust instrument settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Background Noise:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Non-specific binding</li>
+<li>Autofluorescence</li>
+<li>Contamination</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Use blocking reagents</li>
+<li>Reduce autofluorescence</li>
+<li>Clean samples</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>High Variability:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Inconsistent technique</li>
+<li>Instrument instability</li>
+<li>Sample heterogeneity</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Standardize staining protocols</li>
+<li>Calibrate instrument</li>
+<li>Increase sample size</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Inaccurate Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect gating</li>
+<li>Compensation errors</li>
+<li>Data analysis errors</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify gating strategy</li>
+<li>Review compensation</li>
+<li>Inspect data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="controls.html">Controls</a></div>
+<div class="next"><a href="immunophenotyping.html">Immunophenotyping</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#optimization">Optimization</a></li>
+<li><a class="nav-link" href="#overview-of-assay-optimization">Overview of Assay Optimization</a></li>
+<li><a class="nav-link" href="#appropriate-use-of-limited-sample">Appropriate Use of Limited Sample</a></li>
+<li><a class="nav-link" href="#frequency-of-target">Frequency of Target</a></li>
+<li><a class="nav-link" href="#cell-concentration">Cell Concentration</a></li>
+<li><a class="nav-link" href="#kinetics">Kinetics</a></li>
+<li><a class="nav-link" href="#scalability">Scalability</a></li>
+<li><a class="nav-link" href="#blocking">Blocking</a></li>
+<li><a class="nav-link" href="#statistical-design">Statistical Design</a></li>
+<li><a class="nav-link" href="#troubleshooting-assay-optimization-issues">Troubleshooting Assay Optimization Issues</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/02-B-07.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/02-B-07.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

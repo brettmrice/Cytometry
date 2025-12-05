@@ -1,0 +1,128 @@
+# Sample Delivery {-}
+
+## **Overview of Sample Delivery Systems** {-}
+
+The sample delivery system is responsible for transporting the sample (containing cells or particles) from its container to the flow cell, where hydrodynamic focusing and interrogation occur. Different systems are used depending on the instrument design, sample volume, flow rate requirements, and the need for automation
+
+*   **Key Requirements for Sample Delivery:** {-}
+
+    *   **Precise Flow Control:** Maintaining a consistent and accurate flow rate is crucial for stable hydrodynamic focusing and reliable data acquisition
+    *   **Minimal Sample Loss:** Especially important when dealing with limited or precious samples
+    *   **Automation:** The system needs to be compatible with automated sampling (e.g., from multiwell plates) for high-throughput applications
+    *   **Low Carryover:** Minimizing cross-contamination between samples is essential for accurate results
+    *   **Biocompatibility:** The system materials should be compatible with cells and reagents to avoid damage or interference
+
+*   **Types of Sample Delivery Systems** {-}
+    *   Syringe Pump Systems
+    *   Pressure-Based Systems
+    *   Vacuum-Based Systems
+    *   Acoustic Focusing Systems
+
+## **Syringe Pump Systems** {-}
+
+*   **Principle:** A syringe pump uses a motor-driven plunger to precisely dispense the sample from a syringe at a controlled rate
+*   **Mechanism:**
+    *   A syringe containing the sample is mounted in the pump
+    *   The motor drives the plunger forward, pushing the sample through tubing into the flow cell
+    *   The flow rate is determined by the syringe size and the motor speed
+*   **Advantages:**
+    *   **Precise flow control:** Excellent for maintaining consistent and accurate flow rates
+    *   **Low sample consumption:** Can deliver very small volumes with high accuracy
+    *   **Closed system:** Reduces the risk of contamination
+*   **Disadvantages:**
+    *   **Limited sample volume:** Syringe size restricts the total volume that can be analyzed
+    *   **Manual operation:** Typically requires manual loading and unloading of syringes
+    *   **Potential for bubble formation:** Air bubbles can form in the syringe or tubing, affecting flow
+*   **Applications:**
+    *   Applications requiring precise sample delivery at a specific rate
+    *   Good choice for precious samples when only a limited volume is available
+    *   Particularly suitable for research applications
+
+## **Pressure-Based Systems** {-}
+
+*   **Principle:** A pressure differential is used to drive the sample from its container into the flow cell
+*   **Mechanism:**
+    *   A sample tube is connected to a pressurized gas source (e.g., air or nitrogen)
+    *   The pressure forces the sample through tubing into the flow cell
+    *   The flow rate is controlled by adjusting the pressure and the size of the tubing or a flow restrictor
+*   **Advantages:**
+    *   **Larger sample volumes:** Can handle larger volumes compared to syringe pumps
+    *   **Faster aspiration:** Samples can be introduced into the system more quickly
+    *   **Automated sampling:** Well-suited for automated sampling from multiwell plates or tubes
+*   **Disadvantages:**
+    *   **Less precise flow control:** Flow rate can be more variable compared to syringe pumps
+    *   **Potential for cell damage:** High pressure can potentially damage fragile cells
+    *   **Open system:** Increased risk of contamination compared to closed systems
+    *   **Carryover risk:** Inefficient washing protocols can result in sample carryover
+*   **Applications:**
+    *   High-throughput screening
+    *   Clinical diagnostics
+    *   Applications where larger sample volumes are analyzed
+
+## **Vacuum-Based Systems** {-}
+
+*   **Principle:** A vacuum is applied to the waste container to draw the sample through the flow cell
+*   **Mechanism:**
+    *   The sample tube is connected to the flow cell
+    *   A vacuum pump creates a negative pressure in the waste container, pulling the sample through the flow cell
+    *   The flow rate is controlled by adjusting the vacuum level or using a flow restrictor
+*   **Advantages:**
+    *   **Simplicity:** Relatively simple design
+    *   **Automated sampling:** Compatible with automated sampling systems
+*   **Disadvantages:**
+    *   **Less precise flow control:** Flow rate can be affected by variations in sample viscosity or tubing resistance
+    *   **Potential for cell damage:** High vacuum can potentially damage cells
+    *   **Risk of contamination:** Open system with potential for contamination
+    *   **Carryover:** Inefficient washing protocols can result in sample carryover
+*   **Applications:**
+    *   Applications where simplicity is favored over high precision
+    *   Used in some older flow cytometer designs
+
+## **Acoustic Focusing Systems** {-}
+
+*   **Principle:** Acoustic waves are used to focus and move the sample through the flow cell
+*   **Mechanism:**
+    *   Acoustic transducers generate sound waves that create pressure gradients in the fluid
+    *   These pressure gradients focus the sample into a narrow stream and propel it through the interrogation point
+*   **Advantages:**
+    *   **Label-free cell focusing:** Can focus cells without the need for sheath fluid in some designs
+    *   **Gentle cell handling:** Minimizes cell damage compared to pressure-based systems
+    *   **Precise control:** Can be used to manipulate and position cells in three dimensions
+*   **Disadvantages:**
+    *   **Complexity:** More complex instrumentation compared to other systems
+    *   **Throughput limitations:** Acoustic focusing can be slower than other methods
+    *   **Specialized applications:** Not as widely used as other sample delivery methods
+*   **Applications:**
+    *   Cell sorting
+    *   Microfluidics
+    *   Rare cell detection
+
+## **Comparison Table** {-}
+
+| Feature            | Syringe Pump      | Pressure-Based     | Vacuum-Based       | Acoustic Focusing |
+| ------------------ | ----------------- | ------------------ | ------------------ | ----------------- |
+| Flow Control       | Precise           | Less Precise       | Less Precise       | Precise           |
+| Sample Volume      | Limited           | Larger             | Larger             | Variable          |
+| Automation         | Limited           | Good               | Good               | Variable          |
+| Cell Damage        | Low               | Moderate to High   | Moderate to High   | Very Low          |
+| Contamination Risk | Low               | Moderate           | Moderate           | Variable          |
+| Complexity         | Moderate          | Simple             | Simple             | High              |
+| Cost               | Moderate          | Low                | Low                | High              |
+
+## **Troubleshooting Sample Delivery Issues** {-}
+
+*   **No Flow:**
+    *   *Causes:* Empty syringe or sample tube, blocked tubing, pump malfunction, or improper pressure/vacuum settings
+    *   *Solutions:* Refill syringe/tube, check for blockages, inspect pump function, verify pressure/vacuum settings
+*   **Erratic Flow:**
+    *   *Causes:* Air bubbles in the system, loose connections, pump malfunction, or fluctuating pressure/vacuum
+    *   *Solutions:* Remove air bubbles, tighten connections, inspect pump function, stabilize pressure/vacuum
+*   **Low Aspiration Rate:**
+    *   *Causes:* Clogged probe, insufficient pressure/vacuum, or viscous sample
+    *   *Solutions:* Clean probe, increase pressure/vacuum, dilute sample
+*   **High Carryover:**
+    *   *Causes:* Insufficient washing between samples, sticky samples, or contamination of the sampling probe
+    *   *Solutions:* Increase wash volume, use appropriate cleaning solutions, and clean the sampling probe
+*   **Cell Damage:**
+    *   *Causes:* Excessive pressure or vacuum, turbulent flow, or incompatible materials
+    *   *Solutions:* Reduce pressure/vacuum, optimize flow conditions, and use biocompatible materials

@@ -1,0 +1,112 @@
+# Controls {-}
+
+## **Overview of Assay Controls** {-}
+
+*   **Definition:** Assay controls are samples that are included in a flow cytometry experiment to validate the staining protocol, correct for background fluorescence, and ensure the accuracy of the results
+*   **Importance:**
+    *   **Validate Staining:** To confirm that the antibodies or dyes are binding specifically to the intended targets
+    *   **Correct for Background:** To account for autofluorescence, non-specific binding, and other sources of background noise
+    *   **Ensure Accuracy:** To ensure that the results accurately reflect the expression of the target antigens or the activity of the cells
+*   **Common Types of Assay Controls:**
+    *   Fluorescence Minus One (FMO) Controls
+    *   Autofluorescence Controls
+    *   Biological System Controls
+    *   Background Measurement Controls
+
+## **Fluorescence Minus One (FMO) Controls** {-}
+
+*   **Definition:** FMO controls are samples that are stained with all of the antibodies in the flow cytometry panel except for one. This allows you to assess the spread of fluorescence from the other fluorochromes into the channel of the missing fluorochrome
+*   **Purpose:**
+    *   **Identify Gating Boundaries:** To accurately define the boundaries between positive and negative populations, especially when the expression of the target antigen is low or when there is significant spectral overlap
+    *   **Account for Spread:** To account for the spread of fluorescence from other fluorochromes into the channel of the missing fluorochrome
+    *   **Address Technical Variation:** Variations in reagents, staining and instrument settings may affect the spread of the staining signals
+*   **Implementation:**
+    *   Prepare a separate FMO control for each fluorochrome in the panel
+    *   Stain the FMO controls with all of the antibodies in the panel except for the one corresponding to that control
+    *   Acquire the FMO controls at the same time and with the same instrument settings as the experimental samples
+    *   Use the FMO controls to set the gates for the experimental samples
+*   **Gating Strategy:**
+    *   In setting up the gating strategy, align the negative population of the FMO control with the negative population of the experimental sample
+
+## **Autofluorescence Controls** {-}
+
+*   **Definition:** Samples that are not stained with any antibodies or dyes, used to measure the level of autofluorescence in the sample
+*   **Purpose:**
+    *   **Account for Background:** To account for autofluorescence, which is the natural emission of light by cells or tissues
+    *   **Improve Signal-to-Noise:** To subtract the autofluorescence signal from the experimental samples, improving the signal-to-noise ratio
+*   **Implementation:**
+    *   Prepare a separate autofluorescence control for each sample type
+    *   Do not stain the autofluorescence controls with any antibodies or dyes
+    *   Acquire the autofluorescence controls at the same time and with the same instrument settings as the experimental samples
+    *   Subtract the autofluorescence signal from the experimental samples using software tools
+*   **Considerations:**
+    *   **Cell Type:** Different cell types have different levels of autofluorescence
+    *   **Wavelength:** Autofluorescence is typically higher at shorter wavelengths
+    *   **Fixation:** Fixation can increase autofluorescence
+    *   **Age of the Cells:** The age of the cells will contribute to autofluorescence
+
+## **Biological System Controls** {-}
+
+*   **Definition:** Samples that represent known positive or negative controls for the biological system being studied
+*   **Purpose:**
+    *   **Validate Assay Performance:** To confirm that the assay is working as expected
+    *   **Establish Baseline Values:** To establish baseline values for the parameters being measured
+    *   **Compare to Experimental Samples:** To compare the results of the experimental samples to the known controls
+*   **Types:**
+    *   **Positive Controls:** Samples that are known to express the target antigen or exhibit the desired activity
+    *   **Negative Controls:** Samples that are known not to express the target antigen or exhibit the desired activity
+    *   **Stimulated vs. Unstimulated Cells:** Cells that are stimulated to induce a specific response compared to cells that are not stimulated
+*   **Example in functional assays:**
+    *   Cells that express CD69 after stimulation with anti-CD3 and anti-CD28 antibodies
+
+## **Background Measurement Controls** {-}
+
+*   **Definition:** Samples used to measure the level of background noise in the flow cytometer system
+*   **Purpose:**
+    *   **Identify Noise Sources:** To identify sources of noise, such as electronic noise, stray light, or contaminated reagents
+    *   **Optimize Instrument Settings:** To optimize instrument settings to minimize background noise
+    *   **Subtract Background Signal:** To subtract the background signal from the experimental samples, improving the accuracy of the results
+*   **Types:**
+    *   **Isotype Controls:** Antibodies that are the same isotype as the primary antibody but do not bind to the target antigen
+    *   **Blocking Controls:** Samples that are pre-incubated with blocking reagents to reduce non-specific binding
+    *   **Buffer Controls:** Samples that contain only the buffer used for staining, without any cells or antibodies
+*   **Additional controls to use for accurate data:**
+    *   **Compensation controls:** To correct for spillover from each channel
+    *   **Singlet gating:** To exclude aggregates from the analysis
+
+## **Connecting Controls to Experimental Design** {-}
+
+*   **FMO Controls:** essential for accurate gating in multi-color experiments
+*   **Autofluorescence Controls:** critical for samples with high levels of autofluorescence (e.g., macrophages)
+*   **Biological System Controls:** validate the assay and provide context for interpreting experimental results
+*   **Background Measurement Controls:** optimize instrument settings and improve data accuracy
+
+## **Troubleshooting Control Issues** {-}
+
+*   **Unexpected Control Results:**
+    *   *Possible Causes:*
+        *   Reagent degradation
+        *   Incorrect staining protocol
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Verify reagent quality
+        *   Review staining protocol
+        *   Inspect instrument for malfunctions
+*   **High Background in Controls:**
+    *   *Possible Causes:*
+        *   Non-specific binding
+        *   Autofluorescence
+        *   Contamination
+    *   *Troubleshooting Steps:*
+        *   Use blocking reagents
+        *   Reduce autofluorescence
+        *   Clean samples
+*   **Poor Separation of Populations:**
+    *   *Possible Causes:*
+        *   Incorrect gating strategy
+        *   Inadequate compensation
+        *   Low signal intensity
+    *   *Troubleshooting Steps:*
+        *   Optimize gating strategy
+        *   Verify compensation values
+        *   Increase signal intensity

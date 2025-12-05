@@ -1,0 +1,134 @@
+# Probe Types {-}
+
+## **Overview of Probe Types** {-}
+
+*   **Definition:** Probes are molecules that bind to specific targets in or on cells, allowing for their detection and analysis by flow cytometry. Probes can be antibodies, dyes, proteins, or other molecules that are conjugated to a fluorophore
+*   **Importance:**
+    *   **Target Specificity:** Probes must bind specifically to the intended target to ensure accurate results
+    *   **Signal Intensity:** Probes should provide a strong and stable signal to allow for clear detection and quantification
+    *   **Compatibility:** Probes must be compatible with the flow cytometer's lasers and detectors, as well as with the sample preparation and staining protocols
+*   **Common Probe Types:**
+    *   Antibodies
+    *   Viability/DNA Dyes
+    *   Physiological Dyes
+    *   Tracking Dyes
+    *   Fluorescent Proteins
+
+## **Antibodies** {-}
+
+*   **Definition:** Proteins produced by the immune system that bind specifically to a target antigen
+*   **Types:**
+    *   **Monoclonal Antibodies:** Produced by a single clone of B cells and bind to a single epitope on the antigen
+        *   *Advantages:* High specificity and reproducibility
+        *   *Disadvantages:* Can be expensive and may not be available for all targets
+    *   **Polyclonal Antibodies:** Produced by multiple clones of B cells and bind to multiple epitopes on the antigen
+        *   *Advantages:* Less expensive and may be available for a wider range of targets
+        *   *Disadvantages:* Lower specificity and reproducibility compared to monoclonal antibodies
+*   **Conjugates:**
+    *   Antibodies can be conjugated to a variety of fluorophores, allowing for detection by flow cytometry
+    *   Common fluorophores include FITC, PE, APC, and many others
+*   **Considerations:**
+    *   **Target Specificity:** Choose antibodies that bind specifically to the intended target antigen
+    *   **Isotype Control:** Use an isotype control antibody to measure non-specific binding
+    *   **Fluorophore Selection:** Choose a fluorophore that is compatible with the flow cytometer's lasers and detectors and that has minimal spectral overlap with other fluorophores in the panel
+    *   **Titration:** Titrate antibodies to determine the optimal concentration for staining
+    *   **Clonality:** Choosing the right clone impacts the strength and specificity of the antibody; a high quality clone with the appropriate fluorophore will produce more accurate results
+*   **Application:**
+    *   **Cell surface markers:** CD4, CD8
+    *   **Intracellular Proteins:** cytokines
+
+## **Viability/DNA Dyes** {-}
+
+*   **Definition:** Dyes that are used to assess cell viability or to stain DNA for cell cycle analysis
+*   **Types:**
+    *   **DNA Binding Dyes:**
+        *   *Propidium Iodide (PI):* A dye that only enters cells with damaged membranes and binds to DNA, used to identify dead cells
+        *   *7-Aminoactinomycin D (7-AAD):* Similar to PI, used to identify dead cells
+        *   *DAPI:* A dye that binds to DNA and emits blue fluorescence, used for cell cycle analysis and nuclear staining
+    *   **Viability Dyes (Amine Reactive Dyes):**
+        *   *Live/Dead Fixable Aqua, Yellow, or Green Dead Cell Stain Kits:* Dyes that react with free amines on dead cells, allowing for their identification and exclusion from analysis
+*   **Considerations:**
+    *   **Cell Permeability:** DNA binding dyes require permeabilization to enter cells with intact membranes
+    *   **Fixation Compatibility:** Some viability dyes are not compatible with fixation, while others require fixation
+    *   **Spectral Overlap:** Choose dyes that have minimal spectral overlap with other fluorophores in the panel
+    *   **Use of the Fixable viability dye will ensure the accurate exclusion of dead cells even after fixation**
+
+## **Physiological Dyes** {-}
+
+*   **Definition:** Dyes that respond to changes in cellular physiology, such as calcium flux, pH, or membrane potential
+*   **Types:**
+    *   **Calcium Indicators:**
+        *   *Fluo-3, Fluo-4, Indo-1:* Dyes that bind to calcium ions and exhibit increased fluorescence upon binding
+    *   **pH Indicators:**
+        *   *SNARF-1:* A dye that exhibits a shift in emission spectrum depending on pH
+    *   **Membrane Potential Dyes:**
+        *   *DiOC6(3), DiBAC4(3):* Dyes that distribute across the cell membrane depending on the membrane potential
+*   **Considerations:**
+    *   **Cell Loading:** Physiological dyes often require special loading procedures to ensure that they enter cells
+    *   **Excitation and Emission Wavelengths:** Choose dyes that are compatible with the flow cytometer's lasers and detectors
+    *   **Calibration:** Calibrate the dye signal to relate it to the physiological parameter of interest
+    *   **Kinetics:** Calcium flux is often immediate and short-lived; therefore, it is essential that the instrument and protocol are optimized for immediate measurement
+*   **Applications:**
+    *   **Calcium mobilization:** tracking levels in immune cells
+    *   **Mitochondrial health:** identify cells that have healthy and functional mitochondria
+
+## **Tracking Dyes** {-}
+
+*   **Definition:** Dyes that are used to label cells and track their movement or division over time
+*   **Types:**
+    *   **Cell Division Tracking Dyes:**
+        *   *CFSE (Carboxyfluorescein succinimidyl ester):* A dye that diffuses into cells and covalently binds to intracellular proteins. With each cell division, the fluorescence intensity is halved, allowing for the tracking of cell divisions
+        *   *CellTrace Violet:* A similar dye to CFSE, with different spectral properties
+    *   **Cell Proliferation Measurement:**
+        *   *BrdU (Bromodeoxyuridine):* a synthetic nucleoside analogue, is incorporated into the DNA of cells during DNA synthesis (S-phase) of the cell cycle
+
+*   **Considerations:**
+    *   **Cell Toxicity:** Choose dyes that are non-toxic to cells
+    *   **Dye Retention:** Ensure that the dye is retained by cells for the duration of the experiment
+    *   **Spectral Overlap:** Choose dyes that have minimal spectral overlap with other fluorophores in the panel
+*   **Application:**
+    *   **Study cell proliferation:** track cell division
+
+## **Fluorescent Proteins** {-}
+
+*   **Definition:** Genetically encoded proteins that emit fluorescence when excited by a specific wavelength of light
+*   **Types:**
+    *   *Green Fluorescent Protein (GFP):* The original fluorescent protein, emitting green fluorescence
+    *   *Enhanced Green Fluorescent Protein (EGFP):* A brighter version of GFP
+    *   *Other Fluorescent Proteins:* A variety of fluorescent proteins with different spectral properties, such as YFP, CFP, and RFP
+*   **Considerations:**
+    *   **Genetic Modification:** Requires genetic modification of cells to express the fluorescent protein
+    *   **Expression Level:** The expression level of the fluorescent protein can vary depending on the cell type and the promoter used
+    *   **Photobleaching:** Fluorescent proteins can be susceptible to photobleaching
+*   **Application:**
+    *   **Reporter Proteins:** Used to study gene expression and protein localization
+
+## **Troubleshooting Probe Issues** {-}
+
+*   **Weak Signal:**
+    *   *Possible Causes:*
+        *   Low probe concentration
+        *   Poor probe binding
+        *   Incorrect staining protocol
+    *   *Troubleshooting Steps:*
+        *   Increase probe concentration
+        *   Optimize staining protocol
+        *   Use signal amplification techniques
+*   **High Background Noise:**
+    *   *Possible Causes:*
+        *   Non-specific probe binding
+        *   Autofluorescence
+        *   Contamination
+    *   *Troubleshooting Steps:*
+        *   Use blocking reagents
+        *   Reduce autofluorescence
+        *   Clean samples
+*   **Unexpected Results:**
+    *   *Possible Causes:*
+        *   Incorrect probe selection
+        *   Improper sample preparation
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Verify probe specificity
+        *   Review sample preparation protocols
+        *   Inspect instrument for malfunctions

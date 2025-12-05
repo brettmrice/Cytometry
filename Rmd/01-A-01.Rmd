@@ -1,0 +1,82 @@
+# Hydrodaynamic Focusing {-}
+
+## **Core Concept: Hydrodynamic Focusing** {-}
+
+*   **Definition:** Hydrodynamic focusing is a process that uses a sheath fluid to narrow the stream of sample fluid, forcing cells or particles to pass through an interrogation point in a single file
+*   **Purpose:**
+    *   Ensures that only one cell/particle at a time passes through the laser beam, preventing coincidence (multiple events being detected as one).
+    *   Optimizes light scatter and fluorescence signal detection by controlling cell position
+    *   Increases sample throughput
+*   **Mechanism:**
+    *   **Sheath Fluid:** A clean, particle-free fluid that surrounds the sample core
+    *   **Pressure Differential:** The sheath fluid is introduced at a higher pressure than the sample fluid
+    *   **Nozzle/Flow Cell Design:** Specific geometry of the flow cell directs and constricts the sample stream
+    *   **Laminar Flow:** The fluid dynamics are designed to create laminar flow (smooth, layered flow), preventing turbulence and mixing
+    *   **Focused Core Stream:** The higher pressure of the sheath fluid compresses the sample stream into a narrow core, typically a few micrometers in diameter
+
+## **Key Factors Affecting Hydrodynamic Focusing** {-}
+
+*   **Sheath Fluid Pressure:**
+    *   *Increased pressure:* Narrower core stream, higher cell velocity, increased sample throughput, lower resolution
+    *   *Decreased pressure:* Wider core stream, lower cell velocity, decreased sample throughput, better resolution
+*   **Sample Fluid Pressure:**
+    *   *Increased pressure:* Wider core stream
+    *   *Decreased pressure:* Narrower core stream
+*   **Flow Cell Geometry:**
+    *   The design of the nozzle or flow cell (e.g., size, shape, angle) significantly impacts the focusing efficiency and core stream dimensions
+*   **Fluid Viscosity:**
+    *   *Higher viscosity:* affects the flow rate
+*   **Fluid Temperature:**
+    *   *Temperature changes:* can affect the fluidic properties
+*   **Coaxial Alignment:**
+    *   *Misalignment:* affects the flow profile
+
+## **Sheath Fluids: Properties and Considerations** {-}
+
+*   **Composition:** Typically a balanced salt solution (e.g., PBS) or deionized water with added components
+*   **Key Properties:**
+    *   **Purity:** Must be free of particles (bacteria, debris) that could interfere with cell detection or clog the system
+    *   **Sterility:** Prevents microbial growth within the instrument's fluidic system
+    *   **Isotonicity:** Should be isotonic to cells to prevent osmotic stress (swelling or shrinking)
+    *   **pH:** Maintained at a physiological pH (usually around 7.4) to preserve cell viability and antibody binding
+    *   **Viscosity:** Affects the flow rate and focusing efficiency; usually optimized for the specific instrument
+    *   **Refractive Index:** Can affect light scatter measurements
+    *   **Electrical Conductivity:** Important for instruments that use impedance-based cell counting
+    *   **Compatibility:** Must be compatible with the dyes and reagents used in the assay
+*   **Common Additives:**
+    *   **Antibiotics:** To inhibit bacterial growth
+    *   **EDTA:** As a metal chelator, to prevent aggregation of cells
+    *   **Protein (e.g., BSA):** To block non-specific binding of antibodies to the flow cell
+    *   **Surfactants:** To reduce surface tension and prevent bubble formation
+    *   **Stabilizers:** To prevent the degradation of components in the sheath fluid
+*   **Preparation and Storage:**
+    *   Prepared using high-quality reagents and sterile techniques
+    *   Filtered through a 0.2 μm filter to remove particles
+    *   Stored properly to prevent contamination and degradation
+*   **Maintenance:**
+    *   Regularly replaced to ensure purity and prevent clogging
+    *   Fluid filters are replaced
+    *   The fluidic system is cleaned with detergent solution
+
+## **Troubleshooting Fluidic Issues** {-}
+
+*   **Clogging:**
+    *   *Symptoms:* Erratic flow rates, increased pressure, poor resolution, or complete blockage
+    *   *Causes:* Particulate matter in the sheath fluid or sample, cell aggregates, precipitation of reagents
+    *   *Solutions:* Filter sheath fluid and samples, use cell preparation techniques to minimize aggregates, flush the system with cleaning solutions, and replace clogged filters
+*   **Bubble Formation:**
+    *   *Symptoms:* Erratic flow rates, unstable readings, or signal fluctuations
+    *   *Causes:* Air leaks in the fluidic system, improper degassing of sheath fluid, or surfactants in the sample
+    *   *Solutions:* Check for leaks, degas sheath fluid, adjust surfactant concentrations, and ensure proper fluid levels in reservoirs
+*   **Contamination:**
+    *   *Symptoms:* High background noise, unexpected cell populations, or microbial growth.
+    *   *Causes:* Non-sterile sheath fluid, improper handling of samples, or contamination of the flow cell
+    *   *Solutions:* Use sterile techniques, replace contaminated sheath fluid, decontaminate the flow cell appropriate controls.
+*   **Pressure Issues:**
+    *   *Symptoms:* Inconsistent flow rates, unstable focusing, or failure to aspirate samples
+    *   *Causes:* Blocked lines, pump malfunction, or improper pressure settings
+    *   *Solutions:* Check for blockages, inspect pump function, verify pressure settings, and calibrate the instrument
+*   **Carryover:**
+    *   *Symptoms:* False positive results
+    *   *Causes:* Insufficient washing between samples
+    *   *Solutions:* Increase the wash volume, reduce the sample concentration, or use a carryover reduction solution

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Electronics | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Electronics: Transforming Light into Data The electronics system in a flow cytometer is responsible for: Detecting the weak light signals emitted by cells Amplifying those signals to a usable...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Electronics | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Electronics: Transforming Light into Data The electronics system in a flow cytometer is responsible for: Detecting the weak light signals emitted by cells Amplifying those signals to a usable...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Electronics | CYM">
+<meta name="twitter:description" content="Electronics: Transforming Light into Data The electronics system in a flow cytometer is responsible for: Detecting the weak light signals emitted by cells Amplifying those signals to a usable...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="active" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="electronics" class="section level1 unnumbered">
+<h1>Electronics<a class="anchor" aria-label="anchor" href="#electronics"><i class="fas fa-link"></i></a>
+</h1>
+<div id="electronics-transforming-light-into-data" class="section level2 unnumbered">
+<h2>
+<strong>Electronics: Transforming Light into Data</strong><a class="anchor" aria-label="anchor" href="#electronics-transforming-light-into-data"><i class="fas fa-link"></i></a>
+</h2>
+<p>The electronics system in a flow cytometer is responsible for:</p>
+<ul>
+<li>
+<strong>Detecting</strong> the weak light signals emitted by cells</li>
+<li>
+<strong>Amplifying</strong> those signals to a usable level</li>
+<li>
+<strong>Processing</strong> the signals to extract meaningful information</li>
+<li>
+<strong>Converting</strong> the signals into digital data for analysis</li>
+<li><strong>Ultimately, providing the data that allows us to identify and quantify different cell populations</strong></li>
+</ul>
+</div>
+<div id="the-six-pillars-of-the-electronics-system" class="section level2 unnumbered">
+<h2>
+<strong>The Six Pillars of the Electronics System</strong><a class="anchor" aria-label="anchor" href="#the-six-pillars-of-the-electronics-system"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Detectors:</strong>
+<ul>
+<li>
+<em>What they are:</em> Electronic components that convert light into an electrical signal (PMTs, photodiodes, CCD cameras, APDs)</li>
+<li>
+<em>Why they’re important:</em> Capture the light emitted from cells and convert it into an electrical signal that can be processed</li>
+<li>
+<em>Key properties:</em> Sensitivity, quantum efficiency, gain, dynamic range, linearity, response time, and noise</li>
+</ul>
+</li>
+<li>
+<strong>Amplifiers:</strong>
+<ul>
+<li>
+<em>What they are:</em> Electronic circuits that increase the amplitude of a signal</li>
+<li>
+<em>Why they’re important:</em> Boost weak electrical signals from detectors to a level that can be accurately measured</li>
+<li>
+<em>Types:</em> Linear amplifiers (constant gain) and logarithmic amplifiers (gain proportional to log of input)</li>
+</ul>
+</li>
+<li>
+<strong>Digital vs. Analog Systems:</strong>
+<ul>
+<li>
+<em>What they are:</em> Two fundamentally different approaches to signal processing</li>
+<li>
+<em>Why they’re important:</em> Determine how signals are handled and processed within the instrument</li>
+<li>
+<em>Analog:</em> Processes continuous signals, susceptible to noise, simpler circuitry for basic functions</li>
+<li>
+<em>Digital:</em> Processes discrete signals, immune to noise, powerful signal processing capabilities</li>
+</ul>
+</li>
+<li>
+<strong>Analog-to-Digital Converters (ADCs):</strong>
+<ul>
+<li>
+<em>What they are:</em> Convert analog signals into digital signals</li>
+<li>
+<em>Why they’re important:</em> Bridges the gap between analog detectors and digital processing systems</li>
+<li>
+<em>Key parameters:</em> Resolution (number of bits) and sampling rate</li>
+</ul>
+</li>
+<li>
+<strong>Noise:</strong>
+<ul>
+<li>
+<em>What it is:</em> Unwanted random electrical fluctuations that can obscure or distort the signal</li>
+<li>
+<em>Why it’s important:</em> Reduces sensitivity and resolution, making it difficult to detect weak signals</li>
+<li>
+<em>Types:</em> Thermal noise, shot noise, flicker noise, electronic interference, optical noise, reagent noise</li>
+</ul>
+</li>
+<li>
+<strong>Pulse Measurement:</strong>
+<ul>
+<li>
+<em>What it is:</em> Analyzing the shape and characteristics of the electrical pulses generated as cells pass through the detection zone</li>
+<li>
+<em>Why it’s important:</em> Extract information about cell size, shape, and fluorescence intensity</li>
+<li>
+<em>Key parameters:</em> Area, width, and height</li>
+</ul>
+</li>
+<li>
+<strong>Threshold/Discriminator:</strong>
+<ul>
+<li>
+<em>What it is:</em> A set value that an electronic signal must exceed in order to be recorded as an event</li>
+<li>
+<em>Why it’s important:</em> Reduces noise, discriminates events, and improves data quality</li>
+<li>
+<em>Trigger Parameter:</em> The parameter used to determine whether the threshold is exceeded</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="how-they-work-together-2" class="section level2 unnumbered">
+<h2>
+<strong>How They Work Together</strong><a class="anchor" aria-label="anchor" href="#how-they-work-together-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>Imagine a carefully orchestrated sequence of events:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Detectors</strong> capture light signals and convert them into weak electrical signals</li>
+<li>
+<strong>Amplifiers</strong> boost the strength of these signals</li>
+<li>
+<strong>ADCs</strong> (in digital systems) convert the analog signals into digital signals</li>
+<li>
+<strong>Digital Signal Processing (DSP)</strong> refines and processes the digital signals to extract meaningful information</li>
+<li>
+<strong>Noise Reduction Techniques</strong> are applied throughout the system to minimize unwanted interference</li>
+<li>
+<strong>Pulse Measurement</strong> analyzes the shape and characteristics of the signals</li>
+<li>
+<strong>Threshold/Discriminator</strong> determines which events are recorded and analyzed, excluding background noise</li>
+</ol>
+</div>
+<div id="importance-of-the-electronics-system-in-flow-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Importance of the Electronics System in Flow Cytometry</strong><a class="anchor" aria-label="anchor" href="#importance-of-the-electronics-system-in-flow-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Sensitivity:</strong> Maximizes the detection of weak signals, allowing for the analysis of rare cell populations</li>
+<li>
+<strong>Accuracy:</strong> Enables the precise quantification of cellular characteristics, improving the accuracy of cell counts and measurements</li>
+<li>
+<strong>Resolution:</strong> Enhances the ability to distinguish between closely spaced signals, improving the resolution of cell populations</li>
+<li>
+<strong>Data Quality:</strong> Reduces noise and artifacts, improving the overall quality of the data</li>
+<li>
+<strong>Data Analysis:</strong> Provides the data that is used for sophisticated data analysis techniques</li>
+</ul>
+</div>
+<div id="troubleshooting-electronics-system-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Electronics System Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-electronics-system-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>No Signal:</strong> Check detector output, test amplifier functionality, and inspect wiring</li>
+<li>
+<strong>High Noise:</strong> Replace detector, improve shielding, and check grounding</li>
+<li>
+<strong>Saturated Signals:</strong> Reduce detector voltage, reduce amplifier gain, and adjust ADC range</li>
+<li>
+<strong>Distorted Signals:</strong> Test amplifier linearity, replace faulty components, and calibrate ADC</li>
+</ul>
+</div>
+<div id="key-takeaways-2" class="section level2 unnumbered">
+<h2>
+<strong>Key Takeaways</strong><a class="anchor" aria-label="anchor" href="#key-takeaways-2"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>The electronics system is a critical component of flow cytometry, responsible for detecting, amplifying, processing, and converting light signals into data</li>
+<li>The key components of the electronics system are the detectors, amplifiers, ADCs, noise reduction techniques, pulse measurement, and threshold settings</li>
+<li>Modern flow cytometers typically use a hybrid approach, combining analog and digital components for optimal performance</li>
+<li>Proper maintenance, calibration, and troubleshooting of the electronics system are essential for reliable flow cytometry results</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="optical-pathway.html">Optical Pathway</a></div>
+<div class="next"><a href="amplifiers.html">Amplifiers</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#electronics">Electronics</a></li>
+<li><a class="nav-link" href="#electronics-transforming-light-into-data">Electronics: Transforming Light into Data</a></li>
+<li><a class="nav-link" href="#the-six-pillars-of-the-electronics-system">The Six Pillars of the Electronics System</a></li>
+<li><a class="nav-link" href="#how-they-work-together-2">How They Work Together</a></li>
+<li><a class="nav-link" href="#importance-of-the-electronics-system-in-flow-cytometry">Importance of the Electronics System in Flow Cytometry</a></li>
+<li><a class="nav-link" href="#troubleshooting-electronics-system-issues">Troubleshooting Electronics System Issues</a></li>
+<li><a class="nav-link" href="#key-takeaways-2">Key Takeaways</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/01-C-00.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/01-C-00.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

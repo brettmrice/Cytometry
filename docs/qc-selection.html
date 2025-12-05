@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QC Selection | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Overview of Sample Quality Controls (QC) Selection  Definition: Sample quality controls are substances or procedures used to monitor and validate the integrity of samples throughout the testing...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="QC Selection | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Overview of Sample Quality Controls (QC) Selection  Definition: Sample quality controls are substances or procedures used to monitor and validate the integrity of samples throughout the testing...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QC Selection | CYM">
+<meta name="twitter:description" content="Overview of Sample Quality Controls (QC) Selection  Definition: Sample quality controls are substances or procedures used to monitor and validate the integrity of samples throughout the testing...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="active" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="qc-selection" class="section level1 unnumbered">
+<h1>QC Selection<a class="anchor" aria-label="anchor" href="#qc-selection"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-of-sample-quality-controls-qc-selection" class="section level2 unnumbered">
+<h2>
+<strong>Overview of Sample Quality Controls (QC) Selection</strong><a class="anchor" aria-label="anchor" href="#overview-of-sample-quality-controls-qc-selection"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Sample quality controls are substances or procedures used to monitor and validate the integrity of samples throughout the testing process</li>
+<li>
+<strong>Purpose:</strong>
+<ul>
+<li>Verify Sample Handling: To ensure that samples are collected, transported, stored, and processed correctly</li>
+<li>Assess Assay Performance: To validate the performance of flow cytometry assays using known positive and negative controls</li>
+<li>Detect Contamination: To identify contamination issues that may compromise the results</li>
+</ul>
+</li>
+<li>
+<strong>Types of Quality Controls:</strong>
+<ul>
+<li>Internal Quality Controls (IQCs)</li>
+<li>External Quality Controls (EQCs)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="internal-quality-controls-iqcs" class="section level2 unnumbered">
+<h2>
+<strong>Internal Quality Controls (IQCs)</strong><a class="anchor" aria-label="anchor" href="#internal-quality-controls-iqcs"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Substances or procedures that are incorporated directly into the sample or assay workflow to monitor performance</li>
+<li>
+<strong>Purpose:</strong>
+<ul>
+<li>Monitor Sample Integrity: To assess the quality of the sample throughout the testing process</li>
+<li>Detect Matrix Effects: To identify any interference from the sample matrix that may affect the assay results</li>
+<li>Validate Assay Performance: To confirm that the assay is working as expected</li>
+</ul>
+</li>
+<li>
+<strong>Types of IQCs:</strong>
+<ul>
+<li>Cell Markers</li>
+<li>Spiked Controls</li>
+<li>Reagent Blanks</li>
+</ul>
+</li>
+<li>
+<strong>Considerations:</strong>
+<ul>
+<li>Matrix Effects: Be aware of the potential for matrix effects from the sample</li>
+<li>Appropriate Range: Choose IQCs with values that are within the clinically relevant range</li>
+</ul>
+</li>
+</ul>
+<div id="cell-markers-as-iqcs" class="section level3 unnumbered">
+<h3>
+<strong>Cell Markers as IQCs</strong><a class="anchor" aria-label="anchor" href="#cell-markers-as-iqcs"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Some cell markers are known to be relatively stable and consistently expressed, making them useful as internal controls for immunophenotyping assays</li>
+</ul>
+</li>
+<li>
+<strong>Examples:</strong>
+<ul>
+<li>CD45: A marker expressed on all leukocytes that can be used to verify proper leukocyte gating</li>
+<li>CD3: A marker expressed on all T cells that can be used to verify T cell gating</li>
+</ul>
+</li>
+<li>
+<strong>Implementation:</strong>
+<ul>
+<li>Monitor the expression of these markers in each sample</li>
+<li>Compare the expression levels to historical data or to expected values</li>
+</ul>
+</li>
+<li>
+<strong>What to look for:</strong>
+<ul>
+<li>Significant deviations from the expected expression levels may indicate problems with sample preparation, staining, or instrument performance</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="spiked-controls" class="section level3 unnumbered">
+<h3>
+<strong>Spiked Controls</strong><a class="anchor" aria-label="anchor" href="#spiked-controls"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Adding a known quantity of a reference material (e.g., cells, beads, proteins) to the sample to assess recovery and matrix effects</li>
+</ul>
+</li>
+<li>
+<strong>Implementation:</strong>
+<ul>
+<li>Use the recovery of the spiked control to correct for losses during sample preparation</li>
+<li>Compare the results to the expected values to identify matrix effects</li>
+</ul>
+</li>
+<li>
+<strong>Use Cases:</strong>
+<ul>
+<li>Monitor the integrity of surface staining on leukocytes from whole blood</li>
+<li>Verify cell count using enumeration beads</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="reagent-blanks" class="section level3 unnumbered">
+<h3>
+<strong>Reagent Blanks</strong><a class="anchor" aria-label="anchor" href="#reagent-blanks"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>A sample that contains all of the reagents used in the assay, but no sample</li>
+<li>Used to measure background signal and detect contamination</li>
+</ul>
+</li>
+<li>
+<strong>Implementation:</strong>
+<ul>
+<li>Run the reagent blank alongside the experimental samples</li>
+<li>Subtract the signal from the reagent blank from the experimental samples</li>
+</ul>
+</li>
+<li>
+<strong>Use Cases:</strong>
+<ul>
+<li>Checking for any background fluorescence</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="external-quality-controls-eqcs" class="section level2 unnumbered">
+<h2>
+<strong>External Quality Controls (EQCs)</strong><a class="anchor" aria-label="anchor" href="#external-quality-controls-eqcs"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Definition:</strong> Standardized samples or materials that are run periodically to assess the overall performance and accuracy of the entire flow cytometry process</li>
+<li>
+<strong>Purpose:</strong>
+<ul>
+<li>Verify Accuracy: Assess the accuracy and reproducibility of the flow cytometer</li>
+<li>Detect Systematic Errors: Identify systematic errors that may be affecting the results</li>
+<li>Comply with Regulations: Meet regulatory requirements and accreditation standards</li>
+</ul>
+</li>
+<li>
+<strong>Types of EQCs:</strong>
+<ul>
+<li>Proficiency Testing (PT)</li>
+<li>Commercially Available Control Materials</li>
+<li>In-House Controls</li>
+</ul>
+</li>
+<li>
+<strong>Use Cases:</strong>
+<ul>
+<li>EQCs are typically used to assess the performance of the entire flow cytometry process, from sample preparation to data analysis</li>
+<li>EQCs can also be used to compare the performance of different laboratories or different instruments</li>
+</ul>
+</li>
+</ul>
+<div id="proficiency-testing-pt" class="section level3 unnumbered">
+<h3>
+<strong>Proficiency Testing (PT)</strong><a class="anchor" aria-label="anchor" href="#proficiency-testing-pt"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Participating in a PT program involves analyzing blinded samples provided by an external organization</li>
+<li>Comparing the results to those obtained by other laboratories</li>
+</ul>
+</li>
+<li>
+<strong>Implementation:</strong>
+<ul>
+<li>Analyze the PT samples according to the PT provider’s instructions</li>
+<li>Submit the results to the PT provider</li>
+<li>Review the PT report to identify any problems and implement corrective actions</li>
+</ul>
+</li>
+<li>
+<strong>Helpful Tip:</strong>
+<ul>
+<li>PT programs provide a valuable way to assess the overall performance of the flow cytometry laboratory and to identify areas for improvement</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="commercially-available-control-materials" class="section level3 unnumbered">
+<h3>
+<strong>Commercially Available Control Materials</strong><a class="anchor" aria-label="anchor" href="#commercially-available-control-materials"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Using standardized control materials to monitor the performance of flow cytometry assays</li>
+<li>These materials are typically well-characterized and have known values for the parameters being measured</li>
+</ul>
+</li>
+<li>
+<strong>Implementation:</strong>
+<ul>
+<li>Analyze the control materials according to the manufacturer’s instructions</li>
+<li>Compare the results to the manufacturer’s specifications</li>
+<li>Troubleshoot to identify if the control material is not within proper range</li>
+</ul>
+</li>
+<li>
+<strong>Use Cases:</strong>
+<ul>
+<li>The control products may have been previously stained for use</li>
+<li>Control products may come as a mixture to simplify the QC process</li>
+<li>Beads or cell preps that target instrument performance checks</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="in-house-controls" class="section level3 unnumbered">
+<h3>
+<strong>In-House Controls</strong><a class="anchor" aria-label="anchor" href="#in-house-controls"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Principle:</strong>
+<ul>
+<li>Preparing and characterizing control materials within the flow cytometry laboratory</li>
+</ul>
+</li>
+<li>
+<strong>Implementation:</strong>
+<ul>
+<li>Collect and process samples from healthy donors or patients with known disease states</li>
+<li>Characterize the samples using validated flow cytometry assays</li>
+<li>Use the characterized samples as controls to monitor the performance of the assays</li>
+</ul>
+</li>
+<li>
+<strong>Use Cases:</strong>
+<ul>
+<li>Can be tailored to the specific needs of the flow cytometry laboratory</li>
+<li>Less expensive than commercially available control materials</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="analyzing-control-data-and-corrective-action" class="section level2 unnumbered">
+<h2>
+<strong>Analyzing Control Data and Corrective Action</strong><a class="anchor" aria-label="anchor" href="#analyzing-control-data-and-corrective-action"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Trend Analysis:</strong>
+<ul>
+<li>Track control data over time to identify trends or shifts in performance</li>
+<li>Use control charts or other statistical methods to monitor the data</li>
+</ul>
+</li>
+<li>
+<strong>Corrective Action:</strong>
+<ul>
+<li>Establish corrective action procedures to address any problems identified by the control data</li>
+<li>Document all corrective actions taken</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="troubleshooting-sample-quality-control-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Sample Quality Control Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-sample-quality-control-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Controls Out of Range:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Reagent degradation</li>
+<li>Instrument malfunction</li>
+<li>Technician error</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Replace suspect reagents, calibrate instruments, and review techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Inconsistent Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Unstable Instruments</li>
+<li>Varying protocol techniques</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Examine maintenance records and review operating procedures</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Unexpected Results:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Incorrect antibody selection</li>
+<li>Improper gating</li>
+<li>Instrument malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Check and verify markers that are used</li>
+<li>Confirm correct techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="sample-inegrity.html">Sample Inegrity</a></div>
+<div class="next"><a href="trend-analysis.html">Trend Analysis</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#qc-selection">QC Selection</a></li>
+<li><a class="nav-link" href="#overview-of-sample-quality-controls-qc-selection">Overview of Sample Quality Controls (QC) Selection</a></li>
+<li>
+<a class="nav-link" href="#internal-quality-controls-iqcs">Internal Quality Controls (IQCs)</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#cell-markers-as-iqcs">Cell Markers as IQCs</a></li>
+<li><a class="nav-link" href="#spiked-controls">Spiked Controls</a></li>
+<li><a class="nav-link" href="#reagent-blanks">Reagent Blanks</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#external-quality-controls-eqcs">External Quality Controls (EQCs)</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#proficiency-testing-pt">Proficiency Testing (PT)</a></li>
+<li><a class="nav-link" href="#commercially-available-control-materials">Commercially Available Control Materials</a></li>
+<li><a class="nav-link" href="#in-house-controls">In-House Controls</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#analyzing-control-data-and-corrective-action">Analyzing Control Data and Corrective Action</a></li>
+<li><a class="nav-link" href="#troubleshooting-sample-quality-control-issues">Troubleshooting Sample Quality Control Issues</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/05-A-05.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/05-A-05.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

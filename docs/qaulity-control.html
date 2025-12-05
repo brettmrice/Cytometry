@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Qaulity Control | CYM</title>
+<meta name="author" content="Brett M. Rice">
+<meta name="description" content="Quality Control: The Cornerstone of Reliable Flow Cytometry Quality control (QC) in flow cytometry is a multifaceted system designed to: Ensure the accuracy and reliability of our data Detect and...">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
+<meta property="og:title" content="Qaulity Control | CYM">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Quality Control: The Cornerstone of Reliable Flow Cytometry Quality control (QC) in flow cytometry is a multifaceted system designed to: Ensure the accuracy and reliability of our data Detect and...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Qaulity Control | CYM">
+<meta name="twitter:description" content="Quality Control: The Cornerstone of Reliable Flow Cytometry Quality control (QC) in flow cytometry is a multifaceted system designed to: Ensure the accuracy and reliability of our data Detect and...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link rel="icon" type="image/png" href="imgs/favicon.png">
+<meta name="google-adsense-account" content="ca-pub-1344282930858290">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JERRQQFPF4"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JERRQQFPF4');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toc.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cytometry</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="content-areas.html">Content Areas</a></li>
+<li><a class="" href="author-1.html">Author</a></li>
+<li><a class="" href="ascp-boc.html">ASCP BOC</a></li>
+<li><a class="" href="reading-list.html">Reading List</a></li>
+<li class="book-part">Instrumentation</li>
+<li><a class="" href="fluidics.html">Fluidics</a></li>
+<li><a class="" href="hydrodaynamic-focusing.html">Hydrodaynamic Focusing</a></li>
+<li><a class="" href="sample-delivery.html">Sample Delivery</a></li>
+<li><a class="" href="optics.html">Optics</a></li>
+<li><a class="" href="optical-filters.html">Optical Filters</a></li>
+<li><a class="" href="light-source.html">Light Source</a></li>
+<li><a class="" href="lenses.html">Lenses</a></li>
+<li><a class="" href="optical-pathway.html">Optical Pathway</a></li>
+<li><a class="" href="electronics.html">Electronics</a></li>
+<li><a class="" href="amplifiers.html">Amplifiers</a></li>
+<li><a class="" href="detectors.html">Detectors</a></li>
+<li><a class="" href="digital-vs-analog.html">Digital vs Analog</a></li>
+<li><a class="" href="noise.html">Noise</a></li>
+<li><a class="" href="pulse-measurement.html">Pulse Measurement</a></li>
+<li><a class="" href="thresholddiscriminator.html">Threshold/Discriminator</a></li>
+<li><a class="" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="book-part">Panel Design</li>
+<li><a class="" href="sample.html">Sample</a></li>
+<li><a class="" href="source.html">Source</a></li>
+<li><a class="" href="integrity.html">Integrity</a></li>
+<li><a class="" href="prep-and-stain.html">Prep and Stain</a></li>
+<li><a class="" href="cell-enrichment.html">Cell Enrichment</a></li>
+<li><a class="" href="assay-development.html">Assay Development</a></li>
+<li><a class="" href="target.html">Target</a></li>
+<li><a class="" href="sample-state.html">Sample State</a></li>
+<li><a class="" href="probe-types.html">Probe Types</a></li>
+<li><a class="" href="fluorochrome-selection.html">Fluorochrome Selection</a></li>
+<li><a class="" href="spectral-overlap.html">Spectral Overlap</a></li>
+<li><a class="" href="controls.html">Controls</a></li>
+<li><a class="" href="optimization.html">Optimization</a></li>
+<li class="book-part">Applications</li>
+<li><a class="" href="immunophenotyping.html">Immunophenotyping</a></li>
+<li><a class="" href="functional-assays.html">Functional Assays</a></li>
+<li><a class="" href="multiplex-bead-assays.html">Multiplex Bead Assays</a></li>
+<li><a class="" href="solid-organ-transplant.html">Solid Organ Transplant</a></li>
+<li><a class="" href="stem-cell-analysis.html">Stem Cell Analysis</a></li>
+<li><a class="" href="cell-cycle.html">Cell Cycle</a></li>
+<li><a class="" href="rare-event-analysis.html">Rare Event Analysis</a></li>
+<li><a class="" href="small-particle-analysis.html">Small Particle Analysis</a></li>
+<li><a class="" href="fetal-hemoglobin-assay.html">Fetal Hemoglobin Assay</a></li>
+<li><a class="" href="cell-sorting.html">Cell Sorting</a></li>
+<li><a class="" href="imaging-cytometry.html">Imaging Cytometry</a></li>
+<li><a class="" href="mass-cytometry.html">Mass Cytometry</a></li>
+<li class="book-part">Data</li>
+<li><a class="" href="standards.html">Standards</a></li>
+<li><a class="" href="signal-processing.html">Signal Processing</a></li>
+<li><a class="" href="display.html">Display</a></li>
+<li><a class="" href="gating.html">Gating</a></li>
+<li><a class="" href="statistical-methods.html">Statistical Methods</a></li>
+<li><a class="" href="data-modeling.html">Data Modeling</a></li>
+<li><a class="" href="quantitative-cytometry.html">Quantitative Cytometry</a></li>
+<li><a class="" href="data-quality-assessment.html">Data Quality Assessment</a></li>
+<li class="book-part">Lab Operations</li>
+<li><a class="active" href="qaulity-control.html">Qaulity Control</a></li>
+<li><a class="" href="instrument-qc.html">Instrument QC</a></li>
+<li><a class="" href="instrument-optimization.html">Instrument Optimization</a></li>
+<li><a class="" href="reagent-qc.html">Reagent QC</a></li>
+<li><a class="" href="sample-inegrity.html">Sample Inegrity</a></li>
+<li><a class="" href="qc-selection.html">QC Selection</a></li>
+<li><a class="" href="trend-analysis.html">Trend Analysis</a></li>
+<li><a class="" href="assay-validation.html">Assay Validation</a></li>
+<li><a class="" href="method-validation.html">Method Validation</a></li>
+<li><a class="" href="method-calibration.html">Method Calibration</a></li>
+<li><a class="" href="safety.html">Safety</a></li>
+<li><a class="" href="biosafety-procedures.html">Biosafety Procedures</a></li>
+<li><a class="" href="instrument-safety.html">Instrument Safety</a></li>
+<li><a class="" href="chemical-safety.html">Chemical Safety</a></li>
+<li><a class="" href="environmental-safety.html">Environmental Safety</a></li>
+<li><a class="" href="laboratory-administration.html">Laboratory Administration</a></li>
+<li><a class="" href="financial.html">Financial</a></li>
+<li><a class="" href="operations.html">Operations</a></li>
+<li><a class="" href="personnel.html">Personnel</a></li>
+<li><a class="" href="quality-management.html">Quality Management</a></li>
+</ul>
+
+        <div class="book-extra" style="display:none;">
+          <p><a id="book-repo" href="https://github.com/brettmrice/Cytometry/blob">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="qaulity-control" class="section level1 unnumbered">
+<h1>Qaulity Control<a class="anchor" aria-label="anchor" href="#qaulity-control"><i class="fas fa-link"></i></a>
+</h1>
+<div id="quality-control-the-cornerstone-of-reliable-flow-cytometry" class="section level2 unnumbered">
+<h2>
+<strong>Quality Control: The Cornerstone of Reliable Flow Cytometry</strong><a class="anchor" aria-label="anchor" href="#quality-control-the-cornerstone-of-reliable-flow-cytometry"><i class="fas fa-link"></i></a>
+</h2>
+<p>Quality control (QC) in flow cytometry is a multifaceted system designed to:</p>
+<ul>
+<li>Ensure the accuracy and reliability of our data</li>
+<li>Detect and prevent errors</li>
+<li>Maintain consistent performance over time</li>
+<li>Meet regulatory requirements</li>
+</ul>
+<p>It’s a continuous process that spans from the moment a sample arrives in the lab to the final data analysis and reporting</p>
+</div>
+<div id="the-six-pillars-of-quality-control" class="section level2 unnumbered">
+<h2>
+<strong>The Six Pillars of Quality Control</strong><a class="anchor" aria-label="anchor" href="#the-six-pillars-of-quality-control"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Instrument Quality Control:</strong>
+<ul>
+<li>
+<em>What it is:</em> Assessing and maintaining the physical and functional integrity of the flow cytometer</li>
+<li>
+<em>Why it’s important:</em> Ensures that the instrument is operating according to specifications and producing accurate measurements</li>
+<li>
+<em>Key aspects:</em> Optical alignment, detector calibration, fluidics system checks, and electronic stability</li>
+</ul>
+</li>
+<li>
+<strong>Instrument Optimization:</strong>
+<ul>
+<li>
+<em>What it is:</em> Fine-tuning instrument settings to achieve the best possible performance for a specific application</li>
+<li>
+<em>Why it’s important:</em> Maximizes signal intensity, minimizes background noise, improves resolution, and standardizes performance</li>
+<li>
+<em>Key aspects:</em> Laser power adjustment, PMT voltage optimization, compensation settings, and threshold settings</li>
+</ul>
+</li>
+<li>
+<strong>Reagent Quality Control:</strong>
+<ul>
+<li>
+<em>What it is:</em> Verifying the quality and performance of the reagents used in flow cytometry assays</li>
+<li>
+<em>Why it’s important:</em> Ensures that the reagents are binding specifically to the intended targets and are providing adequate signal intensity</li>
+<li>
+<em>Key aspects:</em> Panel verification, titration, lot-to-lot variation, storage, and handling</li>
+</ul>
+</li>
+<li>
+<strong>Sample Integrity:</strong>
+<ul>
+<li>
+<em>What it is:</em> Maintaining the quality and condition of the sample throughout the testing process</li>
+<li>
+<em>Why it’s important:</em> Ensures that the sample accurately represents the biological state of the cells being studied</li>
+<li>
+<em>Key aspects:</em> Collection, handling, storage, and processing</li>
+</ul>
+</li>
+<li>
+<strong>Appropriate Sample Quality Control Selection:</strong>
+<ul>
+<li>
+<em>What it is:</em> Choosing the appropriate internal and external controls to monitor and validate the entire flow cytometry process</li>
+<li>
+<em>Why it’s important:</em> Monitors the complete process while providing the data to remove any interferences</li>
+<li>
+<em>Key aspects:</em> Internal controls and external controls</li>
+</ul>
+</li>
+<li>
+<strong>Trend Analysis and Interpretation:</strong>
+<ul>
+<li>
+<em>What it is:</em> Systematically examining QC data over time to identify patterns, trends, and shifts in instrument performance or assay stability</li>
+<li>
+<em>Why it’s important:</em> Allows for early detection of problems, predictive maintenance, and process improvement</li>
+<li>
+<em>Key aspects:</em> Data Collection, data visualization, statistical analysis, interpretation and action</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="how-they-work-together-5" class="section level2 unnumbered">
+<h2>
+<strong>How They Work Together</strong><a class="anchor" aria-label="anchor" href="#how-they-work-together-5"><i class="fas fa-link"></i></a>
+</h2>
+<p>Imagine a network of interconnected checks and balances:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Instrument Quality Control</strong> establishes a solid foundation by ensuring the instrument is functioning properly</li>
+<li>
+<strong>Instrument Optimization</strong> fine-tunes the settings to maximize performance for a specific assay</li>
+<li>
+<strong>Reagent Quality Control</strong> validates the reagents used in the assay</li>
+<li>
+<strong>Sample Integrity</strong> ensures the sample accurately represents the biology</li>
+<li>
+<strong>Appropriate Sample Quality Control Selection</strong> validates the data and proper operation</li>
+<li>
+<strong>Trend Analysis and Interpretation</strong> continuously monitors QC data to detect and prevent problems</li>
+</ol>
+</div>
+<div id="why-this-holistic-approach-is-essential" class="section level2 unnumbered">
+<h2>
+<strong>Why This Holistic Approach is Essential</strong><a class="anchor" aria-label="anchor" href="#why-this-holistic-approach-is-essential"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Accurate and Reliable Results:</strong> QC ensures that the results accurately reflect the biological system being studied and are free from errors or artifacts</li>
+<li>
+<strong>Reproducible Experiments:</strong> Consistent QC practices lead to reproducible results, allowing for comparisons across different experiments, laboratories, and time points</li>
+<li>
+<strong>Compliance with Regulations:</strong> A comprehensive QC program helps to meet regulatory requirements and accreditation standards</li>
+</ul>
+</div>
+<div id="troubleshooting-quality-control-issues" class="section level2 unnumbered">
+<h2>
+<strong>Troubleshooting Quality Control Issues</strong><a class="anchor" aria-label="anchor" href="#troubleshooting-quality-control-issues"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Out-of-Control Data:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Instrument malfunction</li>
+<li>Reagent degradation</li>
+<li>Human error</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Verify reagents, instrument settings and operation techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Inconsistent Trends:</strong>
+<ul>
+<li>
+<em>Possible Causes:</em>
+<ul>
+<li>Equipment or method malfunction</li>
+</ul>
+</li>
+<li>
+<em>Troubleshooting Steps:</em>
+<ul>
+<li>Review and verify all test steps</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="key-takeaways-5" class="section level2 unnumbered">
+<h2>
+<strong>Key Takeaways</strong><a class="anchor" aria-label="anchor" href="#key-takeaways-5"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Quality control is a critical component of flow cytometry</li>
+<li>A comprehensive QC program encompasses instrument QC, instrument optimization, reagent QC, sample integrity, appropriate control selection, and trend analysis</li>
+<li>By implementing a robust QC program, you can ensure that your flow cytometry laboratory is producing accurate, reliable, and reproducible results</li>
+</ul>
+</div>
+</div>
+<!-- Scoll to TOC element -->
+<script defer>
+  // adjust TOC scroll to selected element/topic
+  function scroll_to_element() {
+    header_height = document.getElementsByTagName('header')[0].offsetHeight/2;
+    toc_element_position = document.querySelector('.book-toc > li > a.active').offsetTop;
+    if(document.querySelector('.book-toc > li > a.active').offsetLeft == 0) {
+      toc_element_position1 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetTop;
+      toc_element_position2 = document.querySelector('.book-toc > li > a.active').offsetParent.offsetHeight;
+      toc_element_position = toc_element_position1 + toc_element_position2;
+    }
+    document.getElementsByTagName('header')[0].scrollTo(0, toc_element_position - header_height, 'smooth');
+  }
+  window.onload = scroll_to_element();
+
+  // hide those labes that take up multiple lines
+  sections = [];
+  topics = [];
+  function hide_label() {
+    // sections
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          elem.classList
+          .contains('book-part')
+          ? sections.push(elem)
+          : '';
+      });
+
+    // topics
+    document
+      .querySelectorAll('.book-toc > li')
+      .forEach(elem => {
+        window
+          .getComputedStyle(elem)
+          .textTransform === "uppercase"
+          &&
+          !elem.classList
+          .contains('book-part')
+          ? topics.push(elem)
+          : '';
+      });
+  }
+  hide_label();
+  head = document.getElementsByTagName('header')[0];
+  head.addEventListener('scroll', () => {
+    // sections
+    count_sections = 0;
+    prev_sections_elem = '';
+    sections
+      .forEach((elem) => {
+      if(count_sections === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_sections = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_sections_elem.classList.add('hide_label');
+        } else {
+          prev_sections_elem.classList.remove('hide_label');
+        }
+      }
+      prev_sections_elem = elem;
+    });
+    // topics
+    count_topics = 0;
+    prev_topic_elem = '';
+    topics
+      .forEach((elem) => {
+      if(count_topics === 0) {
+        initial_y = elem.getBoundingClientRect().y + 20;
+        count_topics = 1;
+      } else {
+        if(elem.getBoundingClientRect().y < initial_y) {
+          prev_topic_elem.classList.add('hide_label');
+        } else {
+          prev_topic_elem.classList.remove('hide_label');
+        }
+      }
+      prev_topic_elem = elem;
+    });
+  });
+</script><div class="chapter-nav">
+<div class="prev"><a href="data-quality-assessment.html">Data Quality Assessment</a></div>
+<div class="next"><a href="instrument-qc.html">Instrument QC</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#qaulity-control">Qaulity Control</a></li>
+<li><a class="nav-link" href="#quality-control-the-cornerstone-of-reliable-flow-cytometry">Quality Control: The Cornerstone of Reliable Flow Cytometry</a></li>
+<li><a class="nav-link" href="#the-six-pillars-of-quality-control">The Six Pillars of Quality Control</a></li>
+<li><a class="nav-link" href="#how-they-work-together-5">How They Work Together</a></li>
+<li><a class="nav-link" href="#why-this-holistic-approach-is-essential">Why This Holistic Approach is Essential</a></li>
+<li><a class="nav-link" href="#troubleshooting-quality-control-issues">Troubleshooting Quality Control Issues</a></li>
+<li><a class="nav-link" href="#key-takeaways-5">Key Takeaways</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/brettmrice/Cytometry/blob/blob/main/Rmd/05-A-00.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/brettmrice/Cytometry/blob/edit/main/Rmd/05-A-00.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+
+</body>
+</html>

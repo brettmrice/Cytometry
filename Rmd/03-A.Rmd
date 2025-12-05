@@ -1,0 +1,147 @@
+# (PART\*) Applications
+
+# Immunophenotyping {-}
+
+## **Overview of Immunophenotyping** {-}
+
+*   **Definition:** Immunophenotyping is the process of identifying and quantifying different cell populations based on the expression of specific cell surface or intracellular markers using antibodies and flow cytometry
+*   **Purpose:**
+    *   **Cell Identification:** To identify and enumerate different cell types in a sample
+    *   **Disease Diagnosis:** To diagnose and classify diseases based on the abnormal expression of cell markers
+    *   **Therapeutic Monitoring:** To monitor the response to treatment and detect minimal residual disease
+    *   **Research:** To study the immune system and investigate the mechanisms of disease
+*   **Key Applications:**
+    *   Immunologic Evaluations
+    *   Hematologic Disorders
+
+## **Immunologic Evaluations** {-}
+
+*   **Definition:** Assessment of the immune system's components, function, and overall health.
+*   **Purpose:**
+    *   **Identify Immune Deficiencies:** To diagnose primary and secondary immunodeficiencies
+    *   **Monitor Immune Status:** To monitor the immune status of patients undergoing immunosuppressive therapy or transplantation
+    *   **Assess Immune Function:** To assess the function of immune cells in response to stimuli
+*   **Commonly Assessed Cell Populations:**
+    *   **T Cells:**
+        *   *CD4+ T Helper Cells:* Coordinate immune responses and activate other immune cells
+        *   *CD8+ Cytotoxic T Cells:* Kill infected or cancerous cells
+        *   *Regulatory T Cells (Tregs):* Suppress immune responses and maintain tolerance
+    *   **B Cells:**
+        *   *Naive B Cells:* Have not yet encountered an antigen
+        *   *Memory B Cells:* Have encountered an antigen and are ready to respond quickly upon re-exposure
+        *   *Plasma Cells:* Secrete antibodies
+    *   **Natural Killer (NK) Cells:**
+        *   *Innate immune cells that kill infected or cancerous cells*
+        *   *CD56 dim cells*: are cytotoxic
+        *   *CD56 bright cells*: secrete cytokines
+    *   **Monocytes and Macrophages:**
+        *   *Phagocytic cells that engulf and digest pathogens and debris*
+    *   **Dendritic Cells:**
+        *   *Antigen-presenting cells that activate T cells*
+*   **Immunophenotyping Panels:**
+    *   **Basic T Cell Panel:** CD3, CD4, CD8
+    *   **B Cell Panel:** CD19, CD20, IgD, IgM
+    *   **NK Cell Panel:** CD3, CD16, CD56
+    *    **Treg Cell Panel:** CD3, CD4, CD25, CD127
+*   **Example Applications:**
+    *   **HIV/AIDS:** Monitoring CD4+ T cell counts to assess immune status
+    *   **Autoimmune Diseases:** Identifying and quantifying autoreactive T cells or B cells
+    *   **Transplant Monitoring:** Monitoring immune cell populations to detect rejection
+    *   **Allergy Testing:** Identifying and quantifying allergic immune responses
+
+## **Hematologic Disorders** {-}
+
+*   **Definition:** Diseases that affect the blood, bone marrow, and lymphatic system
+*   **Purpose:**
+    *   **Diagnosis:** To diagnose and classify hematologic malignancies, such as leukemia, lymphoma, and myeloma
+    *   **Prognosis:** To predict the course of the disease and the response to treatment
+    *   **Minimal Residual Disease (MRD) Monitoring:** To detect residual cancer cells after treatment and predict relapse
+*   **Commonly Assessed Cell Populations:**
+    *   **Myeloid Cells:**
+        *   *Granulocytes (Neutrophils, Eosinophils, Basophils):* Involved in innate immune responses
+        *   *Monocytes:* Precursors to macrophages
+        *   *Dendritic Cells:* Antigen-presenting cells
+        *   *Erythroid Cells:* Red blood cell precursors
+    *   **Lymphoid Cells:**
+        *   *B Cells:* Produce antibodies
+        *   *T Cells:* Coordinate immune responses and kill infected cells
+        *   *NK Cells:* Kill infected or cancerous cells
+    *   **Stem Cells:**
+        *   *Hematopoietic Stem Cells (HSCs):* Give rise to all blood cell types
+        *   *Progenitor Cells:* More differentiated cells that are committed to a specific lineage
+*   **Immunophenotyping Panels:**
+    *   **Acute Leukemia Panel:** CD34, CD117, CD13, CD33, CD19, CD10, CD7, TdT
+    *   **Chronic Lymphoproliferative Disorder Panel:** CD5, CD19, CD20, CD23, CD103, FMC7
+    *   **Multiple Myeloma Panel:** CD38, CD138, CD45, CD56, CD19
+*   **Example Applications:**
+    *   **Acute Myeloid Leukemia (AML):** Identifying and classifying AML based on the expression of myeloid markers and genetic mutations
+    *   **Chronic Lymphocytic Leukemia (CLL):** Diagnosing and staging CLL based on the expression of lymphoid markers and disease-specific markers
+    *   **Multiple Myeloma:** Monitoring MRD after treatment to predict relapse
+
+## **Sample Preparation for Immunophenotyping** {-}
+
+*   **Whole Blood:**
+    *   *Lysis of Red Blood Cells:* Use of lysing buffer to remove red blood cells
+    *   *Surface Staining:* Incubation with fluorochrome-conjugated antibodies to label cell surface markers
+*   **Bone Marrow Aspirate:**
+    *   *Density Gradient Separation:* Use of density gradient media to separate cells based on density
+    *   *Surface Staining:* Incubation with antibodies to label cell surface markers
+*   **Lymph Node Biopsy:**
+    *   *Mechanical Disaggregation:* Use of mechanical methods to disrupt tissue and create single-cell suspensions
+    *   *Enzymatic Digestion:* Use of enzymes to further digest the tissue and release cells
+*   **Sample Handling:**
+    *   **Storage:** Should be stored at an optimal temperature and tested as soon as possible to ensure best results
+    *   **Cell concentration:** Should be at an optimal concentration to prevent any instrument malfunction
+    *   **Quality:** Should be of proper quality to produce the most accurate results.
+
+## **Gating Strategies for Immunophenotyping** {-}
+
+*   **Forward Scatter (FSC) vs. Side Scatter (SSC):**
+    *   Used to distinguish between different cell populations based on size and granularity
+*   **CD45 vs. Side Scatter (SSC):**
+    *   Used to distinguish between different leukocyte populations
+*   **Hierarchical Gating:**
+    *   Used to identify specific cell subsets based on multiple markers
+*   **Boolean Gating:**
+    *   Used to combine multiple markers to define complex cell populations
+
+## **Controls for Immunophenotyping** {-}
+
+*   **Isotype Controls:**
+    *   Used to assess non-specific antibody binding
+*   **Fluorescence Minus One (FMO) Controls:**
+    *   Used to identify gating boundaries and account for spread
+*   **Compensation Controls:**
+    *   Used to correct for spectral overlap
+*   **Viability Dyes:**
+    *   Used to exclude dead cells from analysis
+
+## **Troubleshooting Immunophenotyping Assays** {-}
+
+*   **Low Event Count:**
+    *   *Possible Causes:*
+        *   Sample loss
+        *   Instrument malfunction
+        *   Incorrect gating
+    *   *Troubleshooting Steps:*
+        *   Optimize sample collection and preparation
+        *   Inspect instrument for malfunctions
+        *   Verify gating strategy
+*   **High Background Noise:**
+    *   *Possible Causes:*
+        *   Non-specific antibody binding
+        *   Autofluorescence
+        *   Contamination
+    *   *Troubleshooting Steps:*
+        *   Use blocking reagents
+        *   Reduce autofluorescence
+        *   Clean samples
+*   **Unexpected Results:**
+    *   *Possible Causes:*
+        *   Incorrect antibody selection
+        *   Improper sample preparation
+        *   Instrument malfunction
+    *   *Troubleshooting Steps:*
+        *   Verify antibody specificity
+        *   Review sample preparation protocols
+        *   Inspect instrument for malfunctions
